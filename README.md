@@ -13,3 +13,6 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Converting list of lists into tuple of lists](https://github.com/codingkapoor/til/blob/master/scala/converting-list-of-lists-into-tuple-of-lists.md)
 - [Converting a list of tuples into a list of lists](https://github.com/codingkapoor/til/blob/master/scala/converting-list-of-tuples-into-list-of-lists.md)
 - [Zip elements from multiple lists](https://github.com/codingkapoor/til/blob/master/scala/zip-elements-from-multiple-lists.md)
+
+### Java
+- [Reading properties from properties file](https://github.com/codingkapoor/til/blob/master/java/reading-properties-from-properties-file.md)
