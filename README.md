@@ -16,7 +16,8 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - ["View" in Scala](https://github.com/codingkapoor/til/blob/master/scala/views-in-scala.md)
 
 ### Java
-- [Reading properties from properties file](https://github.com/codingkapoor/til/blob/master/java/reading-properties-from-properties-file.md)
+- [Reading Properties From Properties File](https://github.com/codingkapoor/til/blob/master/java/reading-properties-from-properties-file.md)
+- [Reading Resources From Classpath](https://github.com/codingkapoor/til/blob/master/java/reading-resources-from-classpath.md)
 
 ### Maven
 - [Resolving Dependencies](https://github.com/codingkapoor/til/blob/master/maven/resolving-dependencies.md)
