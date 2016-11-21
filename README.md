@@ -17,3 +17,6 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 
 ### Java
 - [Reading properties from properties file](https://github.com/codingkapoor/til/blob/master/java/reading-properties-from-properties-file.md)
+
+### Maven
+- [Resolving Dependencies](https://github.com/codingkapoor/til/blob/master/maven/resolving-dependencies.md)
