@@ -21,3 +21,4 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 
 ### Maven
 - [Resolving dependencies](https://github.com/codingkapoor/til/blob/master/maven/resolving-dependencies.md)
+- [Running maven applications](https://github.com/codingkapoor/til/blob/master/maven/running-maven-application.md)
