@@ -23,6 +23,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Converting a list of Tuples into a list of Lists](https://github.com/codingkapoor/til/blob/master/scala/converting-list-of-tuples-into-list-of-lists.md)
 - [Zip elements from multiple Lists](https://github.com/codingkapoor/til/blob/master/scala/zip-elements-from-multiple-lists.md)
 - ["View" in Scala](https://github.com/codingkapoor/til/blob/master/scala/views-in-scala.md)
+- [Ways to deal with Option in Scala](https://github.com/codingkapoor/til/blob/master/scala/ways-to-deal-with-option-in-scala.md)
 
 ### SBT
 - [Using SBT from behind proxy](https://github.com/codingkapoor/til/blob/master/sbt/using-sbt-from-behind-proxy.md)
