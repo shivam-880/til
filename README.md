@@ -4,6 +4,9 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 
 ## Categories
 
+### Git
+- [Git branch descriptions](https://github.com/codingkapoor/til/blob/master/git/git-branch-descriptions.md)
+
 ### Java
 - [Reading properties from properties file](https://github.com/codingkapoor/til/blob/master/java/reading-properties-from-properties-file.md)
 - [Reading resources from classpath](https://github.com/codingkapoor/til/blob/master/java/reading-resources-from-classpath.md)
