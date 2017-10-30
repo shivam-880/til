@@ -6,6 +6,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 
 ### Git
 - [Git branch descriptions](https://github.com/codingkapoor/til/blob/master/git/git-branch-descriptions.md)
+- [Adding code to existing github repository](https://github.com/codingkapoor/til/blob/master/git/adding-code-to-existing-github-repository.md)
 
 ### Java
 - [Reading properties from properties file](https://github.com/codingkapoor/til/blob/master/java/reading-properties-from-properties-file.md)
