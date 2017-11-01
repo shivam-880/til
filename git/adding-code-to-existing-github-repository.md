@@ -33,5 +33,5 @@
 
 - Push the changes in your local repository to GitHub.
   ```
-  $ git push origin master
+  $ git push --set-upstream origin master
   ```
