@@ -15,6 +15,8 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 
 ### JavaScript
 - [Parsing JavaScript Object](https://github.com/codingkapoor/til/blob/master/javascript/parsing-javascript-object.md)
+- [Convert a list of objects to an object of objects with indices of objects in the lists as keys](https://github.com/codingkapoor/til/blob/master/javascript/convert-object-list-to-object-of-objects-with-indices-as-keys.md)
+- [Slice objects from a list of objects to an object of objects with keys as indices](https://github.com/codingkapoor/til/blob/master/javascript/slice-objects-from-objects-list-to-object-of-objects-with-keys-as-indices.md)
 
 ### Maven
 - [Resolving dependencies](https://github.com/codingkapoor/til/blob/master/maven/resolving-dependencies.md)
