@@ -2,7 +2,7 @@
 
 ## Input
 
-```
+``` javascript
 var arr = 
 [
   {
@@ -22,7 +22,7 @@ var arr =
 
 ## Output
 
-```
+``` javascript
 { 1: 
    { name: 'styles-conference',
      url: 'https://github.com/codingkapoor/styles-conference',
@@ -40,7 +40,7 @@ var arr =
 
 ## Solution
 
-```
+``` javascript
 var res = arr.reduce((acc, item, index) => { acc[index + 1] = item; return acc; }, {});
 res
 ```
