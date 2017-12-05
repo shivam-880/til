@@ -9,6 +9,8 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Adding code to existing github repository](https://github.com/codingkapoor/til/blob/master/git/adding-code-to-existing-github-repository.md)
 - [Delete git branch locally & remotely](https://github.com/codingkapoor/til/blob/master/git/delete-branches-locally-and-remotely.md)
 - [Revert commit head to second last commit](https://github.com/codingkapoor/til/blob/master/git/revert-commit-head-to-second-last-commit.md)
+- [Selective stashing](https://github.com/codingkapoor/til/blob/master/git/selective-stashing.md)
+- [List changes in stash](https://github.com/codingkapoor/til/blob/master/git/list-changes-in-stash.md) 
 
 ### Java
 - [Reading properties from properties file](https://github.com/codingkapoor/til/blob/master/java/reading-properties-from-properties-file.md)
