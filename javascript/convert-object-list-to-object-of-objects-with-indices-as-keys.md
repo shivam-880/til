@@ -3,6 +3,7 @@
 ## Input
 
 ```
+var arr = 
 [
   {
     "name": "styles-conference",
