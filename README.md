@@ -14,6 +14,9 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Most recent commit log with file names](https://github.com/codingkapoor/til/blob/master/git/most-recent-commit-log-with-file-names.md)
 - [Git Tags](https://github.com/codingkapoor/til/blob/master/git/git-tags.md)
 
+### H2
+- [Specifying absolute path in Jdbc url](https://github.com/codingkapoor/til/blob/master/h2/specifying-absolute-path-in-jdbc-url.md)
+
 ### Java
 - [Reading properties from properties file](https://github.com/codingkapoor/til/blob/master/java/reading-properties-from-properties-file.md)
 - [Reading resources from classpath](https://github.com/codingkapoor/til/blob/master/java/reading-resources-from-classpath.md)
