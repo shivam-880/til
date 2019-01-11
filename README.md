@@ -13,6 +13,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [List changes in stash](https://github.com/codingkapoor/til/blob/master/git/list-changes-in-stash.md) 
 - [Most recent commit log with file names](https://github.com/codingkapoor/til/blob/master/git/most-recent-commit-log-with-file-names.md)
 - [Git Tags](https://github.com/codingkapoor/til/blob/master/git/git-tags.md)
+- [Merge Unrelated Local Remote Repositories](https://github.com/codingkapoor/til/blob/master/git/merge-unrelated-local-remote-repos.md)
 
 ### H2
 - [Specifying absolute path in Jdbc url](https://github.com/codingkapoor/til/blob/master/h2/specifying-absolute-path-in-jdbc-url.md)
