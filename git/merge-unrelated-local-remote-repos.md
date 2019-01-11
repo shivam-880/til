@@ -1,6 +1,5 @@
 # Merge Unrelated Local Remote Repositories
 
-## Use Case
 Suppose you have created a repository in github and also an unrelated repository locally with an intent of merging it with the one created in github.
 
 Merging these repositories could be achieved as described below.
