@@ -4,6 +4,9 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 
 ## Categories
 
+### Bash
+- [Determine If Port Is Already In Use](https://github.com/codingkapoor/til/blob/master/bash/determine-if-port-is-already-in-use.md)
+
 ### Git
 - [Git branch descriptions](https://github.com/codingkapoor/til/blob/master/git/git-branch-descriptions.md)
 - [Adding code to existing github repository](https://github.com/codingkapoor/til/blob/master/git/adding-code-to-existing-github-repository.md)
