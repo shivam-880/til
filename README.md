@@ -22,27 +22,27 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Specifying absolute path in Jdbc url](https://github.com/codingkapoor/til/blob/master/h2/specifying-absolute-path-in-jdbc-url.md)
 
 ### Java
+- [Running java applications](https://github.com/codingkapoor/til/blob/master/java/running-java-applications.md)
 - [Reading properties from properties file](https://github.com/codingkapoor/til/blob/master/java/reading-properties-from-properties-file.md)
 - [Reading resources from classpath](https://github.com/codingkapoor/til/blob/master/java/reading-resources-from-classpath.md)
-- [Running java applications](https://github.com/codingkapoor/til/blob/master/java/running-java-applications.md)
 
 ### JavaScript
-- [Parsing JavaScript Object](https://github.com/codingkapoor/til/blob/master/javascript/parsing-javascript-object.md)
 - [Convert a list of objects to an object of objects with indices of objects in the lists as keys](https://github.com/codingkapoor/til/blob/master/javascript/convert-object-list-to-object-of-objects-with-indices-as-keys.md)
+- [Parsing JavaScript Object](https://github.com/codingkapoor/til/blob/master/javascript/parsing-javascript-object.md)
 - [Slice objects from a list of objects to an object of objects with keys as indices](https://github.com/codingkapoor/til/blob/master/javascript/slice-objects-from-objects-list-to-object-of-objects-with-keys-as-indices.md)
 
 ### Maven
-- [Resolving dependencies](https://github.com/codingkapoor/til/blob/master/maven/resolving-dependencies.md)
-- [Running maven applications](https://github.com/codingkapoor/til/blob/master/maven/running-maven-application.md)
+- [Resolving Dependencies](https://github.com/codingkapoor/til/blob/master/maven/resolving-dependencies.md)
+- [Running Maven Applications](https://github.com/codingkapoor/til/blob/master/maven/running-maven-application.md)
 
 ### Scala
-- [Converting a List into a Tuple](https://github.com/codingkapoor/til/blob/master/scala/converting-a-list-into-a-tuple.md)
-- [Converting list of Lists into Tuple of Lists](https://github.com/codingkapoor/til/blob/master/scala/converting-list-of-lists-into-tuple-of-lists.md)
-- [Converting a list of Tuples into a list of Lists](https://github.com/codingkapoor/til/blob/master/scala/converting-list-of-tuples-into-list-of-lists.md)
-- [Zip elements from multiple Lists](https://github.com/codingkapoor/til/blob/master/scala/zip-elements-from-multiple-lists.md)
-- ["View" in Scala](https://github.com/codingkapoor/til/blob/master/scala/views-in-scala.md)
-- [Ways to deal with Option in Scala](https://github.com/codingkapoor/til/blob/master/scala/ways-to-deal-with-option-in-scala.md)
+- [Converting A List Into A Tuple](https://github.com/codingkapoor/til/blob/master/scala/converting-a-list-into-a-tuple.md)
+- [Converting A List Of Tuples Into A List Of Lists](https://github.com/codingkapoor/til/blob/master/scala/converting-list-of-tuples-into-list-of-lists.md)
+- [Converting List Of Lists Into Tuple Of Lists](https://github.com/codingkapoor/til/blob/master/scala/converting-list-of-lists-into-tuple-of-lists.md)
+- [Views In Scala](https://github.com/codingkapoor/til/blob/master/scala/views-in-scala.md)
+- [Ways To Deal With Option In Scala](https://github.com/codingkapoor/til/blob/master/scala/ways-to-deal-with-option-in-scala.md)
+- [Zip Elements From Multiple Lists](https://github.com/codingkapoor/til/blob/master/scala/zip-elements-from-multiple-lists.md)
 
 ### SBT
-- [Using SBT from behind proxy](https://github.com/codingkapoor/til/blob/master/sbt/using-sbt-from-behind-proxy.md)
-- [Making Eclipse aware of fresh dependencies in a SBT project](https://github.com/codingkapoor/til/blob/master/sbt/making-eclipse-aware-of-fresh-dependencies.md)
+- [Making Eclipse Aware Of Fresh Dependencies In A SBT Project](https://github.com/codingkapoor/til/blob/master/sbt/making-eclipse-aware-of-fresh-dependencies.md)
+- [Using SBT From Behind Proxy](https://github.com/codingkapoor/til/blob/master/sbt/using-sbt-from-behind-proxy.md)
