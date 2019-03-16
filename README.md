@@ -8,28 +8,28 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Determine If Port Is Already In Use](https://github.com/codingkapoor/til/blob/master/bash/determine-if-port-is-already-in-use.md)
 
 ### Git
-- [Git branch descriptions](https://github.com/codingkapoor/til/blob/master/git/git-branch-descriptions.md)
-- [Adding code to existing github repository](https://github.com/codingkapoor/til/blob/master/git/adding-code-to-existing-github-repository.md)
-- [Delete git branch locally & remotely](https://github.com/codingkapoor/til/blob/master/git/delete-branches-locally-and-remotely.md)
-- [Revert commit head to second last commit](https://github.com/codingkapoor/til/blob/master/git/revert-commit-head-to-second-last-commit.md)
-- [Selective stashing](https://github.com/codingkapoor/til/blob/master/git/selective-stashing.md)
-- [List changes in stash](https://github.com/codingkapoor/til/blob/master/git/list-changes-in-stash.md) 
-- [Most recent commit log with file names](https://github.com/codingkapoor/til/blob/master/git/most-recent-commit-log-with-file-names.md)
+- [Adding Code To Existing Github Repository](https://github.com/codingkapoor/til/blob/master/git/adding-code-to-existing-github-repository.md)
+- [Delete Git Branch Locally & Remotely](https://github.com/codingkapoor/til/blob/master/git/delete-branches-locally-and-remotely.md)
 - [Git Tags](https://github.com/codingkapoor/til/blob/master/git/git-tags.md)
+- [Git Branch Descriptions](https://github.com/codingkapoor/til/blob/master/git/git-branch-descriptions.md)
+- [List Changes In Stash](https://github.com/codingkapoor/til/blob/master/git/list-changes-in-stash.md)
 - [Merge Unrelated Local Remote Repositories](https://github.com/codingkapoor/til/blob/master/git/merge-unrelated-local-remote-repos.md)
+- [Most Recent Commit Log With File Names](https://github.com/codingkapoor/til/blob/master/git/most-recent-commit-log-with-file-names.md)
+- [Revert Commit Head To Second Last Commit](https://github.com/codingkapoor/til/blob/master/git/revert-commit-head-to-second-last-commit.md)
+- [Selective Stashing](https://github.com/codingkapoor/til/blob/master/git/selective-stashing.md)
 
 ### H2
-- [Specifying absolute path in Jdbc url](https://github.com/codingkapoor/til/blob/master/h2/specifying-absolute-path-in-jdbc-url.md)
+- [Specifying Absolute Path In Jdbc Url](https://github.com/codingkapoor/til/blob/master/h2/specifying-absolute-path-in-jdbc-url.md)
 
 ### Java
-- [Running java applications](https://github.com/codingkapoor/til/blob/master/java/running-java-applications.md)
-- [Reading properties from properties file](https://github.com/codingkapoor/til/blob/master/java/reading-properties-from-properties-file.md)
-- [Reading resources from classpath](https://github.com/codingkapoor/til/blob/master/java/reading-resources-from-classpath.md)
+- [Running Java Applications](https://github.com/codingkapoor/til/blob/master/java/running-java-applications.md)
+- [Reading Properties From Properties File](https://github.com/codingkapoor/til/blob/master/java/reading-properties-from-properties-file.md)
+- [Reading Resources From Classpath](https://github.com/codingkapoor/til/blob/master/java/reading-resources-from-classpath.md)
 
 ### JavaScript
-- [Convert a list of objects to an object of objects with indices of objects in the lists as keys](https://github.com/codingkapoor/til/blob/master/javascript/convert-object-list-to-object-of-objects-with-indices-as-keys.md)
+- [Convert A List Of Objects To An Object Of Objects With Indices Of Objects In The Lists As Keys](https://github.com/codingkapoor/til/blob/master/javascript/convert-object-list-to-object-of-objects-with-indices-as-keys.md)
 - [Parsing JavaScript Object](https://github.com/codingkapoor/til/blob/master/javascript/parsing-javascript-object.md)
-- [Slice objects from a list of objects to an object of objects with keys as indices](https://github.com/codingkapoor/til/blob/master/javascript/slice-objects-from-objects-list-to-object-of-objects-with-keys-as-indices.md)
+- [Slice Objects From A List Of Objects To An Object Of Objects With Keys As Indices](https://github.com/codingkapoor/til/blob/master/javascript/slice-objects-from-objects-list-to-object-of-objects-with-keys-as-indices.md)
 
 ### Maven
 - [Resolving Dependencies](https://github.com/codingkapoor/til/blob/master/maven/resolving-dependencies.md)
