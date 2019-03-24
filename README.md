@@ -15,6 +15,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [List Changes In Stash](https://github.com/codingkapoor/til/blob/master/git/list-changes-in-stash.md)
 - [Merge Unrelated Local Remote Repositories](https://github.com/codingkapoor/til/blob/master/git/merge-unrelated-local-remote-repos.md)
 - [Most Recent Commit Log With File Names](https://github.com/codingkapoor/til/blob/master/git/most-recent-commit-log-with-file-names.md)
+- [Revert Commit Already Pushed To Github](https://github.com/codingkapoor/til/blob/master/git/revert-commit-already-pushed-to-github.md)
 - [Revert Commit Head To Second Last Commit](https://github.com/codingkapoor/til/blob/master/git/revert-commit-head-to-second-last-commit.md)
 - [Selective Stashing](https://github.com/codingkapoor/til/blob/master/git/selective-stashing.md)
 
