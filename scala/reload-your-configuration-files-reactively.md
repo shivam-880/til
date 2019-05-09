@@ -1,4 +1,4 @@
-# Watch your configuration changes 
+# Reload your configuration files reactively 
 
 ## 1. Poll config file for changes
 Conventional way would be to poll checksum of the configuation file every configured period of time, check if the checksum has changed and based on the results reload the file.
