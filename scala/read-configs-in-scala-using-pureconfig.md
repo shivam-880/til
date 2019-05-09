@@ -1,4 +1,4 @@
-# Read configs in Scala using `pureconfig` library
+# Read configs in Scala using `pureconfig`
 
 This reason you would use a scala library instead of **Lightbend's** already popular [configuration library](https://github.com/lightbend/config) because it is written purely in Java and when you try to fetch complex formats instead of simply fetching configs by `String` or `Int` it returns *Java Collections* which makes it difficult to work with in Scala especially if the configs are deeply nested. 
 
