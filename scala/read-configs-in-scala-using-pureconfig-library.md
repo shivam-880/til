@@ -1,6 +1,8 @@
 # Read configs in Scala using `pureconfig` library
 
-This reason you would use a scala library instead of Lightbend's already popular [configuration library](https://github.com/lightbend/config) because it is written purely in Java and when you try to fetch complex formats instead of simply fetching configs by `String` or `Int` it returns *Java Collections* which makes it difficult to work with in Scala especially if the configs are deeply nested. Basically, it can't cast configs to *Case Classes*.
+This reason you would use a scala library instead of **Lightbend's** already popular [configuration library](https://github.com/lightbend/config) because it is written purely in Java and when you try to fetch complex formats instead of simply fetching configs by `String` or `Int` it returns *Java Collections* which makes it difficult to work with in Scala especially if the configs are deeply nested. 
+
+Basically, it can't cast configs to *Case Classes*.
 
 ``` scala
 case class TtlPerDatabase(cass: Option[Int], solr: Option[Int], vertica: Option[Int])
