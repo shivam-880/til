@@ -8,6 +8,11 @@ Conventional way would be to poll checksum of the configuation file every config
 https://github.com/pathikrit/better-files
 
 ``` scala
+import akka.actor.{ActorRef, ActorSystem}
+import better.files.File
+import better.files.FileWatcher._
+import java.nio.file.{StandardWatchEventKinds => EventType}
+
 trait ConfWatcher {
   def confDir: String
   implicit def actorSystem: ActorSystem
