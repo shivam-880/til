@@ -7,17 +7,21 @@ Basically, it can't cast configs to *Case Classes*.
 ``` scala
 case class TtlPerDatabase(cass: Option[Int], solr: Option[Int], vertica: Option[Int])
 
-def fetchTtls() = {
-    // pureconfig.loadConfig[Map[String, TtlPerDatabase]](ConfigFactory.parseString("""ttl: { "vce/vce/pod": {cass:80, solr:90, vertica:10}, "ibm/ibm/pod": {cass:21, solr:7, vertica:3} }"""), "scalar.ttl")
+trait ReadConfigs {
+    def confPath
 
-    val ttlConf = pureconfig.loadConfig[Map[String, TtlPerDatabase]](Paths.get(confPath), "scalar.ttl")
-    Try {
-      ttlConf match {
-        case Left(configReaderFailures) =>
-          sys.error(s"Encountered the following errors reading ttl configurations per mps: ${configReaderFailures.toList.mkString("\n")}")
-        case Right(config) =>
-          config
+    def fetchTtls() = {
+        // pureconfig.loadConfig[Map[String, TtlPerDatabase]](ConfigFactory.parseString("""ttl: { "vce/vce/pod": {cass:80, solr:90, vertica:10}, "ibm/ibm/pod": {cass:21, solr:7, vertica:3} }"""), "scalar.ttl")
+
+        val ttlConf = pureconfig.loadConfig[Map[String, TtlPerDatabase]](Paths.get(confPath), "scalar.ttl")
+        Try {
+          ttlConf match {
+            case Left(configReaderFailures) =>
+              sys.error(s"Encountered the following errors reading ttl configurations per mps: ${configReaderFailures.toList.mkString("\n")}")
+            case Right(config) =>
+              config
+          }
+        }
       }
-    }
   }
 ```
