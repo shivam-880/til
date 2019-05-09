@@ -7,6 +7,10 @@ Basically, it can't cast configs to *Case Classes*.
 ``` scala
 case class TtlPerDatabase(cass: Option[Int], solr: Option[Int], vertica: Option[Int])
 
+import java.nio.file.Paths
+import pureconfig.generic.auto._
+import scala.util.{Failure, Success, Try}
+
 trait ReadConfigs {
     def confPath
 
@@ -23,5 +27,12 @@ trait ReadConfigs {
           }
         }
       }
+     
+  }
+  
+  // usage
+  fetchTtls() match {
+    case Success(ttls) => println(ttls)
+    case Failure(e) => e.printStackTrace()
   }
 ```
