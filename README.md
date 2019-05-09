@@ -40,7 +40,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Converting a List into a Tuple](https://github.com/codingkapoor/til/blob/master/scala/converting-a-list-into-a-tuple.md)
 - [Converting a List of Tuples into a List of Lists](https://github.com/codingkapoor/til/blob/master/scala/converting-list-of-tuples-into-list-of-lists.md)
 - [Converting List of Lists into Tuple of Lists](https://github.com/codingkapoor/til/blob/master/scala/converting-list-of-lists-into-tuple-of-lists.md)
-- [Read configs in Scala using pureconfig library](https://github.com/codingkapoor/til/blob/master/scala/read-configs-in-scala-using-pureconfig-library.md)
+- [Read configs in Scala using pureconfig](https://github.com/codingkapoor/til/blob/master/scala/read-configs-in-scala-using-pureconfig.md)
 - [Read File](https://github.com/codingkapoor/til/blob/master/scala/read-file.md)
 - [Reload your configuration files reactively](https://github.com/codingkapoor/til/blob/master/scala/reload-your-configuration-files-reactively.md)
 - [Views in Scala](https://github.com/codingkapoor/til/blob/master/scala/views-in-scala.md)
