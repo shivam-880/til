@@ -41,6 +41,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Converting A List Of Tuples Into A List Of Lists](https://github.com/codingkapoor/til/blob/master/scala/converting-list-of-tuples-into-list-of-lists.md)
 - [Converting List Of Lists Into Tuple Of Lists](https://github.com/codingkapoor/til/blob/master/scala/converting-list-of-lists-into-tuple-of-lists.md)
 - [Read File](https://github.com/codingkapoor/til/blob/master/scala/read-file.md)
+- [Reload your configuration files reactively](https://github.com/codingkapoor/til/blob/master/scala/reload-your-configuration-files-reactively.md)
 - [Views In Scala](https://github.com/codingkapoor/til/blob/master/scala/views-in-scala.md)
 - [Ways To Deal With Option In Scala](https://github.com/codingkapoor/til/blob/master/scala/ways-to-deal-with-option-in-scala.md)
 - [Zip Elements From Multiple Lists](https://github.com/codingkapoor/til/blob/master/scala/zip-elements-from-multiple-lists.md)
