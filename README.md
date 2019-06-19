@@ -12,7 +12,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Delete git branch locally & remotely](https://github.com/codingkapoor/til/blob/master/git/delete-branches-locally-and-remotely.md)
 - [Git tags](https://github.com/codingkapoor/til/blob/master/git/git-tags.md)
 - [Git branch descriptions](https://github.com/codingkapoor/til/blob/master/git/git-branch-descriptions.md)
-- [List changes in Stash](https://github.com/codingkapoor/til/blob/master/git/list-changes-in-stash.md)
+- [List changes in stash](https://github.com/codingkapoor/til/blob/master/git/list-changes-in-stash.md)
 - [Merge unrelated local remote repositories](https://github.com/codingkapoor/til/blob/master/git/merge-unrelated-local-remote-repos.md)
 - [Most recent commit log with file names](https://github.com/codingkapoor/til/blob/master/git/most-recent-commit-log-with-file-names.md)
 - [Revert commit already pushed to github](https://github.com/codingkapoor/til/blob/master/git/revert-commit-already-pushed-to-github.md)
