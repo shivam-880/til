@@ -8,7 +8,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Determine if a port is already in use](https://github.com/codingkapoor/til/blob/master/bash/determine-if-port-is-already-in-use.md)
 
 ### Docker
-- [Build a docker image]()
+- [Build a docker image](https://github.com/codingkapoor/til/blob/master/docker/build-a-docker-image.md)
 - [Check the content of a docker volume]()
 - [Delete docker volumes that are not being used by any container]()
 - [Follow container logs]()
