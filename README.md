@@ -7,6 +7,13 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 ### Bash
 - [Determine if a port is already in use](https://github.com/codingkapoor/til/blob/master/bash/determine-if-port-is-already-in-use.md)
 
+### Docker
+- [Build a docker image]()
+- [Check the content of a docker volume]()
+- [Delete docker volumes that are not being used by any container]()
+- [Follow container logs]()
+- [Run a container]()
+
 ### Git
 - [Adding code to existing github repository](https://github.com/codingkapoor/til/blob/master/git/adding-code-to-existing-github-repository.md)
 - [Delete git branch locally & remotely](https://github.com/codingkapoor/til/blob/master/git/delete-branches-locally-and-remotely.md)
