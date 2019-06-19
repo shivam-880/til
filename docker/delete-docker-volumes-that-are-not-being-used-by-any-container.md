@@ -5,6 +5,7 @@
 
 $ docker volume ls
 
+
 // Delete all docker volumes that are not being used by any container
 
 $ docker volume prune
