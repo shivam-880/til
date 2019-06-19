@@ -3,5 +3,5 @@
 ```sh
 // change to directory that has Dockerfile
 
-$ docker build --tag codingkapoor/dropbox .
+$ docker build --tag codingkapoor/dropbox:latest .
 ```
