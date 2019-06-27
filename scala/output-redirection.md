@@ -1,4 +1,5 @@
 # Output Redirection
+Bash like output redirection can be implemented in Scala using implicit classes like so.
 
 ```scala
 trait Pipeline {
@@ -33,6 +34,8 @@ def unzip(zip: File): String = {
 
   s"${zip.getParent}/1"
 }
+
+implicit val zipAsByteArray: Array[Byte] = ??? 
 
 createUniqueTmpDir |> writeZipToTmpFile |> unzip
 
