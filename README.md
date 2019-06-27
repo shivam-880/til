@@ -48,6 +48,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Converting a list of tuples into a list of lists](https://github.com/codingkapoor/til/blob/master/scala/converting-list-of-tuples-into-list-of-lists.md)
 - [Converting list of lists into tuple of lists](https://github.com/codingkapoor/til/blob/master/scala/converting-list-of-lists-into-tuple-of-lists.md)
 - [Managed Resources](https://github.com/codingkapoor/til/blob/master/scala/managed-resources.md)
+- [Ouptut Redirections](https://github.com/codingkapoor/til/blob/master/scala/output-redirection.md)
 - [Read configs in Scala using pureconfig](https://github.com/codingkapoor/til/blob/master/scala/read-configs-in-scala-using-pureconfig.md)
 - [Read file](https://github.com/codingkapoor/til/blob/master/scala/read-file.md)
 - [Reload your configuration files reactively](https://github.com/codingkapoor/til/blob/master/scala/reload-your-configuration-files-reactively.md)
