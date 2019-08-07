@@ -59,3 +59,4 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 ### SBT
 - [Making eclipse aware of fresh dependencies in a sbt project](https://github.com/codingkapoor/til/blob/master/sbt/making-eclipse-aware-of-fresh-dependencies.md)
 - [Using sbt from behind proxy](https://github.com/codingkapoor/til/blob/master/sbt/using-sbt-from-behind-proxy.md)
+- [Debug Lagom Projects](https://github.com/codingkapoor/til/blob/master/sbt/debug-lagom-projects.md)
