@@ -27,3 +27,9 @@ git push --tags origin master
 ```
 git push origin <tag name>
 ```
+
+# Fetch all remote tags
+
+```
+git fetch --tags
+```
