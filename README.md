@@ -6,7 +6,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 
 ### Bash
 - [Determine if a port is already in use](https://github.com/codingkapoor/til/blob/master/bash/determine-if-port-is-already-in-use.md)
-- [Lines Of Code](https://github.com/codingkapoor/til/blob/master/bash/lines-of-code.md)
+- [Lines of code](https://github.com/codingkapoor/til/blob/master/bash/lines-of-code.md)
 
 ### Docker
 - [Build a docker image](https://github.com/codingkapoor/til/blob/master/docker/build-a-docker-image.md)
