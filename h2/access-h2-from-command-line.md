@@ -1,7 +1,9 @@
 # Access H2 From Command Line
 
 ```
-java -cp com.h2database.h2-1.4.196.jar org.h2.tools.Shell -url "jdbc:h2:tcp://10.172.137.15:9092/codb.mv.db"
+java -cp com.h2database.h2-1.4.196.jar org.h2.tools.Shell \
+  -url "jdbc:h2:tcp://10.172.137.15:9092/employee.mv.db" \
+  -sql "select count(*) from employee; select * from employee;"
 
 Welcome to H2 Shell 1.4.196 (2017-06-10)
 Exit with Ctrl+C
