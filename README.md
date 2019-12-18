@@ -28,7 +28,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Selective stashing](https://github.com/codingkapoor/til/blob/master/git/selective-stashing.md)
 
 ### H2
-- [Access H2 From Command Line](https://github.com/codingkapoor/til/blob/master/h2/access-h2-from-command-line.md)
+- [Access H2 from command line](https://github.com/codingkapoor/til/blob/master/h2/access-h2-from-command-line.md)
 - [Specifying absolute path in jdbc url](https://github.com/codingkapoor/til/blob/master/h2/specifying-absolute-path-in-jdbc-url.md)
 
 ### Java
