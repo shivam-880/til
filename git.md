@@ -36,7 +36,7 @@
   $ git push --set-upstream origin master
   ```
 
-## Delete git branch 
+## Delete branch 
 
 ```
 // locally
@@ -46,49 +46,35 @@ git branch -d <branch name>
 git push origin --delete <branch name>
 ```
 
-## Git branch descriptions
-
-### Add/Edit
-
-`git branch --edit-description`
-
-### Read
-
-`git config --get branch.{branchName}.description`
-
-
-## Create a tag
+## Branch descriptions
 
 ```
+// add/edit
+git branch --edit-description
+
+// read
+git config --get branch.{branchName}.description
+```
+
+## Tags 
+
+```
+// create a tag
 git tag <tag name>
-```
 
-## Delete a tag
-
-```
+// delete a tag
 git tag --delete v.3.0.0
-```
 
-## Delete a remote tag
-
-```
+// delete a remote tag
 git push --delete origin v6.0.2.75
-```
 
-## Push tags created locally
-```
+// push tags created locally
 git push --tags origin master
-```
 
-## Push single tag created locally
-
-```
+// push single tag created locally
 git push origin <tag name>
-```
 
-## Fetch all remote tags
-
-```
+// fetch all remote tags
 git fetch --tags
 ```
 
