@@ -32,9 +32,9 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Specifying absolute path in jdbc url](https://github.com/iamsmkr/til/blob/master/h2.md#specifying-absolute-path-in-jdbc-url)
 
 ### Java
-- [Running java applications](https://github.com/codingkapoor/til/blob/master/java/running-java-applications.md)
-- [Reading properties from properties file](https://github.com/codingkapoor/til/blob/master/java/reading-properties-from-properties-file.md)
-- [Reading resources from classpath](https://github.com/codingkapoor/til/blob/master/java/reading-resources-from-classpath.md)
+- [Running java applications](https://github.com/iamsmkr/til/blob/master/java.md#running-java-applications)
+- [Reading properties from properties file](https://github.com/iamsmkr/til/blob/master/java.md#reading-properties-from-properties-file)
+- [Reading resources from classpath](https://github.com/iamsmkr/til/blob/master/java.md#reading-resources-from-classpath)
 
 ### JavaScript
 - [Convert a list of objects to an object of objects with indices of objects in the lists as keys](https://github.com/codingkapoor/til/blob/master/javascript/convert-object-list-to-object-of-objects-with-indices-as-keys.md)
