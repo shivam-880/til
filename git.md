@@ -142,21 +142,10 @@ Suppose you have created a repository in github and also an unrelated repository
   git show --stat  HEAD~1
   ```
 
-## Revert Commit Already Pushed To Github
-
-- Revert the commit already pushed to github.
+## Revert commit already pushed to github
   ```
-  git revert 2473667a14b01fb96758c2a1a85d66acd6fdb42b
-  ```
-
-- Rid the changes made in the last commit.
-  ```
-  git reset --hard HEAD~2
-  ```
-
-- Rewrite history.
-  ```
-  git push -f
+  git reset --hard <old-commit-id>
+  git push -f <remote-name> <branch-name>
   ```
 
 ## Revert commit head to second last commit
