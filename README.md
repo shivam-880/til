@@ -60,6 +60,6 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Zip elements from multiple lists](https://github.com/iamsmkr/til/blob/master/scala.md#zip-elements-from-multiple-lists)
 
 ### SBT
-- [Making eclipse aware of fresh dependencies in a sbt project](https://github.com/codingkapoor/til/blob/master/sbt/making-eclipse-aware-of-fresh-dependencies.md)
-- [Using sbt from behind proxy](https://github.com/codingkapoor/til/blob/master/sbt/using-sbt-from-behind-proxy.md)
-- [Debug lagom projects](https://github.com/codingkapoor/til/blob/master/sbt/debug-lagom-projects.md)
+- [Making eclipse aware of fresh dependencies in a sbt project](https://github.com/iamsmkr/til/blob/master/sbt.md#making-eclipse-aware-of-fresh-dependencies-in-a-sbt-project)
+- [Using sbt from behind proxy](https://github.com/iamsmkr/til/blob/master/sbt.md#using-sbt-from-behind-proxy)
+- [Debug lagom projects](https://github.com/iamsmkr/til/blob/master/sbt.md#debug-lagom-projects)
