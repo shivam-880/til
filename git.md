@@ -36,104 +36,108 @@
   $ git push --set-upstream origin master
   ```
 
-## Branch
-#### Descriptions
+## Branches
+#### Add/Edit/Read branch descriptions
 ```
-// add/edit
+# add/edit
 git branch --edit-description
 
-// read
+# read
 git config --get branch.{branchName}.description
 ```
 
-#### Delete
+#### Delete a branch
 ```
-// locally
+# locally
 git branch -d <branch name>
 
-// remotely
+# remotely
 git push origin --delete <branch name>
 ```
 
 ## Tags 
 
+#### Create a tag
 ```
-// create a tag
 git tag <tag name>
+```
 
-// delete a tag
+#### Delete a tag
+```
+# delete a local tag
 git tag --delete v.3.0.0
 
-// delete a remote tag
+# delete a remote tag
 git push --delete origin v6.0.2.75
+```
 
-// push tags created locally
+#### Push tags
+```
+# push tags created locally
 git push --tags origin master
 
-// push single tag created locally
+# push single tag created locally
 git push origin <tag name>
+```
 
-// fetch all remote tags
+#### Fetch all remote tags
+```
 git fetch --tags
 ```
 
-## List changes in stash
+## Stash
 
+#### List changes in stash
 ```
 git stash show -p stash@{0}
 ```
 
-## List only file names in stash
-
+#### List only file names in stash
 ```
 git stash show stash@{0} --name-only
 ```
 
 ## Merge Unrelated Local Remote Repositories
+Suppose you have created a repository in github and also an unrelated repository locally with an intent of merging it with the one created in github. Merging these repositories could be achieved as described below.
 
-Suppose you have created a repository in github and also an unrelated repository locally with an intent of merging it with the one created in github.
+- Initialize the local repository as a Git repository
+  ```
+  $ git init
+  ```
 
-Merging these repositories could be achieved as described below.
+- Add the URL for the remote repository where your local repository will be pushed
+  ```
+  # sets the new remote
+  $ git remote add origin <remote repository URL>
 
-### Initialize the local repository as a Git repository.
+  # verifies the new remote URL
+  $ git remote -v
+  ```
 
-`$ git init`
+- Pull the latest changes from the remote repository
+  ```
+  $ git pull origin master --allow-unrelated-histories
+  ```
 
-### Add the URL for the remote repository where your local repository will be pushed.
+- Add the files in your new local repository. This stages them for the first commit
+  ```
+  $ git add .
+  ```
 
-```
-$ git remote add origin <remote repository URL>
-# Sets the new remote
+- Commit the files that you've staged in your local repository.
+  ```
+  $ git commit -m "your first commit"
+  ```
 
-$ git remote -v
-# Verifies the new remote URL
-```
+- Push the changes in your local repository to GitHub.
+  ```
+  $ git push --set-upstream origin master
+  ```
 
-### Pull the latest changes from the remote repository.
-```
-$ git pull origin master --allow-unrelated-histories
-```
-
-### Add the files in your new local repository. This stages them for the first commit.
-```
-$ git add .
-```
-
-### Commit the files that you've staged in your local repository.
-```
-$ git commit -m "your first commit"
-```
-
-### Push the changes in your local repository to GitHub.
-```
-$ git push --set-upstream origin master
-```
-
-## Most recent commit log with the file names
-
-```
-git show --stat 
-```
+- Most recent commit log with the file names
+  ```
+  git show --stat 
+  ```
 
 ## Other commits
 
