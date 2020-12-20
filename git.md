@@ -9,11 +9,11 @@
 
 - Add the URL for the remote repository where your local repository will be pushed.
   ```
+  # sets the new remote
   $ git remote add origin <remote repository URL>
-  # Sets the new remote
 
+  # verifies the new remote URL
   $ git remote -v
-  # Verifies the new remote URL
   ```
 
 - Pull the latest changes from the remote repository.
@@ -139,11 +139,11 @@ Suppose you have created a repository in github and also an unrelated repository
   git show --stat 
   ```
 
-## Other commits
+- Other commits
 
-```
-git show --stat  HEAD~1
-```
+  ```
+  git show --stat  HEAD~1
+  ```
 
 ## Revert Commit Already Pushed To Github
 
@@ -164,19 +164,19 @@ git show --stat  HEAD~1
 
 ## Revert commit head to second last commit
 
-### Preserve changes
+#### Preserve changes
 
 ```
 git reset HEAD~1 --soft
 ```
 
-### Rid all changes
+#### Rid all changes
 
 ```
 git reset HEAD~1 --hard
 ```
 
-## Selectively stash git changes
+#### Selectively stash git changes
 
 ```
 git stash -p
