@@ -71,8 +71,7 @@ val content = using(Source.fromFile("/tmp/myfile.txt"))(_.mkString)
 ```
 
 ## Map.map vs Map.mapValues
-#### Refer
-http://blog.bruchez.name/2013/02/mapmap-vs-mapmapvalues.html
+**Refer:** http://blog.bruchez.name/2013/02/mapmap-vs-mapmapvalues.html
 
 ## Output redirection
 Bash like output redirection can be implemented in Scala using implicit classes like so.
