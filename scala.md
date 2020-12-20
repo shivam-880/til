@@ -15,8 +15,6 @@ scala> hl.tupled
 res6: (Int, Int, Int) = (1,2,3)
 ```
 
-## Converting a list to a map
-
 ## Converting list of lists into tuple of lists
 
 There isn't any way in standard Scala library to convert a list of lists into tuple of lists as in:
@@ -237,8 +235,7 @@ scala> (1 to 1000000000).view.filter(_ % 2 == 0).take(10).toList
 res2: List[Int] = List(2, 4, 6, 8, 10, 12, 14, 16, 18, 20)
 ```
 
-#### Refer:
-[In Scala, what does “view” do?](http://stackoverflow.com/questions/6799648/in-scala-what-does-view-do)
+**Refer:** [In Scala, what does “view” do?](http://stackoverflow.com/questions/6799648/in-scala-what-does-view-do)
 
 ## Ways to deal with Option in Scala
 
