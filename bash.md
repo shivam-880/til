@@ -1,4 +1,4 @@
-# Determine if a port is already in use
+## Determine if a port is already in use
 
 #### Cmd
 ```
@@ -13,7 +13,7 @@ if lsof -Pi :8080 -sTCP:LISTEN -t >/dev/null ; then
 fi
 ```
 
-# Lines of code
+## Lines of code
 
 ```
 find . -type f -exec wc -l {} +
