@@ -22,13 +22,13 @@ $ docker volume ls
 $ docker volume prune
 ```
 
-# Follow container logs
+## Follow container logs
 
 ```sh
 $ docker logs -f mywebsite_dropbox-ghost-technology_1
 ```
 
-# Run a container
+## Run a container
 
 ```sh
 docker run -d --restart=always --name=dropbox janeczku/dropbox
