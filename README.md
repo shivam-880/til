@@ -28,8 +28,8 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Selective stashing](https://github.com/iamsmkr/til/blob/master/git.md#selectively-stash-git-changes)
 
 ### H2
-- [Access H2 from command line](https://github.com/codingkapoor/til/blob/master/h2/access-h2-from-command-line.md)
-- [Specifying absolute path in jdbc url](https://github.com/codingkapoor/til/blob/master/h2/specifying-absolute-path-in-jdbc-url.md)
+- [Access H2 from command line](https://github.com/iamsmkr/til/blob/master/h2.md#access-h2-from-cmd)
+- [Specifying absolute path in jdbc url](https://github.com/iamsmkr/til/blob/master/h2.md#specifying-absolute-path-in-jdbc-url)
 
 ### Java
 - [Running java applications](https://github.com/codingkapoor/til/blob/master/java/running-java-applications.md)
