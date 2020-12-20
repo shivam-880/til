@@ -16,16 +16,16 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Run a container](https://github.com/iamsmkr/til/blob/master/docker.md#run-a-container)
 
 ### Git
-- [Adding code to existing github repository](https://github.com/codingkapoor/til/blob/master/git/adding-code-to-existing-github-repository.md)
-- [Delete git branch locally & remotely](https://github.com/codingkapoor/til/blob/master/git/delete-branches-locally-and-remotely.md)
-- [Git tags](https://github.com/codingkapoor/til/blob/master/git/git-tags.md)
-- [Git branch descriptions](https://github.com/codingkapoor/til/blob/master/git/git-branch-descriptions.md)
-- [List changes in stash](https://github.com/codingkapoor/til/blob/master/git/list-changes-in-stash.md)
-- [Merge unrelated local remote repositories](https://github.com/codingkapoor/til/blob/master/git/merge-unrelated-local-remote-repos.md)
-- [Most recent commit log with file names](https://github.com/codingkapoor/til/blob/master/git/most-recent-commit-log-with-file-names.md)
-- [Revert commit already pushed to github](https://github.com/codingkapoor/til/blob/master/git/revert-commit-already-pushed-to-github.md)
-- [Revert commit head to second last commit](https://github.com/codingkapoor/til/blob/master/git/revert-commit-head-to-second-last-commit.md)
-- [Selective stashing](https://github.com/codingkapoor/til/blob/master/git/selective-stashing.md)
+- [Adding code to existing github repository](https://github.com/iamsmkr/til/blob/master/git.md#adding-code-to-existing-github-repository)
+- [Delete git branch locally & remotely](https://github.com/iamsmkr/til/blob/master/git.md#delete-a-branch)
+- [Git tags](https://github.com/iamsmkr/til/blob/master/git.md#tags)
+- [Git branch descriptions](https://github.com/iamsmkr/til/blob/master/git.md#addeditread-branch-descriptions)
+- [List changes in stash](https://github.com/iamsmkr/til/blob/master/git.md#stash)
+- [Merge unrelated local remote repositories](https://github.com/iamsmkr/til/blob/master/git.md#merge-unrelated-local-remote-repositories)
+- [Most recent commit log with file names](https://github.com/iamsmkr/til/blob/master/git.md#most-recent-commit-log-with-the-file-names)
+- [Revert commit already pushed to github](https://github.com/iamsmkr/til/blob/master/git.md#revert-commit-already-pushed-to-github)
+- [Revert commit head to second last commit](https://github.com/iamsmkr/til/blob/master/git.md#revert-commit-head-to-second-last-commit)
+- [Selective stashing](https://github.com/iamsmkr/til/blob/master/git.md#selectively-stash-git-changes)
 
 ### H2
 - [Access H2 from command line](https://github.com/codingkapoor/til/blob/master/h2/access-h2-from-command-line.md)
