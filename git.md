@@ -138,7 +138,7 @@ Suppose you have created a repository in github and also an unrelated repository
   ```
   git show --stat 
 
-  // other commits
+  # other commits
   git show --stat  HEAD~1
   ```
 
