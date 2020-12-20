@@ -9,11 +9,11 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Lines of code](https://github.com/iamsmkr/til/blob/master/bash.md#lines-of-code)
 
 ### Docker
-- [Build a docker image](https://github.com/codingkapoor/til/blob/master/docker/build-a-docker-image.md)
-- [Check the content of a docker volume](https://github.com/codingkapoor/til/blob/master/docker/check-the-content-of-a-docker-volume.md)
-- [Delete docker volumes that are not being used by any container](https://github.com/codingkapoor/til/blob/master/docker/delete-docker-volumes-that-are-not-being-used-by-any-container.md)
-- [Follow container logs](https://github.com/codingkapoor/til/blob/master/docker/follow-container-logs.md)
-- [Run a container](https://github.com/codingkapoor/til/blob/master/docker/run-a-container.md)
+- [Build a docker image](https://github.com/iamsmkr/til/blob/master/docker.md#build-a-docker-image)
+- [Check the content of a docker volume](https://github.com/iamsmkr/til/blob/master/docker.md#check-the-content-of-a-docker-volume)
+- [Delete docker volumes that are not being used by any container](https://github.com/iamsmkr/til/blob/master/docker.md#delete-docker-volumes-that-are-not-being-used-by-any-container)
+- [Follow container logs](https://github.com/iamsmkr/til/blob/master/docker.md#follow-container-logs)
+- [Run a container](https://github.com/iamsmkr/til/blob/master/docker.md#run-a-container)
 
 ### Git
 - [Adding code to existing github repository](https://github.com/codingkapoor/til/blob/master/git/adding-code-to-existing-github-repository.md)
