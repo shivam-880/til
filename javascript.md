@@ -44,7 +44,7 @@ var arr =
 var res = arr.reduce((acc, item, index) => { acc[index + 1] = item; return acc; }, {});
 res
 ```
-
+<br/>
 ## Parsing JavaScript Object
 
 We can parse nested javascript object like so:
@@ -127,7 +127,7 @@ N
 O
 P
 ```
-
+<br/>
 ## Slice objects from a list of objects to an object of objects with keys as indices
 
 #### Input
