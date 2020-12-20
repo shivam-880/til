@@ -1,6 +1,136 @@
-# Slice objects from a list of objects to an object of objects with keys as indices
+## Convert a list of objects to an object of objects with indices of objects in the lists as keys
 
-## Input
+#### Input
+
+``` javascript
+var arr = 
+[
+  {
+    "name": "styles-conference",
+    "url": "https://github.com/codingkapoor/styles-conference",
+    "desc": "Bootstrapped version of 'StylesConference' website created by Shay Howe @learn.shayhowe.com.",
+    "stack": ["HTML5", "CSS3", "BootStrap"]
+  },
+  {
+    "name": "akka-scala",
+    "url": "https://github.com/codingkapoor/akka-scala",
+    "desc": "This repository includes projects that attempt to explore Akka toolkit in Scala.",
+    "stack": ["Scala", "Akka"]
+  }
+]
+```
+
+#### Output
+
+``` javascript
+{ 1: 
+   { name: 'styles-conference',
+     url: 'https://github.com/codingkapoor/styles-conference',
+     desc: 'Bootstrapped version of \'StylesConference\' website created by Shay Howe @learn.shayhowe.com.',
+     stack: [ 'HTML5', 'CSS3', 'BootStrap' ] 
+   },
+  2: 
+   { name: 'akka-scala',
+     url: 'https://github.com/codingkapoor/akka-scala',
+     desc: 'This repository includes projects that attempt to explore Akka toolkit in Scala.',
+     stack: [ 'Scala', 'Akka' ] 
+   } 
+ }
+```
+
+#### Solution
+
+``` javascript
+var res = arr.reduce((acc, item, index) => { acc[index + 1] = item; return acc; }, {});
+res
+```
+
+## Parsing JavaScript Object
+
+We can parse nested javascript object like so:
+
+``` javascript
+// Parser.js
+
+var obj = [{
+    id: "A",
+    children: [{
+        id: "B",
+        children: [{
+            id: "C",
+            children: [{
+                id: "D",
+                children: [{
+                    id: "E",
+                    children: [{
+                        id: "F"
+          }]
+        }]
+      }, {
+                id: "G",
+                children: {
+                    id: "H"
+                }
+      }]
+    }, {
+            id: "I"
+    }]
+  }, {
+        id: "J",
+        children: [{
+            id: "K"
+    }]
+  }]
+}, {
+    id: "L"
+}, {
+    id: "M",
+    children: {
+        id: "N",
+        children: [{
+            id: "O"
+    }]
+    }
+}, {
+    id: "P"
+}];
+
+function parse(obj) {
+    for (var k in obj) {
+        if (typeof obj[k] == "object" && obj[k] !== null)
+            parse(obj[k]);
+        else
+            console.log(obj[k])
+    }
+}
+
+parse(obj)
+```
+
+This would print all the **id**'s on the console:
+``` shell
+$ node Parser.js
+A
+B
+C
+D
+E
+F
+G
+H
+I
+J
+K
+L
+M
+N
+O
+P
+```
+
+## Slice objects from a list of objects to an object of objects with keys as indices
+
+#### Input
 
 ``` javascript
 var arr = 
@@ -92,7 +222,7 @@ var arr =
 ]
 ```
 
-## Output
+#### Output
 
 ``` javascript
 { 2: 
@@ -134,7 +264,7 @@ var arr =
  }
 ```
 
-## Solution
+#### Solution
 
 ``` javascript
 function slice(offset, limit) {
