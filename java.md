@@ -30,7 +30,7 @@ public class PropertyReader {
 - [Why not use ResourceBundle instead of Properties?](http://stackoverflow.com/questions/14883000/why-not-use-resourcebundle-instead-of-properties)
 
 
-## Reading Resources From Classpath
+## Reading resources from classpath
 
 Resource file present in the classpath, such as `src/main/resources`, can be read as depicted below:
 
@@ -46,7 +46,7 @@ BufferedReader br = new BufferedReader(new InputStreamReader(getResource(null)))
 **Note:** In this snippet, if user provides resource file name as argument to the `getResource()` method that file will be read otherwise default resource file present in the classpath will be read.
 
 
-## Running Java Applications
+## Running java applications
 
 #### Without arguments
 ```
