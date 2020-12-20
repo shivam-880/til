@@ -36,24 +36,23 @@
   $ git push --set-upstream origin master
   ```
 
-## Delete branch 
-
-```
-// locally
-git branch -d <branch name>
-
-// remotely
-git push origin --delete <branch name>
-```
-
-## Branch descriptions
-
+## Branch
+#### Descriptions
 ```
 // add/edit
 git branch --edit-description
 
 // read
 git config --get branch.{branchName}.description
+```
+
+#### Delete
+```
+// locally
+git branch -d <branch name>
+
+// remotely
+git push origin --delete <branch name>
 ```
 
 ## Tags 
