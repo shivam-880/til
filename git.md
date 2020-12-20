@@ -162,7 +162,7 @@ git reset HEAD~1 --soft
 git reset HEAD~1 --hard
 ```
 
-#### Selectively stash git changes
+## Selectively stash git changes
 
 ```
 git stash -p
