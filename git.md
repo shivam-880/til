@@ -36,15 +36,13 @@
   $ git push --set-upstream origin master
   ```
 
-## Delete git branch locally
+## Delete git branch 
 
 ```
+// locally
 git branch -d <branch name>
-```
 
-## Delete git branch remotely
-
-```
+// remotely
 git push origin --delete <branch name>
 ```
 
