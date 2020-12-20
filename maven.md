@@ -1,4 +1,4 @@
-## Resolving Dependencies
+## Resolving dependencies
 
 `mvn compile` will resolve all the compile time dependencies.<br/>
 `mvn test` will resolve all the compile time as well as test time dependencies.
@@ -7,7 +7,7 @@
 
 However, if we want to only download dependencies without doing anything else, we can run `mvn dependency:resolve`.
 
-## Running Maven Applications
+## Running maven applications
 
 #### Without arguments
 
