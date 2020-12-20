@@ -1,11 +1,11 @@
-# Determine If Port Is Already In Use
+## Determine if a port is already in use
 
-### CMD
+#### Cmd
 ```
 netstat -nlp | grep 7199
 ```
 
-### Programmatically
+#### Code
 ```
 if lsof -Pi :8080 -sTCP:LISTEN -t >/dev/null ; then
     echo "Port already in use!"
@@ -13,7 +13,7 @@ if lsof -Pi :8080 -sTCP:LISTEN -t >/dev/null ; then
 fi
 ```
 
-# Lines Of Code
+## Lines of code
 
 ```
 find . -type f -exec wc -l {} +
