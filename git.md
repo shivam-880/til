@@ -134,14 +134,11 @@ Suppose you have created a repository in github and also an unrelated repository
   $ git push --set-upstream origin master
   ```
 
-- Most recent commit log with the file names
+## Most recent commit log with the file names
   ```
   git show --stat 
-  ```
 
-- Other commits
-
-  ```
+  // other commits
   git show --stat  HEAD~1
   ```
 
