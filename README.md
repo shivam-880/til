@@ -42,8 +42,8 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Slice objects from a list of objects to an object of objects with keys as indices](https://github.com/iamsmkr/til/blob/master/javascript.md#slice-objects-from-a-list-of-objects-to-an-object-of-objects-with-keys-as-indices)
 
 ### Maven
-- [Resolving dependencies](https://github.com/codingkapoor/til/blob/master/maven/resolving-dependencies.md)
-- [Running maven applications](https://github.com/codingkapoor/til/blob/master/maven/running-maven-application.md)
+- [Resolving dependencies](https://github.com/iamsmkr/til/blob/master/maven.md#resolving-dependencies)
+- [Running maven applications](https://github.com/iamsmkr/til/blob/master/maven.md#running-maven-applications)
 
 ### Scala
 - [Converting a list into a tuple](https://github.com/codingkapoor/til/blob/master/scala/converting-a-list-into-a-tuple.md)
