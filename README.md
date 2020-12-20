@@ -37,9 +37,9 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Reading resources from classpath](https://github.com/iamsmkr/til/blob/master/java.md#reading-resources-from-classpath)
 
 ### JavaScript
-- [Convert a list of objects to an object of objects with indices of objects in the lists as keys](https://github.com/codingkapoor/til/blob/master/javascript/convert-object-list-to-object-of-objects-with-indices-as-keys.md)
-- [Parsing javascript object](https://github.com/codingkapoor/til/blob/master/javascript/parsing-javascript-object.md)
-- [Slice objects from a list of objects to an object of objects with keys as indices](https://github.com/codingkapoor/til/blob/master/javascript/slice-objects-from-objects-list-to-object-of-objects-with-keys-as-indices.md)
+- [Convert a list of objects to an object of objects with indices of objects in the lists as keys](https://github.com/iamsmkr/til/blob/master/javascript.md#convert-a-list-of-objects-to-an-object-of-objects-with-indices-of-objects-in-the-lists-as-keys)
+- [Parsing javascript object](https://github.com/iamsmkr/til/blob/master/javascript.md#parsing-javascript-object)
+- [Slice objects from a list of objects to an object of objects with keys as indices](https://github.com/iamsmkr/til/blob/master/javascript.md#slice-objects-from-a-list-of-objects-to-an-object-of-objects-with-keys-as-indices)
 
 ### Maven
 - [Resolving dependencies](https://github.com/codingkapoor/til/blob/master/maven/resolving-dependencies.md)
