@@ -118,6 +118,34 @@ createUniqueTmpDir |> writeZipToTmpFile |> unzip
 "org.zeroturnaround" % "zt-zip" % "1.13"
 ```
 
+## Marshalling/Unmarshalling Scala Enumerations using spray-json
+[Refer PR](https://github.com/spray/spray-json/pull/336)
+Marshalling/Unmarshalling of Scala Enumerations is not natively supported in spray-json as of now. It could be achieved by manually writing reader and writer like so:
+```
+import spray.json._
+
+class EnumJsonFormat[T <: scala.Enumeration](enu: T) extends RootJsonFormat[T#Value] {
+  override def write(obj: T#Value): JsValue = JsString(obj.toString)
+  override def read(json: JsValue): T#Value = {
+    json match {
+      case JsString(txt) => enu.withName(txt)
+      case somethingElse => throw DeserializationException(s"Expected a value from enum $enu instead of $somethingElse")
+    }
+  }
+}
+
+object Fruits extends Enumeration {
+  type Fruit = Value
+  val APPLE, BANANA, MANGO = Value
+}
+
+	it("should be possible to serialize/deserialize enum") {
+  implicit val fruitFormat: EnumJsonFormat[Fruits.type] = new EnumJsonFormat(Fruits)
+  Fruits.APPLE.toJson should be(JsString("APPLE"))
+  JsString("BANANA").convertTo[Fruits.Fruit] should be(Fruits.BANANA)
+}
+```
+
 ## Read configs in Scala using `pureconfig`
 
 This reason you would use a scala library instead of **Lightbend's** already popular [configuration library](https://github.com/lightbend/config) because it is written purely in Java and when you try to fetch complex formats instead of simply fetching configs by `String` or `Int` it returns *Java Collections* which makes it difficult to work with in Scala especially if the configs are deeply nested. 
