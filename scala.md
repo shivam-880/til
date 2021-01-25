@@ -120,8 +120,9 @@ createUniqueTmpDir |> writeZipToTmpFile |> unzip
 
 ## Marshalling/Unmarshalling Scala Enumerations using spray-json
 [Refer PR](https://github.com/spray/spray-json/pull/336)
+
 Marshalling/Unmarshalling of Scala Enumerations is not natively supported in spray-json as of now. It could be achieved by manually writing reader and writer like so:
-```
+```scala
 import spray.json._
 
 class EnumJsonFormat[T <: scala.Enumeration](enu: T) extends RootJsonFormat[T#Value] {
