@@ -20,7 +20,7 @@ In order to use SBT behind proxy server you need to set an *environment variable
 
 ## Unmanaged Resources
 There are scenarios when the jar we need in our project are not available on mvnrepositories. In that case, we can add those jars to our sbt projects as unmanaged jars. The jar can be stored in the `lib` directory under the root folder. 
-```
+```scala
 unmanagedJars in Compile ++= Seq(
   baseDirectory.value / "lib/rules-core_2.11-0.1.jar"
 )
