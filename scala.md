@@ -1,3 +1,20 @@
+## Change Current Directory
+`cd` is not actually a program. It's a shell-internal that tells the shell to the chdir system call. 
+
+Java either doesn't have a function to make the entire jvm to change its cwd (current working directory). One option is executing `sh -c '...'`, changing the directory within a forked process, like so:
+```scala
+import sys.process._
+val cmd = "whatever you wanted to run"
+s"sh -c 'cd ../..; $cmd'".!
+```
+
+Still better would be to use the `scala.sys.process.Process` factory that take both a command and a cwd:
+```scala
+scala.sys.process.Process("your command here", new java.io.File("/some/dir"))
+```
+
+Refer: https://stackoverflow.com/a/34969373/1879109
+
 ## Converting a list into a tuple
 
 There isn't any way in standard Scala library to convert a list into a tuple as:
