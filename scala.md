@@ -203,7 +203,7 @@ trait ReadConfigs {
   }
 ```
 
-## Read a file
+## Read from a file
 
 ```scala
 import scala.concurrent.Future
@@ -307,7 +307,7 @@ println(res3)
 ```
 
 ## Write to a file
-```
+```scala
 import java.nio.file.{Paths, Files}
 import java.nio.charset.StandardCharsets
 
@@ -315,7 +315,7 @@ Files.write(Paths.get("file.txt"), "file contents".getBytes(StandardCharsets.UTF
 ```
 
 Using `sys.process._`
-```
+```scala
 import sys.process._
 "echo hello world" #> new java.io.File("/tmp/example.txt") !
 ```
