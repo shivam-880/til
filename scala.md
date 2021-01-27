@@ -306,6 +306,22 @@ val res3 = r.fold("Not Found") {
 println(res3)
 ```
 
+## Write to a file
+```
+import java.nio.file.{Paths, Files}
+import java.nio.charset.StandardCharsets
+
+Files.write(Paths.get("file.txt"), "file contents".getBytes(StandardCharsets.UTF_8))
+```
+
+Using `sys.process._`
+```
+import sys.process._
+"echo hello world" #> new java.io.File("/tmp/example.txt") !
+```
+
+Refer: https://stackoverflow.com/questions/6879427/scala-write-string-to-file-in-one-statement
+
 ## Zip elements from multiple lists
 
 We are aware of zipping two lists as:
