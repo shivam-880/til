@@ -46,6 +46,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Running maven applications](https://github.com/iamsmkr/til/blob/master/maven.md#running-maven-applications)
 
 ### Scala
+- [Change Current Directory](https://github.com/iamsmkr/til/blob/master/scala.md#change-current-directory)
 - [Converting a list into a tuple](https://github.com/iamsmkr/til/blob/master/scala.md#converting-a-list-into-a-tuple)
 - [Converting a list of tuples into a list of lists](https://github.com/iamsmkr/til/blob/master/scala.md#converting-a-list-of-tuples-into-a-list-of-lists)
 - [Converting list of lists into tuple of lists](https://github.com/iamsmkr/til/blob/master/scala.md#converting-list-of-lists-into-tuple-of-lists)
