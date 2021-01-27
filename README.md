@@ -55,10 +55,11 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Marshalling/Unmarshalling Scala Enumerations using spray-json](https://github.com/iamsmkr/til/blob/master/scala.md#marshallingunmarshalling-scala-enumerations-using-spray-json)
 - [Ouptut Redirections](https://github.com/iamsmkr/til/blob/master/scala.md#output-redirection)
 - [Read configs in Scala using pureconfig](https://github.com/iamsmkr/til/blob/master/scala.md#read-configs-in-scala-using-pureconfig)
-- [Read file](https://github.com/iamsmkr/til/blob/master/scala.md#read-a-file)
+- [Read from a file](https://github.com/iamsmkr/til/blob/master/scala.md#read-from-a-file)
 - [Reload your configuration files reactively](https://github.com/iamsmkr/til/blob/master/scala.md#reload-your-configuration-files-reactively)
 - [Views in scala](https://github.com/iamsmkr/til/blob/master/scala.md#view-in-scala)
 - [Ways to deal with option in scala](https://github.com/iamsmkr/til/blob/master/scala.md#ways-to-deal-with-option-in-scala)
+- [Write to a file](https://github.com/iamsmkr/til/blob/master/scala.md#write-to-a-file)
 - [Zip elements from multiple lists](https://github.com/iamsmkr/til/blob/master/scala.md#zip-elements-from-multiple-lists)
 
 ### SBT
