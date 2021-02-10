@@ -44,6 +44,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 ### Linux
 - [How to create windows bootable disk on ubuntu
 ](https://github.com/iamsmkr/til/blob/master/linux.md#how-to-create-windows-bootable-disk-on-ubuntu)
+- [How to format bootable ubuntu usb drive](https://github.com/iamsmkr/til/blob/master/linux.md#how-to-format-bootable-ubuntu-usb-drive)
 
 ### Maven
 - [Resolving dependencies](https://github.com/iamsmkr/til/blob/master/maven.md#resolving-dependencies)
