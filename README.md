@@ -41,6 +41,10 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Parsing javascript object](https://github.com/iamsmkr/til/blob/master/javascript.md#parsing-javascript-object)
 - [Slice objects from a list of objects to an object of objects with keys as indices](https://github.com/iamsmkr/til/blob/master/javascript.md#slice-objects-from-a-list-of-objects-to-an-object-of-objects-with-keys-as-indices)
 
+### Linux
+- [How to create windows bootable disk on ubuntu
+](https://github.com/iamsmkr/til/blob/master/linux.md#how-to-create-windows-bootable-disk-on-ubuntu)
+
 ### Maven
 - [Resolving dependencies](https://github.com/iamsmkr/til/blob/master/maven.md#resolving-dependencies)
 - [Running maven applications](https://github.com/iamsmkr/til/blob/master/maven.md#running-maven-applications)
