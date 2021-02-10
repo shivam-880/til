@@ -20,3 +20,11 @@ sudo umount /dev/sdd1
 ```
 sudo woeusb --target-filesystem NTFS --device Windows_10_Pro_en-US_v1909_x64_BiT_Activated.iso /dev/sdd
 ```
+
+## How to format bootable ubuntu usb drive
+1. Download and install gparted
+```
+sudo apt-get update && sudo apt-get install gparted -y 
+```
+
+2. Choose your drive and format
