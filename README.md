@@ -4,10 +4,6 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 
 ## Categories
 
-### Bash
-- [Determine if a port is already in use](https://github.com/iamsmkr/til/blob/master/bash.md#determine-if-port-is-already-in-use)
-- [Lines of code](https://github.com/iamsmkr/til/blob/master/bash.md#lines-of-code)
-
 ### Docker
 - [Build a docker image](https://github.com/iamsmkr/til/blob/master/docker.md#build-a-docker-image)
 - [Check the content of a docker volume](https://github.com/iamsmkr/til/blob/master/docker.md#check-the-content-of-a-docker-volume)
@@ -42,6 +38,9 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Slice objects from a list of objects to an object of objects with keys as indices](https://github.com/iamsmkr/til/blob/master/javascript.md#slice-objects-from-a-list-of-objects-to-an-object-of-objects-with-keys-as-indices)
 
 ### Linux
+- [Create tunnel](https://github.com/iamsmkr/til/blob/master/linux.md#create-tunnel)
+- [Determine if a port is already in use](https://github.com/iamsmkr/til/blob/master/linux.md#determine-if-a-port-is-already-in-use)
+- [Find lines of code](https://github.com/iamsmkr/til/blob/master/linux.md#find-lines-of-code)
 - [How to create windows bootable disk on ubuntu
 ](https://github.com/iamsmkr/til/blob/master/linux.md#how-to-create-windows-bootable-disk-on-ubuntu)
 - [How to format bootable ubuntu usb drive](https://github.com/iamsmkr/til/blob/master/linux.md#how-to-format-bootable-ubuntu-usb-drive)
