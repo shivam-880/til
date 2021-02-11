@@ -1,3 +1,29 @@
+## Create tunnel
+```
+ssh -f -N -L 8989:localhost:8981 bst-03
+```
+
+## Determine if a port is already in use
+
+#### Cmd
+```
+netstat -nlp | grep 7199
+```
+
+#### Code
+```
+if lsof -Pi :8080 -sTCP:LISTEN -t >/dev/null ; then
+    echo "Port already in use!"
+    exit 0 ;
+fi
+```
+
+## Find lines of code
+```
+find . -type f -exec wc -l {} +
+find . -type f -exec cat {} + | wc -l
+```
+
 ## How to create windows bootable disk on ubuntu
 
 1. Download `woeusb`. Refer: https://github.com/slacka/WoeUSB/issues/311
