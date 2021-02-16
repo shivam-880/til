@@ -157,7 +157,7 @@ object Fruits extends Enumeration {
   val APPLE, BANANA, MANGO = Value
 }
 
-	it("should be possible to serialize/deserialize enum") {
+it("should be possible to serialize/deserialize enum") {
   implicit val fruitFormat: EnumJsonFormat[Fruits.type] = new EnumJsonFormat(Fruits)
   Fruits.APPLE.toJson should be(JsString("APPLE"))
   JsString("BANANA").convertTo[Fruits.Fruit] should be(Fruits.BANANA)
