@@ -56,6 +56,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Converting list of lists into tuple of lists](https://github.com/iamsmkr/til/blob/master/scala.md#converting-list-of-lists-into-tuple-of-lists)
 - [Managed Resources](https://github.com/iamsmkr/til/blob/master/scala.md#managed-resources)
 - [Map.map vs Map.mapValues](https://github.com/iamsmkr/til/blob/master/scala.md#mapmap-vs-mapmapvalues)
+- [Marshalling/Unmarshalling Java LocalDateTime using spray-json](https://github.com/iamsmkr/til/blob/master/scala.md#marshallingunmarshalling-java-localdatetime-using-spray-json)
 - [Marshalling/Unmarshalling Scala Enumerations using spray-json](https://github.com/iamsmkr/til/blob/master/scala.md#marshallingunmarshalling-scala-enumerations-using-spray-json)
 - [Ouptut Redirections](https://github.com/iamsmkr/til/blob/master/scala.md#output-redirection)
 - [Read configs in Scala using pureconfig](https://github.com/iamsmkr/til/blob/master/scala.md#read-configs-in-scala-using-pureconfig)
