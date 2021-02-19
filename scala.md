@@ -135,6 +135,24 @@ createUniqueTmpDir |> writeZipToTmpFile |> unzip
 "org.zeroturnaround" % "zt-zip" % "1.13"
 ```
 
+## Marshalling/Unmarshalling Java LocalDateTime using spray-json
+**Refer**
+1. https://www.programcreek.com/scala/java.time.LocalDateTime
+2. https://github.com/spray/spray-json/issues/128#issuecomment-258712233
+
+Marshalling/Unmarshalling of Java LocalDateTime is not natively supported in spray-json as of now. It could be achieved by manually writing reader and writer like so:
+``` scala
+implicit object LocalDateTimeJsonFormat extends RootJsonFormat[LocalDateTime] {
+    override def write(dt: LocalDateTime): JsValue =
+      JsString(dt.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME))
+
+    override def read(json: JsValue): LocalDateTime = json match {
+      case JsString(s) => LocalDateTime.parse(s, DateTimeFormatter.ISO_LOCAL_DATE_TIME)
+      case _ => throw DeserializationException("Decode local datetime failed")
+    }
+ }
+```
+
 ## Marshalling/Unmarshalling Scala Enumerations using spray-json
 [Refer PR](https://github.com/spray/spray-json/pull/336)
 
