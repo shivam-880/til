@@ -71,6 +71,26 @@ warning: there was one feature warning; re-run with -feature for details
 res4: List[List[Any]] = List(List('a, 'b, 'c), List('b, 'c, 'd), List('c, 'd, 'e), List('d, 'e, 'f), List('e, 'f, 'a), List('f, 'a, 'b))
 ```
 
+## Convert String to LocalDateTime
+``` scala
+scala> LocalDateTime.of(LocalDate.parse("17-02-2020", 
+  DateTimeFormatter.ofPattern("dd-MM-yyyy")), LocalDateTime.now().toLocalTime())
+res14: java.time.LocalDateTime = 2020-02-17T09:54:44.503
+
+scala> LocalDateTime.of(LocalDate.parse("17-02-2020", 
+  DateTimeFormatter.ofPattern("dd-MM-yyyy")), LocalDateTime.MIN.toLocalTime())
+res15: java.time.LocalDateTime = 2020-02-17T00:00
+
+LocalDateTime.parse("Jan 15, 2019 20:12", DateTimeFormatter.ofPattern("MMM dd, yyyy HH:mm")) 
+//2019-01-15T20:12
+
+LocalDateTime.parse("09/25/2017 12:55 PM", DateTimeFormatter.ofPattern("MM/dd/yyyy hh:mm a")) 
+// 2017-09-25T12:55
+
+LocalDateTime.parse("02-August-1989 11:40:12.450", DateTimeFormatter.ofPattern("dd-MMMM-yyyy HH:mm:ss.SSS")) 
+// 1989-08-02T11:40:12.450
+```
+
 ## Managed resources
 The resource passed to `using` as first parameter will be closed after the function passed as second is done with it's execution. The resource however is expected to implement the `close` function that takes care of closing the resource.
 
