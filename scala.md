@@ -306,6 +306,11 @@ trait ConfWatcher {
 
 **Note:** This snippet of code also address multiple events [issue](https://github.com/pathikrit/better-files/issues/313).
 
+## String format
+``` scala
+"%s %s, age %d".format(firstName, lastName, age)
+```
+
 ## "View" in Scala
 
 View produces a lazy collection, so that calls to e.g. `filter` do not evaluate every element of the collection. *Elements are only evaluated once they are explicitly accessed.*
