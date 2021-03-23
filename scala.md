@@ -15,6 +15,25 @@ scala.sys.process.Process("your command here", new java.io.File("/some/dir"))
 
 Refer: https://stackoverflow.com/a/34969373/1879109
 
+## Class Constructors
+```
+class MyException(message: String) extends Exception(message) {
+
+  def this(message: String, cause: Throwable) {
+    this(message)
+    initCause(cause)
+  }
+
+  def this(cause: Throwable) {
+    this(Option(cause).map(_.toString).orNull, cause)
+  }
+
+  def this() {
+    this(null: String)
+  }
+}
+```
+
 ## Converting a list into a tuple
 
 There isn't any way in standard Scala library to convert a list into a tuple as:
