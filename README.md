@@ -65,6 +65,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Reload your configuration files reactively](https://github.com/iamsmkr/til/blob/master/scala.md#reload-your-configuration-files-reactively)
 - [String format](https://github.com/iamsmkr/til/blob/master/scala.md#string-format)
 - [Views in scala](https://github.com/iamsmkr/til/blob/master/scala.md#view-in-scala)
+- [Wait for all futures to complete](https://github.com/iamsmkr/til/blob/master/scala.md#wait-for-all-futures-to-complete)
 - [Ways to deal with option in scala](https://github.com/iamsmkr/til/blob/master/scala.md#ways-to-deal-with-option-in-scala)
 - [Write to a file](https://github.com/iamsmkr/til/blob/master/scala.md#write-to-a-file)
 - [Zip elements from multiple lists](https://github.com/iamsmkr/til/blob/master/scala.md#zip-elements-from-multiple-lists)
