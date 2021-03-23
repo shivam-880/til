@@ -328,6 +328,26 @@ res2: List[Int] = List(2, 4, 6, 8, 10, 12, 14, 16, 18, 20)
 
 **Refer:** [In Scala, what does “view” do?](http://stackoverflow.com/questions/6799648/in-scala-what-does-view-do)
 
+## Wait for all futures to complete
+A `Future` produced by `Future.sequence` completes when either:
+- all the futures have completed successfully, or
+- one of the futures has failed
+
+The second point is what's happening in your case, and it makes sense to complete as soon as one of the wrapped `Future` has failed, because the wrapping `Future` can only hold a single `Throwable` in the failure case. There's no point in waiting for the other futures because the result will be the same failure.
+
+However, it's perfectly reasonable to want to gather all the results, failed or not.
+
+``` scala
+def waitAll[T](futures: Seq[Future[T]]): Future[Seq[Try[T]]] = {
+  def lift[X](futures: Seq[Future[X]]): Seq[Future[Try[X]]] =
+    futures.map(_.map(Success(_)).recover { case t => Failure(t) })
+
+  // Having neutralized exception completions through the lifting, .sequence can now be used
+  // Refer: https://stackoverflow.com/a/29344937/1879109
+  Future.sequence(lift(futures))
+}
+```
+
 ## Ways to deal with Option in Scala
 
 ``` scala
