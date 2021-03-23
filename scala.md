@@ -16,7 +16,7 @@ scala.sys.process.Process("your command here", new java.io.File("/some/dir"))
 Refer: https://stackoverflow.com/a/34969373/1879109
 
 ## Class Constructors
-```
+```scala
 class MyException(message: String) extends Exception(message) {
 
   def this(message: String, cause: Throwable) {
