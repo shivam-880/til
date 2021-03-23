@@ -51,6 +51,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 
 ### Scala
 - [Change Current Directory](https://github.com/iamsmkr/til/blob/master/scala.md#change-current-directory)
+- [Class Constructors](https://github.com/iamsmkr/til/blob/master/scala.md#class-constructors)
 - [Converting a list into a tuple](https://github.com/iamsmkr/til/blob/master/scala.md#converting-a-list-into-a-tuple)
 - [Converting a list of tuples into a list of lists](https://github.com/iamsmkr/til/blob/master/scala.md#converting-a-list-of-tuples-into-a-list-of-lists)
 - [Converting list of lists into tuple of lists](https://github.com/iamsmkr/til/blob/master/scala.md#converting-list-of-lists-into-tuple-of-lists)
