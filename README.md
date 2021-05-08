@@ -60,6 +60,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Map.map vs Map.mapValues](https://github.com/iamsmkr/til/blob/master/scala.md#mapmap-vs-mapmapvalues)
 - [Marshalling/Unmarshalling Java LocalDateTime using spray-json](https://github.com/iamsmkr/til/blob/master/scala.md#marshallingunmarshalling-java-localdatetime-using-spray-json)
 - [Marshalling/Unmarshalling Scala Enumerations using spray-json](https://github.com/iamsmkr/til/blob/master/scala.md#marshallingunmarshalling-scala-enumerations-using-spray-json)
+- [Marshalling/Unmarshalling generic ADT using spray-json](https://github.com/iamsmkr/til/blob/master/scala.md#marshallingunmarshalling-generic-adt-using-spray-json)
 - [Ouptut Redirections](https://github.com/iamsmkr/til/blob/master/scala.md#output-redirection)
 - [Read configs in Scala using pureconfig](https://github.com/iamsmkr/til/blob/master/scala.md#read-configs-in-scala-using-pureconfig)
 - [Read from a file](https://github.com/iamsmkr/til/blob/master/scala.md#read-from-a-file)
