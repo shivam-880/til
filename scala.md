@@ -226,7 +226,7 @@ it("should be possible to serialize/deserialize enum") {
 
 ## Marshalling/Unmarshalling generic ADT using spray-json
 Suppose you need to reply to a rest api request in a predefined response format, as shown below. 
-```
+```json
 {
     "data": {
         "id": "123",
