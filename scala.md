@@ -226,6 +226,18 @@ it("should be possible to serialize/deserialize enum") {
 
 ## Marshalling/Unmarshalling generic ADT using spray-json
 Suppose you need to reply to a rest api request in a predefined response format, as shown below. 
+```
+{
+    "data": {
+        "id": "123",
+        "fullName": "Shivam Kapoor"
+    }
+}
+
+{ "error": "No employee found" }
+```
+
+We can define ADTs to abstract these responses, as shown below. Clearly, successfully responses need to be of type generic so as to capture all sorts of responses.
 ```scala
 case class SuccessHttpResponse[T](data: T, msg: Option[String] = None)
 case class FailureHttpResponse(error: String)
