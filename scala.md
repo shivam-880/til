@@ -224,6 +224,19 @@ it("should be possible to serialize/deserialize enum") {
 }
 ```
 
+## Marshalling/Unmarshalling generic ADT using spray-json
+Suppose you need to reply to a rest api request in a predefined response format, as shown below. 
+```scala
+case class SuccessHttpResponse[T](data: T, msg: Option[String] = None)
+case class FailureHttpResponse(error: String)
+```
+
+This woud require json serializer/deserializer to be defined as below:
+```scala
+implicit def successHttpResponseFormat[T: JsonFormat]: RootJsonFormat[SuccessHttpResponse[T]] = jsonFormat2(SuccessHttpResponse.apply[T])
+implicit val failureHttpResponseFormat: RootJsonFormat[FailureHttpResponse] = jsonFormat1(FailureHttpResponse)
+```
+
 ## Read configs in Scala using `pureconfig`
 
 This reason you would use a scala library instead of **Lightbend's** already popular [configuration library](https://github.com/lightbend/config) because it is written purely in Java and when you try to fetch complex formats instead of simply fetching configs by `String` or `Int` it returns *Java Collections* which makes it difficult to work with in Scala especially if the configs are deeply nested. 
