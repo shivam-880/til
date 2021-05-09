@@ -47,6 +47,13 @@ res
 
 <br/>
 
+## Enums in Javascript
+```javascript
+export const Scope = Object.freeze({ Row: "Row", File: "File", Bundle: "Bundle" });
+```
+
+<br/>
+
 ## Parsing JavaScript Object
 
 We can parse nested javascript object like so:
