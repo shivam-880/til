@@ -34,6 +34,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 
 ### JavaScript
 - [Convert a list of objects to an object of objects with indices of objects in the lists as keys](https://github.com/iamsmkr/til/blob/master/javascript.md#convert-a-list-of-objects-to-an-object-of-objects-with-indices-of-objects-in-the-lists-as-keys)
+- [Enums in Javascript](https://github.com/iamsmkr/til/blob/master/javascript.md#enums-in-javascript)
 - [Parsing javascript object](https://github.com/iamsmkr/til/blob/master/javascript.md#parsing-javascript-object)
 - [Slice objects from a list of objects to an object of objects with keys as indices](https://github.com/iamsmkr/til/blob/master/javascript.md#slice-objects-from-a-list-of-objects-to-an-object-of-objects-with-keys-as-indices)
 
