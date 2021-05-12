@@ -3,6 +3,48 @@
 Object.keys({}).length === 0
 ```
 
+## Convert an array of objects to object of objects with indices as one of the key value
+#### Input
+```javascript
+const arr = [
+  {
+      key: "Row",
+      value: 1
+  },
+  {
+      key: "File",
+      value: 2
+  },
+  {
+      key: "Bundle",
+      value: 3
+  }
+]
+
+#### Output
+```javascript
+{
+  1: {
+      key: "Row",
+      value: 1
+  },
+  2: {
+      key: "File",
+      value: 2
+  },
+  3: {
+      key: "Bundle",
+      value: 3
+  }
+}
+```
+
+#### Solution
+```
+import _ from 'lodash'
+const obj = _.keyBy(arr, "value")
+```
+
 ## Convert a list of objects to an object of objects with indices of objects in the lists as keys
 
 #### Input
