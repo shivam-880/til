@@ -20,6 +20,7 @@ const arr = [
       value: 3
   }
 ]
+```
 
 #### Output
 ```javascript
