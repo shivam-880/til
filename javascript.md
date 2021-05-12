@@ -8,16 +8,16 @@ Object.keys({}).length === 0
 ```javascript
 const arr = [
   {
-      key: "Row",
-      value: 1
+      scope: "Row",
+      index: 1
   },
   {
-      key: "File",
-      value: 2
+      scope: "File",
+      index: 2
   },
   {
-      key: "Bundle",
-      value: 3
+      scope: "Bundle",
+      index: 3
   }
 ]
 ```
@@ -26,16 +26,16 @@ const arr = [
 ```javascript
 {
   1: {
-      key: "Row",
-      value: 1
+      scope: "Row",
+      index: 1
   },
   2: {
-      key: "File",
-      value: 2
+      scope: "File",
+      index: 2
   },
   3: {
-      key: "Bundle",
-      value: 3
+      scope: "Bundle",
+      index: 3
   }
 }
 ```
@@ -43,7 +43,7 @@ const arr = [
 #### Solution
 ```
 import _ from 'lodash'
-const obj = _.keyBy(arr, "value")
+const obj = _.keyBy(arr, "index")
 ```
 
 ## Convert a list of objects to an object of objects with indices of objects in the lists as keys
