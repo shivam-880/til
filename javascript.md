@@ -139,6 +139,11 @@ P
 
 <br/>
 
+## Sleep in Javascript
+```javascript
+await new Promise(r => setTimeout(r, 10000))
+```
+
 ## Slice objects from a list of objects to an object of objects with keys as indices
 
 #### Input
