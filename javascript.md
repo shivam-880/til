@@ -1,3 +1,8 @@
+## Check if Javascript object is empty
+```javascript
+Object.keys({}).length === 0
+```
+
 ## Convert a list of objects to an object of objects with indices of objects in the lists as keys
 
 #### Input
