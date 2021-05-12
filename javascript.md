@@ -41,7 +41,7 @@ const arr = [
 ```
 
 #### Solution
-```
+```javascript
 import _ from 'lodash'
 const obj = _.keyBy(arr, "index")
 ```
