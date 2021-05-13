@@ -187,6 +187,36 @@ P
 
 <br/>
 
+## Custom React Hook to implement intervals
+`setInterval` doesn't work with react hooks as expected, hence this custom hook. It's a copy paste the following blog post.
+Refer https://overreacted.io/making-setinterval-declarative-with-react-hooks/
+```javascript
+import { useEffect, useRef } from 'react'
+
+const useInterval = (callback, delay) => {
+    const savedCallback = useRef()
+
+    // Remember the latest callback.
+    useEffect(() => {
+        savedCallback.current = callback
+    }, [callback])
+
+    // Set up the interval.
+    useEffect(() => {
+        function tick() {
+            savedCallback.current()
+        }
+        if (delay !== null) {
+            let id = setInterval(tick, delay)
+            return () => clearInterval(id)
+        }
+    }, [delay])
+}
+
+export default useInterval
+
+```
+
 ## Sleep in Javascript
 ```javascript
 await new Promise(r => setTimeout(r, 10000))
