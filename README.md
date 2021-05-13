@@ -33,6 +33,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Reading resources from classpath](https://github.com/iamsmkr/til/blob/master/java.md#reading-resources-from-classpath)
 
 ### JavaScript
+- [Animated Logo in Reactjs](https://github.com/iamsmkr/til/blob/master/javascript.md#animated-logo-in-reactjs)
 - [Check if Javascript object is empty](https://github.com/iamsmkr/til/blob/master/javascript.md#check-if-javascript-object-is-empty)
 - [Convert an array of objects to object of objects with indices as one of the key value](https://github.com/iamsmkr/til/blob/master/javascript.md#convert-an-array-of-objects-to-object-of-objects-with-indices-as-one-of-the-key-value)
 - [Convert a list of objects to an object of objects with indices of objects in the lists as keys](https://github.com/iamsmkr/til/blob/master/javascript.md#convert-a-list-of-objects-to-an-object-of-objects-with-indices-of-objects-in-the-lists-as-keys)
