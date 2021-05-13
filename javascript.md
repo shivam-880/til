@@ -1,3 +1,50 @@
+## Animated Logo in Reactjs
+```javascript
+import { useState } from "react"
+import { Image, Transition } from "semantic-ui-react"
+import { useInterval } from '../common/hooks' // Refer https://github.com/iamsmkr/til/blob/master/javascript.md#custom-react-hook-to-implement-intervals
+
+const transitions = [
+    'jiggle',
+    'flash',
+    'shake',
+    'pulse',
+    'tada',
+    'bounce'
+]
+
+const AnimatedLogo = () => {
+    const [anime, setAnime] = useState({
+        animation: 'jiggle', duration: 1000, visible: true
+    })
+
+    const { animation, duration, visible } = anime
+
+    useInterval(() => {
+        setAnime({
+            ...anime, 
+            animation: transitions[Math.floor(Math.random() * transitions.length)], 
+            visible: !anime.visible
+        })
+    }, 5000)
+
+    return (
+        <Transition
+            animation={animation}
+            duration={duration}
+            visible={visible}
+        >
+            <Image
+                src='https://icon-library.com/images/8-bit-icon/8-bit-icon-15.jpg'
+                style={{ width: 40, height: 40, float: 'right', marginRight: 15 }}
+            />
+        </Transition>
+    )
+}
+
+export default AnimatedLogo
+```
+
 ## Check if Javascript object is empty
 ```javascript
 Object.keys({}).length === 0
