@@ -38,6 +38,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Convert a list of objects to an object of objects with indices of objects in the lists as keys](https://github.com/iamsmkr/til/blob/master/javascript.md#convert-a-list-of-objects-to-an-object-of-objects-with-indices-of-objects-in-the-lists-as-keys)
 - [Enums in Javascript](https://github.com/iamsmkr/til/blob/master/javascript.md#enums-in-javascript)
 - [Parsing javascript object](https://github.com/iamsmkr/til/blob/master/javascript.md#parsing-javascript-object)
+- [Custom React Hook to implement intervals](https://github.com/iamsmkr/til/blob/master/javascript.md#custom-react-hook-to-implement-intervals)
 - [Sleep in Javascript](https://github.com/iamsmkr/til/blob/master/javascript.md#sleep-in-javascript)
 - [Slice objects from a list of objects to an object of objects with keys as indices](https://github.com/iamsmkr/til/blob/master/javascript.md#slice-objects-from-a-list-of-objects-to-an-object-of-objects-with-keys-as-indices)
 
