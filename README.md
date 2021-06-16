@@ -46,6 +46,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 ### Linux
 - [Create tunnel](https://github.com/iamsmkr/til/blob/master/linux.md#create-tunnel)
 - [Determine if a port is already in use](https://github.com/iamsmkr/til/blob/master/linux.md#determine-if-a-port-is-already-in-use)
+- [Determine if a port is open on a remote server](https://github.com/iamsmkr/til/blob/master/linux.md#determine-if-a-port-is-open-on-a-remote-server)
 - [Find lines of code](https://github.com/iamsmkr/til/blob/master/linux.md#find-lines-of-code)
 - [How to create windows bootable disk on ubuntu
 ](https://github.com/iamsmkr/til/blob/master/linux.md#how-to-create-windows-bootable-disk-on-ubuntu)
