@@ -10,6 +10,11 @@ ssh -f -N -L 8989:localhost:8981 bst-03
 netstat -nlp | grep 7199
 ```
 
+## Determine if a port is open on a remote server
+```
+nc -v neo4j 7474
+```
+
 #### Code
 ```sh
 if lsof -Pi :8080 -sTCP:LISTEN -t >/dev/null ; then
