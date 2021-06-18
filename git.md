@@ -56,9 +56,14 @@ git push origin --delete <branch name>
 ```
 
 #### Git commits count
+`git shortlog -s` gives you the split up of the number of commits for each developer.
+
+The folloeing gives you the total count if there is more than one developer working on the git repository.
 ```
 git shortlog -n -s|awk '{print $1}'|perl -ne '$s+=$_;END{print $s,"\n"}'
 ```
+
+Please note that the above also counts the number of git merge commits.
 
 ## Tags 
 
