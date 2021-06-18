@@ -15,6 +15,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 ### Git
 - [Adding code to existing github repository](https://github.com/iamsmkr/til/blob/master/git.md#adding-code-to-existing-github-repository)
 - [Delete git branch locally & remotely](https://github.com/iamsmkr/til/blob/master/git.md#delete-a-branch)
+- [Git commits count](https://github.com/iamsmkr/til/blob/master/git.md#git-commits-count)
 - [Git tags](https://github.com/iamsmkr/til/blob/master/git.md#tags)
 - [Git branch descriptions](https://github.com/iamsmkr/til/blob/master/git.md#addeditread-branch-descriptions)
 - [List changes in stash](https://github.com/iamsmkr/til/blob/master/git.md#stash)
