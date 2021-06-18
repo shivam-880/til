@@ -5,6 +5,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 ## Categories
 
 ### Docker
+- [Access host from a container as localhost](https://github.com/iamsmkr/til/blob/master/docker.md#access-host-from-a-container-as-localhost)
 - [Build a docker image](https://github.com/iamsmkr/til/blob/master/docker.md#build-a-docker-image)
 - [Check the content of a docker volume](https://github.com/iamsmkr/til/blob/master/docker.md#check-the-content-of-a-docker-volume)
 - [Delete docker volumes that are not being used by any container](https://github.com/iamsmkr/til/blob/master/docker.md#delete-docker-volumes-that-are-not-being-used-by-any-container)
