@@ -1,3 +1,9 @@
+## Access host from a container as localhost
+Use --net="host" in your docker run command, then localhost in your docker container will point to your docker host.
+```
+docker run -d --net="host" --restart=always --name=ltimdb_etl etl-postgres-neo4j-service:0.1
+```
+
 ## Build a docker image
 
 ```sh
