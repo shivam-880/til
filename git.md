@@ -55,6 +55,11 @@ git branch -d <branch name>
 git push origin --delete <branch name>
 ```
 
+#### Git commits count
+```
+git shortlog -n -s|awk '{print $1}'|perl -ne '$s+=$_;END{print $s,"\n"}'
+```
+
 ## Tags 
 
 #### Create a tag
