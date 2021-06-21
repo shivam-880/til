@@ -9,3 +9,10 @@ The issue with ammonite is that it awalys launches against the latest version of
     $ cs launch ammonite --scala 2.13
     ```
     Both full and binary version are accepted as scala versions, and the Ammonite version is optional. Refer this [github issue](https://github.com/com-lihaoyi/Ammonite/issues/1093).
+    
+    
+    Launch the script with desired version of ammonite like so:
+    ```
+    $ cs launch ammonite --scala 2.13 -- myscript.sc
+    ```
+    
