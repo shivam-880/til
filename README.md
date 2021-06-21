@@ -4,6 +4,9 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 
 ## Categories
 
+### Ammonite
+- [Launch a particular version of ammonite](https://github.com/iamsmkr/til/blob/master/amm.md#launch-a-particular-version-of-ammonite)
+
 ### Docker
 - [Access host from a container as localhost](https://github.com/iamsmkr/til/blob/master/docker.md#access-host-from-a-container-as-localhost)
 - [Build a docker image](https://github.com/iamsmkr/til/blob/master/docker.md#build-a-docker-image)
