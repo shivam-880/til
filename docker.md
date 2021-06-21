@@ -40,3 +40,8 @@ $ docker logs -f mywebsite_dropbox-ghost-technology_1
 docker run -d --restart=always --name=dropbox janeczku/dropbox
 docker exec -it busybox /bin/bash
 ```
+
+## Run a container as root
+```
+docker exec -u 0 -it ltimdb_etl /bin/bash
+```
