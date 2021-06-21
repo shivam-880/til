@@ -11,6 +11,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Delete docker volumes that are not being used by any container](https://github.com/iamsmkr/til/blob/master/docker.md#delete-docker-volumes-that-are-not-being-used-by-any-container)
 - [Follow container logs](https://github.com/iamsmkr/til/blob/master/docker.md#follow-container-logs)
 - [Run a container](https://github.com/iamsmkr/til/blob/master/docker.md#run-a-container)
+- [Run a container as root](https://github.com/iamsmkr/til/blob/master/docker.md#run-a-container-as-root)
 
 ### Git
 - [Adding code to existing github repository](https://github.com/iamsmkr/til/blob/master/git.md#adding-code-to-existing-github-repository)
