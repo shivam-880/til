@@ -63,6 +63,11 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Resolving dependencies](https://github.com/iamsmkr/til/blob/master/maven.md#resolving-dependencies)
 - [Running maven applications](https://github.com/iamsmkr/til/blob/master/maven.md#running-maven-applications)
 
+### Postgres
+- [How to generate the “create table” sql statement for an existing table in postgreSQL](https://github.com/iamsmkr/til/blob/master/postgres.md#how-to-generate-the-create-table-sql-statement-for-an-existing-table-in-postgresql)
+- [How to pass arguments to sql file](https://github.com/iamsmkr/til/blob/master/postgres.md#how-to-pass-arguments-to-sql-file)
+- [How to merge two tables in postgresql based on multiple conditions](https://github.com/iamsmkr/til/blob/master/postgres.md#how-to-merge-two-tables-in-postgresql-based-on-multiple-conditions)
+
 ### Scala
 - [Change Current Directory](https://github.com/iamsmkr/til/blob/master/scala.md#change-current-directory)
 - [Class Constructors](https://github.com/iamsmkr/til/blob/master/scala.md#class-constructors)
