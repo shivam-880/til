@@ -23,6 +23,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Git tags](https://github.com/iamsmkr/til/blob/master/git.md#tags)
 - [Git branch descriptions](https://github.com/iamsmkr/til/blob/master/git.md#addeditread-branch-descriptions)
 - [List changes in stash](https://github.com/iamsmkr/til/blob/master/git.md#stash)
+- [Merge branches with unrelated histories](https://github.com/iamsmkr/til/blob/master/git.md#merge-branches-with-unrelated-histories)
 - [Merge unrelated local remote repositories](https://github.com/iamsmkr/til/blob/master/git.md#merge-unrelated-local-remote-repositories)
 - [Most recent commit log with file names](https://github.com/iamsmkr/til/blob/master/git.md#most-recent-commit-log-with-the-file-names)
 - [Revert commit already pushed to github](https://github.com/iamsmkr/til/blob/master/git.md#revert-commit-already-pushed-to-github)
