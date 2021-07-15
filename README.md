@@ -49,6 +49,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Custom React Hook to implement intervals](https://github.com/iamsmkr/til/blob/master/javascript.md#custom-react-hook-to-implement-intervals)
 - [Sleep in Javascript](https://github.com/iamsmkr/til/blob/master/javascript.md#sleep-in-javascript)
 - [Slice objects from a list of objects to an object of objects with keys as indices](https://github.com/iamsmkr/til/blob/master/javascript.md#slice-objects-from-a-list-of-objects-to-an-object-of-objects-with-keys-as-indices)
+- [How to properly terminate timeouts started in a loop](https://github.com/iamsmkr/til/blob/master/javascript.md#how-to-properly-terminate-timeouts-started-in-a-loop)
 
 ### Linux
 - [Create tunnel](https://github.com/iamsmkr/til/blob/master/linux.md#create-tunnel)
