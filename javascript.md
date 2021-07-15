@@ -434,3 +434,23 @@ function slice(offset, limit) {
 
 slice(2,7);
 ```
+
+## How to properly terminate timeouts started in a loop
+Calling `setTimeout` inside a loop will create multiple timers. The idea is to maintain a list of all such timers and clear them iteratively.
+```
+let timeouts = []
+
+timeouts.forEach((timer) => {
+    clearTimeout(timer)
+})
+
+for (let x = 0; x < 10; x++) {
+    let tick = () => {
+        return () => {
+            console.log("Hi")
+        }
+    }
+    timeouts.push(setTimeout(tick(), 1000 * x))
+}
+
+```
