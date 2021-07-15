@@ -107,7 +107,18 @@ git stash show -p stash@{0}
 git stash show stash@{0} --name-only
 ```
 
-## Merge Unrelated Local Remote Repositories
+## Merge branches with unrelated histories
+Github has started naming their main branch as `main` instead of `master` while git still names default branch as `master` when you initialize git repo via `git init`. This sometimes causes issue while merging master to main as github refuses merge with following error:
+```
+fatal: refusing to merge unrelated histories
+```
+
+We can force the merge `master` to `main` branch like so:
+```
+git merge master --allow-unrelated-histories
+```
+
+## Merge unrelated local remote repositories
 Suppose you have created a repository in github and also an unrelated repository locally with an intent of merging it with the one created in github. Merging these repositories could be achieved as described below.
 
 - Initialize the local repository as a Git repository
