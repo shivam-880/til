@@ -96,3 +96,9 @@ $ kubectl get nodes
 $ kubectl get pods
 $ kubectl get deployments
 ```
+
+## Kubectl logs
+```
+$ kubectl get pods
+$ kubectl logs hello-proxy-v1-0-snapshot-64649c7f57-r9r2s
+```
