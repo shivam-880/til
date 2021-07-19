@@ -1,9 +1,10 @@
-## Basic `minikube` cluster commands
+## Basic minikube cluster commands
 ```sh
 $ minikube start --driver=docker
 $ minikube stop
 $ minikube status
 $ minikube delete
+$ minikube version
 ```
 
 ## List minikube cluster ip address
@@ -11,7 +12,7 @@ $ minikube delete
 $ minikube ip
 ```
 
-## Enable Addons on a minikube cluster
+## Enable addons on a minikube cluster
 ```sh
 $ minikube addons enable ingress
 $ minikube addons list
@@ -88,6 +89,7 @@ $ kubectl delete -f kubernetes/hello-impl.yml
 
 ## Kubectl queries
 ```sh
+$ kubectl get nodes
 $ kubectl get pods
 $ kubectl get deployments
 ```
