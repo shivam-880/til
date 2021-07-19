@@ -33,6 +33,7 @@ $ eval $(minikube -p minikube docker-env)
 ```
 
 With this when you publish docker images, they will get available in minikube's internal docker registry. 
+
 **Note**: Make sure to execute following commands in the terminal where local docker daemon is pointing to the minikube internal docker registry otherwise docker images won't be avaiable from inside minikube.
 
 ```sh
