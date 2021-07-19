@@ -32,7 +32,9 @@ export MINIKUBE_ACTIVE_DOCKERD=”minikube”
 $ eval $(minikube -p minikube docker-env)
 ```
 
-With this when you publish docker images, they will get available in minikube's internal docker registry
+With this when you publish docker images, they will get available in minikube's internal docker registry. 
+**Note**: Make sure to execute following commands in the terminal where local docker daemon is pointing to the minikube internal docker registry otherwise docker images won't be avaiable from inside minikube.
+
 ```sh
 $ sbt hello-impl/docker:publishLocal -Ddocker.username=iamsmkr -Ddocker.registry=index.docker.io
 $ sbt hello-proxy-impl/docker:publishLocal -Ddocker.username=iamsmkr -Ddocker.registry=index.docker.io
