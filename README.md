@@ -51,6 +51,19 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Slice objects from a list of objects to an object of objects with keys as indices](https://github.com/iamsmkr/til/blob/master/javascript.md#slice-objects-from-a-list-of-objects-to-an-object-of-objects-with-keys-as-indices)
 - [How to properly terminate timeouts started in a loop](https://github.com/iamsmkr/til/blob/master/javascript.md#how-to-properly-terminate-timeouts-started-in-a-loop)
 
+### Kubernetes
+- [Basic minikube cluster commands](https://github.com/iamsmkr/til/blob/master/kubernetes.md#basic-minikube-cluster-commands)
+- [List minikube cluster ip address](https://github.com/iamsmkr/til/blob/master/kubernetes.md#list-minikube-cluster-ip-address)
+- [Enable addons on a minikube cluster](https://github.com/iamsmkr/til/blob/master/kubernetes.md#enable-addons-on-a-minikube-cluster)
+- [List minikube docker environment variables](https://github.com/iamsmkr/til/blob/master/kubernetes.md#list-minikube-docker-environment-variables)
+- [Point local Docker daemon to the minikube internal Docker registry](https://github.com/iamsmkr/til/blob/master/kubernetes.md#point-local-docker-daemon-to-the-minikube-internal-docker-registry)
+- [Launch minikube Dashboard](https://github.com/iamsmkr/til/blob/master/kubernetes.md#launch-minikube-dashboard)
+- [Show minikube cluster info](https://github.com/iamsmkr/til/blob/master/kubernetes.md#show-minikube-cluster-info)
+- [Create a secret](https://github.com/iamsmkr/til/blob/master/kubernetes.md#create-a-secret)
+- [Apply deployment configs](https://github.com/iamsmkr/til/blob/master/kubernetes.md#apply-deployment-configs)
+- [Delete deployment configs](https://github.com/iamsmkr/til/blob/master/kubernetes.md#delete-deployment-configs)
+- [Kubectl queries](https://github.com/iamsmkr/til/blob/master/kubernetes.md#kubectl-queries)
+
 ### Linux
 - [Create tunnel](https://github.com/iamsmkr/til/blob/master/linux.md#create-tunnel)
 - [Determine if a port is already in use](https://github.com/iamsmkr/til/blob/master/linux.md#determine-if-a-port-is-already-in-use)
