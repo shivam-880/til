@@ -63,6 +63,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Apply deployment configs](https://github.com/iamsmkr/til/blob/master/kubernetes.md#apply-deployment-configs)
 - [Delete deployment configs](https://github.com/iamsmkr/til/blob/master/kubernetes.md#delete-deployment-configs)
 - [Kubectl queries](https://github.com/iamsmkr/til/blob/master/kubernetes.md#kubectl-queries)
+- [Kubectl logs](https://github.com/iamsmkr/til/blob/master/kubernetes.md#kubectl-logs)
 
 ### Linux
 - [Create tunnel](https://github.com/iamsmkr/til/blob/master/linux.md#create-tunnel)
