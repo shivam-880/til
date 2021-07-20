@@ -109,6 +109,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 
 ### SBT
 - [Debug lagom projects](https://github.com/iamsmkr/til/blob/master/sbt.md#debug-lagom-projects)
+- [How to have SBT subproject with multiple Scala versions](https://github.com/iamsmkr/til/blob/master/sbt.md#how-to-have-sbt-subproject-with-multiple-scala-versions)
 - [Making eclipse aware of fresh dependencies in a sbt project](https://github.com/iamsmkr/til/blob/master/sbt.md#making-eclipse-aware-of-fresh-dependencies-in-a-sbt-project)
 - [Unmanaged Resources](https://github.com/iamsmkr/til/blob/master/sbt.md#unmanaged-resources)
 - [Using sbt from behind proxy](https://github.com/iamsmkr/til/blob/master/sbt.md#using-sbt-from-behind-proxy)
