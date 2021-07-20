@@ -6,6 +6,9 @@ However every time you add new library dependencies in `build.sbt` it requires r
 ## Debug lagom projects
 To debug lagom projects, start `sbt` in debug mode like so, `sbt -jvm-debug 5005` and then add a remote debug configuration in your intellij project before launching the same.
 
+## How to have SBT subproject with multiple Scala versions?
+Refer this [stackoverflow post](https://stackoverflow.com/questions/27929272/how-to-have-sbt-subproject-with-multiple-scala-versions) and a [github project](https://github.com/iamsmkr/prime-grpc-scala-akka) to see this in action.
+
 ## Using sbt from behind proxy
 In order to use SBT behind proxy server you need to set an *environment variable* named "**SBT_OPTS**" with following value.
 
