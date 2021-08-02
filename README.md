@@ -113,3 +113,4 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Making eclipse aware of fresh dependencies in a sbt project](https://github.com/iamsmkr/til/blob/master/sbt.md#making-eclipse-aware-of-fresh-dependencies-in-a-sbt-project)
 - [Unmanaged Resources](https://github.com/iamsmkr/til/blob/master/sbt.md#unmanaged-resources)
 - [Using sbt from behind proxy](https://github.com/iamsmkr/til/blob/master/sbt.md#using-sbt-from-behind-proxy)
+- [Publish Artificats to Sonatype OSSRH](https://github.com/iamsmkr/til/blob/master/sbt.md#publish-artificats-to-sonatype-ossrh)
