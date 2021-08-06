@@ -28,7 +28,9 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Most recent commit log with file names](https://github.com/iamsmkr/til/blob/master/git.md#most-recent-commit-log-with-the-file-names)
 - [Revert commit already pushed to github](https://github.com/iamsmkr/til/blob/master/git.md#revert-commit-already-pushed-to-github)
 - [Revert commit head to second last commit](https://github.com/iamsmkr/til/blob/master/git.md#revert-commit-head-to-second-last-commit)
+- [Sparse Checkout](https://github.com/iamsmkr/til/blob/master/git.md#sparse-checkout)
 - [Selective stashing](https://github.com/iamsmkr/til/blob/master/git.md#selectively-stash-git-changes)
+- [Symbolic links in git](https://github.com/iamsmkr/til/blob/master/git.md#symbolic-links-in-git)
 
 ### H2
 - [Access H2 from command line](https://github.com/iamsmkr/til/blob/master/h2.md#access-h2-from-cmd)
