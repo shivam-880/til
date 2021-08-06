@@ -190,7 +190,7 @@ git stash -p
 ```
 
 ## Sparse Checkout
-Refer [docs](https://www.git-scm.com/docs/git-sparse-checkout) and [stackoverflow post](https://stackoverflow.com/questions/600079/how-do-i-clone-a-subdirectory-only-of-a-git-repository).
+Refer git [docs](https://www.git-scm.com/docs/git-sparse-checkout) and [this](https://stackoverflow.com/questions/600079/how-do-i-clone-a-subdirectory-only-of-a-git-repository) stackoverflow post.
 ```
 $ git init
 $ git remote add origin git@github.com:iamsmkr/prime-grpc-scala-akka.git
@@ -207,4 +207,4 @@ Git can track symlinks as well as any other text files. There is an important ca
 $ ln -s rules-engine/src/universal/rules.g8 rules.g8
 ```
 
-Refer [blog](https://mokacoding.com/blog/symliks-in-git/).
+Refer [this](https://mokacoding.com/blog/symliks-in-git/) blog.
