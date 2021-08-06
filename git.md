@@ -188,3 +188,23 @@ git reset HEAD~1 --hard
 ```
 git stash -p
 ```
+
+## Sparse Checkout
+Refer [docs](https://www.git-scm.com/docs/git-sparse-checkout) and [stackoverflow post](https://stackoverflow.com/questions/600079/how-do-i-clone-a-subdirectory-only-of-a-git-repository).
+```
+$ git init
+$ git remote add origin git@github.com:iamsmkr/prime-grpc-scala-akka.git
+$ git sparse-checkout init
+$ git sparse-checkout set "prime-protobuf"
+$ git sparse-checkout list
+$ git pull origin master
+$ git checkout master
+```
+
+## Symbolic links in git
+Git can track symlinks as well as any other text files. There is an important caveat when creating symlinks that are meant to be tracked under Git. The reference path of the source file should be relative to the repository, not absolute to the machine.
+```
+$ ln -s rules-engine/src/universal/rules.g8 rules.g8
+```
+
+Refer [blog](https://mokacoding.com/blog/symliks-in-git/).
