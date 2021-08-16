@@ -15,6 +15,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Follow container logs](https://github.com/iamsmkr/til/blob/master/docker.md#follow-container-logs)
 - [Run a container](https://github.com/iamsmkr/til/blob/master/docker.md#run-a-container)
 - [Run a container as root](https://github.com/iamsmkr/til/blob/master/docker.md#run-a-container-as-root)
+- [Set path in Dockerfile](https://github.com/iamsmkr/til/blob/master/docker.md#set-path-in-dockerfile)
 
 ### Git
 - [Adding code to existing github repository](https://github.com/iamsmkr/til/blob/master/git.md#adding-code-to-existing-github-repository)
