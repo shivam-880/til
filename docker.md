@@ -45,3 +45,8 @@ docker exec -it busybox /bin/bash
 ```
 docker exec -u 0 -it ltimdb_etl /bin/bash
 ```
+
+## Set `path` in Dockerfile
+```
+ENV PATH="/opt/gtk/bin:${PATH}"
+```
