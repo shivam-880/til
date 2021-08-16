@@ -34,16 +34,23 @@ $ docker volume prune
 $ docker logs -f mywebsite_dropbox-ghost-technology_1
 ```
 
+## List docker volume data
+The data present in a docker volume could be accessed like so:
+```
+$ sudo ls /var/lib/docker/volumes/eb8584883bb7c9894d0f8a8363770d8089d44a78f36720b129250146046a97de/_data
+$ cat ls /var/lib/docker/volumes/eb8584883bb7c9894d0f8a8363770d8089d44a78f36720b129250146046a97de/_data/stdout.log 
+```
+
 ## Run a container
 
 ```sh
-docker run -d --restart=always --name=dropbox janeczku/dropbox
-docker exec -it busybox /bin/bash
+$ docker run -d --restart=always --name=dropbox janeczku/dropbox
+$ docker exec -it busybox /bin/bash
 ```
 
 ## Run a container as root
 ```
-docker exec -u 0 -it ltimdb_etl /bin/bash
+$ docker exec -u 0 -it ltimdb_etl /bin/bash
 ```
 
 ## Set `path` in Dockerfile
