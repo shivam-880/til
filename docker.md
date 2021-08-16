@@ -47,6 +47,7 @@ docker exec -u 0 -it ltimdb_etl /bin/bash
 ```
 
 ## Set `path` in Dockerfile
+Trying to set PATH via RUN command as `RUN . ~/.bashrc` doesn't seem to work. Docker provides `ENV` command to achieve the same as shown below:
 ```
 ENV PATH="/opt/gtk/bin:${PATH}"
 ```
