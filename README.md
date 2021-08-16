@@ -8,13 +8,13 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Launch a particular version of ammonite](https://github.com/iamsmkr/til/blob/master/amm.md#launch-a-particular-version-of-ammonite)
 
 ### Docker
-- [Access host from a container as localhost](https://github.com/iamsmkr/til/blob/master/docker.md#access-host-from-a-container-as-localhost)
+- [Access services running on host machine from inside a container service as localhost](https://github.com/iamsmkr/til/blob/master/docker.md#access-services-running-on-host-machine-from-inside-a-container-service-as-localhost)
 - [Build a docker image](https://github.com/iamsmkr/til/blob/master/docker.md#build-a-docker-image)
 - [Check the content of a docker volume](https://github.com/iamsmkr/til/blob/master/docker.md#check-the-content-of-a-docker-volume)
 - [Delete docker volumes that are not being used by any container](https://github.com/iamsmkr/til/blob/master/docker.md#delete-docker-volumes-that-are-not-being-used-by-any-container)
 - [Follow container logs](https://github.com/iamsmkr/til/blob/master/docker.md#follow-container-logs)
+- [List docker volume data](https://github.com/iamsmkr/til/blob/master/docker.md#list-docker-volume-data)
 - [Run a container](https://github.com/iamsmkr/til/blob/master/docker.md#run-a-container)
-- [Run a container as root](https://github.com/iamsmkr/til/blob/master/docker.md#run-a-container-as-root)
 - [Set path in Dockerfile](https://github.com/iamsmkr/til/blob/master/docker.md#set-path-in-dockerfile)
 
 ### Git
