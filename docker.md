@@ -24,6 +24,8 @@ Data written persists even if you stop the container. If however you wish to rid
 $ docker run --rm -i -v=named-data-volume:/tmp/ghost busybox find /tmp/ghost
 ```
 
+**Note**: This will also rid the container created from the image. In other words, container won't be listed under `docker ps -a`.
+
 ## Follow container logs
 ```sh
 $ docker logs -f mywebsite_dropbox-ghost-technology_1
