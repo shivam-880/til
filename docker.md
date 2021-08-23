@@ -27,7 +27,7 @@ $ docker run --rm -i -v=named-data-volume:/tmp/ghost busybox find /tmp/ghost
 **Note**: This will also rid the container created from the image. In other words, container won't be listed under `docker ps -a`.
 
 ## Enable Buildkit
-When using `docker-compose` export following environment variables:
+Buildkit provides a greate set of features on top of docker. One of it being facilitation of building images faster by employing caching, parallelization and skipping non-target stages in a multi-stage build. When using `docker-compose` export following environment variables to enable buildkit.
 ```
 $ export DOCKER_BUILDKIT=1
 $ export COMPOSE_DOCKER_CLI_BUILD=1
