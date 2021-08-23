@@ -26,6 +26,16 @@ $ docker run --rm -i -v=named-data-volume:/tmp/ghost busybox find /tmp/ghost
 
 **Note**: This will also rid the container created from the image. In other words, container won't be listed under `docker ps -a`.
 
+## Enable Buildkit
+When using `docker-compose` export following environment variables:
+```
+$ export DOCKER_BUILDKIT=1
+$ export COMPOSE_DOCKER_CLI_BUILD=1
+```
+
+Refer this [blog](https://pythonspeed.com/articles/docker-buildkit/).
+
+
 ## Follow container logs
 ```sh
 $ docker logs -f mywebsite_dropbox-ghost-technology_1
