@@ -13,6 +13,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Delete docker volumes that are not being used by any container](https://github.com/iamsmkr/til/blob/master/docker.md#delete-docker-volumes-that-are-not-being-used-by-any-container)
 - [Follow container logs](https://github.com/iamsmkr/til/blob/master/docker.md#follow-container-logs)
 - [List docker volume data](https://github.com/iamsmkr/til/blob/master/docker.md#list-docker-volume-data)
+- [Multi-stage based builder pattern to create docker images](https://github.com/iamsmkr/til/blob/master/docker.md#multi-stage-based-builder-pattern-to-create-docker-images)
 - [Run a container](https://github.com/iamsmkr/til/blob/master/docker.md#run-a-container)
 - [Set path in Dockerfile](https://github.com/iamsmkr/til/blob/master/docker.md#set-path-in-dockerfile)
 
