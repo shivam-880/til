@@ -48,6 +48,59 @@ $ sudo ls /var/lib/docker/volumes/eb8584883bb7c9894d0f8a8363770d8089d44a78f36720
 $ cat ls /var/lib/docker/volumes/eb8584883bb7c9894d0f8a8363770d8089d44a78f36720b129250146046a97de/_data/stdout.log 
 ```
 
+## Multi-stage based builder pattern to create docker images
+- To create a reactjs docker image
+```dockerfile
+FROM node:16-alpine AS base
+WORKDIR /app
+COPY . .
+
+FROM base AS development
+ENV NODE_ENV development
+RUN npm install
+EXPOSE 3000
+CMD [ "npm", "start" ]
+
+FROM base AS builder
+ENV NODE_ENV production
+RUN npm install --production
+RUN npm run build
+
+# Bundle static assets with nginx
+FROM nginx:1.21.0-alpine AS production
+ENV NODE_ENV production
+COPY --from=builder /app/build /usr/share/nginx/html
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
+```
+
+- To create nodejs docker image
+```dockerfile
+FROM node:16-alpine AS base
+WORKDIR /app
+COPY . .
+
+FROM base AS development
+ENV NODE_ENV development
+RUN npm install
+EXPOSE 4000
+CMD [ "npm", "start" ]
+
+FROM base AS builder
+ENV NODE_ENV production
+RUN npm install --production
+RUN npm run build
+
+FROM node:16-alpine AS production
+WORKDIR /app
+ENV NODE_ENV production
+COPY --from=builder /app/build /app
+COPY --from=builder /app/public /app/public
+EXPOSE 80
+CMD [ "node", "./index.js" ]
+```
+
 ## Run a container
 
 ```sh
