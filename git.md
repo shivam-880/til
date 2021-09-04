@@ -55,6 +55,11 @@ git branch -d <branch name>
 git push origin --delete <branch name>
 ```
 
+## Change git editor to Vim
+```
+$ git config core.editor "vim"
+```
+
 ## Git commits count
 `git shortlog -s` gives you the split up of the number of commits for each developer.
 
