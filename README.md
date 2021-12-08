@@ -122,3 +122,6 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Unmanaged Resources](https://github.com/iamsmkr/til/blob/master/sbt.md#unmanaged-resources)
 - [Using sbt from behind proxy](https://github.com/iamsmkr/til/blob/master/sbt.md#using-sbt-from-behind-proxy)
 - [Publish Artificats to Sonatype OSSRH](https://github.com/iamsmkr/til/blob/master/sbt.md#publish-artificats-to-sonatype-ossrh)
+
+### Sql
+- [Passing args to Sql files via script or command line](https://github.com/iamsmkr/til/blob/master/sql.md#passing-args-to-sql-files-via-script-or-command-line)
