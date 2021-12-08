@@ -7,6 +7,10 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 ### Ammonite
 - [Launch a particular version of ammonite](https://github.com/iamsmkr/til/blob/master/amm.md#launch-a-particular-version-of-ammonite)
 
+### Bash
+- [Extract IP Address](https://github.com/iamsmkr/til/blob/master/bash.md#extract-ip-address)
+- [Configure Base Dir](https://github.com/iamsmkr/til/blob/master/bash.md#configure-base-dir)
+
 ### Docker
 - [Access services running on host machine from inside a container service as localhost](https://github.com/iamsmkr/til/blob/master/docker.md#access-services-running-on-host-machine-from-inside-a-container-service-as-localhost)
 - [Build a docker image](https://github.com/iamsmkr/til/blob/master/docker.md#build-a-docker-image)
