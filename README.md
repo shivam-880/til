@@ -109,6 +109,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Ouptut Redirections](https://github.com/iamsmkr/til/blob/master/scala.md#output-redirection)
 - [Read configs in Scala using pureconfig](https://github.com/iamsmkr/til/blob/master/scala.md#read-configs-in-scala-using-pureconfig)
 - [Read from a file](https://github.com/iamsmkr/til/blob/master/scala.md#read-from-a-file)
+- [Read resource file abs path](https://github.com/iamsmkr/til/blob/master/scala.md#read-resource-file-abs-path)
 - [Reload your configuration files reactively](https://github.com/iamsmkr/til/blob/master/scala.md#reload-your-configuration-files-reactively)
 - [String format](https://github.com/iamsmkr/til/blob/master/scala.md#string-format)
 - [Views in scala](https://github.com/iamsmkr/til/blob/master/scala.md#view-in-scala)
