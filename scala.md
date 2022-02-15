@@ -317,7 +317,7 @@ object MyFileReader {
 Reading the absolute path of a file present in the resource dir serves no purpose because you cannot read the entries within a `jar` like it was a plain old `File`. The absolute path looks something like this: `file:/example.jar!/file.txt`.
 
 Rather than trying to address the resource as a `File` just ask the `ClassLoader` to return an `InputStream` for the resource instead via `getResourceAsStream`:
-```
+```scala
 try (InputStream in = getClass().getResourceAsStream("/file.txt");
     BufferedReader reader = new BufferedReader(new InputStreamReader(in))) {
     // Use resource
