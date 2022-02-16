@@ -138,6 +138,5 @@ credentials += Credentials(Path.userHome / ".sbt" / "sonatype_credentials")
 $ sbt publishSigned
 ```
 
-**8. Using wildcards with scala.sys.process._ in Scala**
-
+## Using wildcards with scala.sys.process._ in Scala
 Refer: https://stackoverflow.com/questions/71132425/using-wildcards-with-scala-sys-process-in-scala
