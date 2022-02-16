@@ -115,7 +115,7 @@ LocalDateTime.parse("02-August-1989 11:40:12.450", DateTimeFormatter.ofPattern("
 
 ## Find files with a given extension
 ```scala
-if(dataDir.toDirectory.files.map(_.path).exists(name => name matches """.*\.gz"""))
+if("/tmp".toDirectory.files.map(_.path).exists(name => name matches """.*\.gz"""))
   Seq("/bin/sh", "-c", s"gunzip $dataDir/*.gz").!
 ```
 
