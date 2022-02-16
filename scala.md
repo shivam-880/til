@@ -13,7 +13,7 @@ Still better would be to use the `scala.sys.process.Process` factory that take b
 scala.sys.process.Process("your command here", new java.io.File("/some/dir"))
 ```
 
-Refer: https://stackoverflow.com/a/34969373/1879109
+**Refer**: https://stackoverflow.com/a/34969373/1879109
 
 ## Class Constructors
 ```scala
@@ -110,14 +110,15 @@ LocalDateTime.parse("02-August-1989 11:40:12.450", DateTimeFormatter.ofPattern("
 // 1989-08-02T11:40:12.450
 ```
 
-**Refer**
-1. https://www.baeldung.com/java-date-to-localdate-and-localdatetime
+**Refer**: https://www.baeldung.com/java-date-to-localdate-and-localdatetime
 
 ## Find files with a given extension
 ```scala
 if("/tmp".toDirectory.files.map(_.path).exists(name => name matches """.*\.gz"""))
   Seq("/bin/sh", "-c", s"gunzip $dataDir/*.gz").!
 ```
+
+**Refer**: https://stackoverflow.com/a/48271851/1879109
 
 ## Managed resources
 The resource passed to `using` as first parameter will be closed after the function passed as second is done with it's execution. The resource however is expected to implement the `close` function that takes care of closing the resource.
