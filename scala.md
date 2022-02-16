@@ -113,6 +113,12 @@ LocalDateTime.parse("02-August-1989 11:40:12.450", DateTimeFormatter.ofPattern("
 **Refer**
 1. https://www.baeldung.com/java-date-to-localdate-and-localdatetime
 
+## Find files with a given extension
+```scala
+if(dataDir.toDirectory.files.map(_.path).exists(name => name matches """.*\.gz"""))
+  Seq("/bin/sh", "-c", s"gunzip $dataDir/*.gz").!
+```
+
 ## Managed resources
 The resource passed to `using` as first parameter will be closed after the function passed as second is done with it's execution. The resource however is expected to implement the `close` function that takes care of closing the resource.
 
