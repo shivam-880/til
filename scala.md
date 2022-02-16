@@ -368,6 +368,9 @@ trait ConfWatcher {
 "%s %s, age %d".format(firstName, lastName, age)
 ```
 
+## Using wildcards with scala.sys.process._ in Scala
+Refer: https://stackoverflow.com/questions/71132425/using-wildcards-with-scala-sys-process-in-scala
+
 ## "View" in Scala
 
 View produces a lazy collection, so that calls to e.g. `filter` do not evaluate every element of the collection. *Elements are only evaluated once they are explicitly accessed.*
