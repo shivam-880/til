@@ -112,6 +112,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Read resource file abs path](https://github.com/iamsmkr/til/blob/master/scala.md#read-resource-file-abs-path)
 - [Reload your configuration files reactively](https://github.com/iamsmkr/til/blob/master/scala.md#reload-your-configuration-files-reactively)
 - [String format](https://github.com/iamsmkr/til/blob/master/scala.md#string-format)
+- [Using wildcards with scala.sys.process._ in Scala](https://github.com/iamsmkr/til/blob/master/scala.md#using-wildcards-with-scalasysprocess_-in-scala)
 - [Views in scala](https://github.com/iamsmkr/til/blob/master/scala.md#view-in-scala)
 - [Wait for all futures to complete](https://github.com/iamsmkr/til/blob/master/scala.md#wait-for-all-futures-to-complete)
 - [Ways to deal with option in scala](https://github.com/iamsmkr/til/blob/master/scala.md#ways-to-deal-with-option-in-scala)
