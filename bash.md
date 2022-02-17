@@ -14,6 +14,14 @@ ADDR=`sudo ip addr show docker0 | grep inet | grep -v inet6 | awk '{print $2}' |
 echo $ADDR
 ```
 
+## Find lines of code
+```sh
+$ find . -type f -exec wc -l {} +
+$ find . -type f -exec cat {} + | wc -l
+
+$ find . -type f -name '*.js' | xargs cat | wc -l
+```
+
 ## Interactive Bash Script
 ```bash
 while true; do
