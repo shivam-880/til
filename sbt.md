@@ -1,3 +1,8 @@
+## Are sbt library dependencies order dependent?
+Yes, the order listed is the order used to resolve dependencies.
+
+**Refer**: https://stackoverflow.com/questions/29135602/are-sbt-library-dependencies-order-dependent
+
 ## Making eclipse aware of fresh dependencies in a sbt project
 While eclipsifying a SBT project in order to open the project in Eclipse IDE all the library dependencies specified in the `build.sbt` are downloaded and registered in the generated eclipse `.classpath` file.
 
