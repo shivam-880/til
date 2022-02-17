@@ -12,6 +12,8 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Configure Base Dir](https://github.com/iamsmkr/til/blob/master/bash.md#configure-base-dir)
 - [Extract IP Address](https://github.com/iamsmkr/til/blob/master/bash.md#extract-ip-address)
 - [Interactive Bash Script](https://github.com/iamsmkr/til/blob/master/bash.md#interactive-bash-script)
+- [Output to both console and log file](https://github.com/iamsmkr/til/blob/master/bash.md#output-to-both-console-and-log-file)
+- [Print last line of each file](https://github.com/iamsmkr/til/blob/master/bash.md#print-last-line-of-each-file)
 
 ### Docker
 - [Access services running on host machine from inside a container service as localhost](https://github.com/iamsmkr/til/blob/master/docker.md#access-services-running-on-host-machine-from-inside-a-container-service-as-localhost)
