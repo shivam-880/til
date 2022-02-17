@@ -23,14 +23,6 @@ if lsof -Pi :8080 -sTCP:LISTEN -t >/dev/null ; then
 fi
 ```
 
-## Find lines of code
-```sh
-$ find . -type f -exec wc -l {} +
-$ find . -type f -exec cat {} + | wc -l
-
-$ find . -type f -name '*.js' | xargs cat | wc -l
-```
-
 ## How to create windows bootable disk on ubuntu
 
 1. Download `woeusb`. Refer: https://github.com/slacka/WoeUSB/issues/311
