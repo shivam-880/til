@@ -124,7 +124,8 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Write to a file](https://github.com/iamsmkr/til/blob/master/scala.md#write-to-a-file)
 - [Zip elements from multiple lists](https://github.com/iamsmkr/til/blob/master/scala.md#zip-elements-from-multiple-lists)
 
-### SBT
+### Sbt
+- [Are sbt library dependencies order dependent?](https://github.com/iamsmkr/til/blob/master/sbt.md#are-sbt-library-dependencies-order-dependent)
 - [Debug lagom projects](https://github.com/iamsmkr/til/blob/master/sbt.md#debug-lagom-projects)
 - [How to have SBT subproject with multiple Scala versions](https://github.com/iamsmkr/til/blob/master/sbt.md#how-to-have-sbt-subproject-with-multiple-scala-versions)
 - [Making eclipse aware of fresh dependencies in a sbt project](https://github.com/iamsmkr/til/blob/master/sbt.md#making-eclipse-aware-of-fresh-dependencies-in-a-sbt-project)
