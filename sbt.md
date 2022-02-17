@@ -3,16 +3,16 @@ Yes, the order listed is the order used to resolve dependencies.
 
 **Refer**: https://stackoverflow.com/questions/29135602/are-sbt-library-dependencies-order-dependent
 
-## Making eclipse aware of fresh dependencies in a sbt project
-While eclipsifying a SBT project in order to open the project in Eclipse IDE all the library dependencies specified in the `build.sbt` are downloaded and registered in the generated eclipse `.classpath` file.
-
-However every time you add new library dependencies in `build.sbt` it requires re-eclipsification of the SBT project i.e., you would need to re-run `sbt eclipse` so that freshly downloaded dependencies are also registered in `.classpath` file.
-
 ## Debug lagom projects
 To debug lagom projects, start `sbt` in debug mode like so, `sbt -jvm-debug 5005` and then add a remote debug configuration in your intellij project before launching the same.
 
 ## How to have SBT subproject with multiple Scala versions?
 Refer this [stackoverflow post](https://stackoverflow.com/questions/27929272/how-to-have-sbt-subproject-with-multiple-scala-versions) and a [github project](https://github.com/iamsmkr/prime-grpc-scala-akka) to see this in action.
+
+## Making eclipse aware of fresh dependencies in a sbt project
+While eclipsifying a SBT project in order to open the project in Eclipse IDE all the library dependencies specified in the `build.sbt` are downloaded and registered in the generated eclipse `.classpath` file.
+
+However every time you add new library dependencies in `build.sbt` it requires re-eclipsification of the SBT project i.e., you would need to re-run `sbt eclipse` so that freshly downloaded dependencies are also registered in `.classpath` file.
 
 ## Using sbt from behind proxy
 In order to use SBT behind proxy server you need to set an *environment variable* named "**SBT_OPTS**" with following value.
