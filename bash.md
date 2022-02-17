@@ -8,6 +8,18 @@ BASEDIR="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 echo $BASEDIR
 ```
 
+## Cumulative size of all the files in a dir/subdir
+```bash
+$ du -s
+
+$ du -sh
+
+$ du -sh --exclude='*.dmg'  Or,
+% du -sh -I "*.dmg"
+
+$ du -d 1 -h  # subdir
+```
+
 ## Extract IP Address
 ```bash
 ADDR=`sudo ip addr show docker0 | grep inet | grep -v inet6 | awk '{print $2}' | cut -d'/' -f1`
@@ -58,5 +70,5 @@ done
 
 ## Print last line of each file
 ```bash
-ls -1|while read file; do tail -1 $file; done
+$ ls -1|while read file; do tail -1 $file; done
 ```
