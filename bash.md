@@ -36,3 +36,19 @@ while true; do
   esac
 done
 ```
+
+## Output to both console and log file
+```bash
+#!/bin/bash
+(
+  #Command 1
+  #Command 2
+  #Command 3
+  ...
+) 2>&1 | tee /path/to/save/console_output.log
+```
+
+## Print last line of each file
+```bash
+ls -1|while read file; do tail -1 $file; done
+```
