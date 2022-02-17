@@ -60,6 +60,15 @@ git push origin --delete <branch name>
 $ git config core.editor "vim"
 ```
 
+## Initialize repo with default branch
+```
+$ git init --initial-branch=main   # Or,
+$ git init -b main
+
+# Configurable with settings
+$ git config --global init.defaultBranch main
+```
+
 ## Git commits count
 `git shortlog -s` gives you the split up of the number of commits for each developer.
 
