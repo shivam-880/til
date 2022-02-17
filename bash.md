@@ -14,7 +14,7 @@ $ du -s
 
 $ du -sh
 
-$ du -sh --exclude='*.dmg'  Or,
+$ du -sh --exclude='*.dmg'  # Or,
 % du -sh -I "*.dmg"
 
 $ du -d 1 -h  # subdir
