@@ -11,6 +11,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Banners in Bash Scripts](https://github.com/iamsmkr/til/blob/master/bash.md#banners-in-bash-scripts)
 - [Configure Base Dir](https://github.com/iamsmkr/til/blob/master/bash.md#configure-base-dir)
 - [Extract IP Address](https://github.com/iamsmkr/til/blob/master/bash.md#extract-ip-address)
+- [Find lines of code](https://github.com/iamsmkr/til/blob/master/bash.md#find-lines-of-code)
 - [Interactive Bash Script](https://github.com/iamsmkr/til/blob/master/bash.md#interactive-bash-script)
 - [Output to both console and log file](https://github.com/iamsmkr/til/blob/master/bash.md#output-to-both-console-and-log-file)
 - [Print last line of each file](https://github.com/iamsmkr/til/blob/master/bash.md#print-last-line-of-each-file)
@@ -81,7 +82,6 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Create tunnel](https://github.com/iamsmkr/til/blob/master/linux.md#create-tunnel)
 - [Determine if a port is already in use](https://github.com/iamsmkr/til/blob/master/linux.md#determine-if-a-port-is-already-in-use)
 - [Determine if a port is open on a remote server](https://github.com/iamsmkr/til/blob/master/linux.md#determine-if-a-port-is-open-on-a-remote-server)
-- [Find lines of code](https://github.com/iamsmkr/til/blob/master/linux.md#find-lines-of-code)
 - [How to create windows bootable disk on ubuntu
 ](https://github.com/iamsmkr/til/blob/master/linux.md#how-to-create-windows-bootable-disk-on-ubuntu)
 - [How to format bootable ubuntu usb drive](https://github.com/iamsmkr/til/blob/master/linux.md#how-to-format-bootable-ubuntu-usb-drive)
