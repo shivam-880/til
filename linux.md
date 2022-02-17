@@ -1,6 +1,9 @@
 ## Create tunnel
 ```sh
 $ ssh -f -N -L 8989:localhost:8981 bst-03
+$ ssh -i aws.pem -N -f -L 4000:localhost:3000 ubuntu@ec2-10-2-199-58.compute-1.amazonaws.com
+
+# ssh -f -N -L <local port>:<local ipaddr>:<remote port> <remote ipaddr>
 ```
 
 ## Determine if a port is already in use
