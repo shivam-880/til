@@ -20,6 +20,11 @@ $ du -sh --exclude='*.dmg'  # Or,
 $ du -d 1 -h  # subdir
 ```
 
+## Delete all directories except
+```
+rm -rf $(ls -A | grep -v data)
+```
+
 ## Extract IP Address
 ```bash
 ADDR=`sudo ip addr show docker0 | grep inet | grep -v inet6 | awk '{print $2}' | cut -d'/' -f1`
