@@ -11,6 +11,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Banners in Bash Scripts](https://github.com/iamsmkr/til/blob/master/bash.md#banners-in-bash-scripts)
 - [Configure Base Dir](https://github.com/iamsmkr/til/blob/master/bash.md#configure-base-dir)
 - [Cumulative size of all the files in a dir/subdir](https://github.com/iamsmkr/til/blob/master/bash.md#cumulative-size-of-all-the-files-in-a-dirsubdir)
+- [Delete all directories except](https://github.com/iamsmkr/til/blob/master/bash.md#delete-all-directories-except)
 - [Extract IP Address](https://github.com/iamsmkr/til/blob/master/bash.md#extract-ip-address)
 - [Find lines of code](https://github.com/iamsmkr/til/blob/master/bash.md#find-lines-of-code)
 - [Interactive Bash Script](https://github.com/iamsmkr/til/blob/master/bash.md#interactive-bash-script)
