@@ -1,8 +1,11 @@
 ## Access services running on host machine from inside a container service as `localhost`
-Use --net="host" in your docker run command, then localhost in your docker container will point to your docker host.
-```
-docker run -d --net="host" --restart=always --name=ltimdb_etl etl-postgres-neo4j-service:0.1
-```
+1. Use --net="host" in your docker run command, then localhost in your docker container will point to your docker host.
+    ```
+    docker run -d --net="host" --restart=always --name=ltimdb_etl etl-postgres-neo4j-service:0.1
+    ```
+2. If you are trying to access services running on host machine from inside `docker-compose` managed container then all you need to do is to access service at `host.docker.internal`. No other configuration is needed.
+
+    **Refer**: https://docs.docker.com/desktop/mac/networking/
 
 ## Build a docker image
 ```sh
