@@ -1,5 +1,5 @@
 ## Branches
-### Branch descriptions
+#### Branch descriptions
 ```bash
 # Add/Edit
 $ git branch --edit-description
@@ -8,7 +8,12 @@ $ git branch --edit-description
 $ git config --get branch.{branchName}.description
 ```
 
-### Delete a branch
+#### Rename branch
+```bash
+$ git branch -m arrowdatab
+```
+
+#### Delete a branch
 ```bash
 # Locally
 $ git branch -d <branch name>
@@ -18,12 +23,12 @@ $ git push origin --delete <branch name>
 ```
 
 ## Commits
-### Change commit message
-```
+#### Change commit message
+```bash
 $ git commit --amend -m 'feat: impl arrow data'
 ```
 
-### Git commits count
+#### Git commits count
 `git shortlog -s` gives you the split up of the number of commits for each developer.
 
 The folloeing gives you the total count if there is more than one developer working on the git repository.
@@ -34,13 +39,13 @@ $ git shortlog -n -s|awk '{print $1}'|perl -ne '$s+=$_;END{print $s,"\n"}'
 Please note that the above also counts the number of git merge commits.
 
 
-### Revert commit already pushed to github
+#### Revert commit already pushed to github
   ```bash
   $ git reset --hard <old-commit-id>
   $ git push -f <remote-name> <branch-name>
   ```
 
-### Revert commit head to second last commit
+#### Revert commit head to second last commit
 
 - Preserve changes
 
@@ -55,12 +60,12 @@ $ git reset HEAD~1 --hard
 ```
 
 ## Git
-### Change git editor to Vim
+#### Change git editor to Vim
 ```bash
 $ git config core.editor "vim"
 ```
 
-### Symbolic links in git
+#### Symbolic links in git
 Git can track symlinks as well as any other text files. There is an important caveat when creating symlinks that are meant to be tracked under Git. The reference path of the source file should be relative to the repository, not absolute to the machine.
 ```bash
 $ ln -s rules-engine/src/universal/rules.g8 rules.g8
@@ -69,7 +74,7 @@ $ ln -s rules-engine/src/universal/rules.g8 rules.g8
 Refer [this](https://mokacoding.com/blog/symliks-in-git/) blog.
 
 ## Logs
-### Most recent commit log with the file names
+#### Most recent commit log with the file names
   ```bash
   $ git show --stat 
 
@@ -78,7 +83,7 @@ Refer [this](https://mokacoding.com/blog/symliks-in-git/) blog.
   ```
   
 ## Merge
-### Merge branches with unrelated histories
+#### Merge branches with unrelated histories
 Github has started naming their main branch as `main` instead of `master` while git still names default branch as `master` when you initialize git repo via `git init`. This sometimes causes issue while merging master to main as github refuses merge with following error:
 ```bash
 fatal: refusing to merge unrelated histories
@@ -89,7 +94,7 @@ We can force the merge `master` to `main` branch like so:
 $ git merge master --allow-unrelated-histories
 ```
 
-### Merge unrelated local remote repositories
+#### Merge unrelated local remote repositories
 Suppose you have created a repository in github and also an unrelated repository locally with an intent of merging it with the one created in github. Merging these repositories could be achieved as described below.
 
 - Initialize the local repository as a Git repository
@@ -125,9 +130,27 @@ Suppose you have created a repository in github and also an unrelated repository
   ```bash
   $ git push --set-upstream origin master
   ```
+ 
+## Rebase
+#### Rebase from another branch `arrow`
+  ```bash
+  $ git rebase origin/arrow
+  ```
+  
+#### Reorder commits while rebasing
+Mention the last commit id from where onwards you wish to rebase
+  ```bash
+  $ git rebase -i 1205c8fed66416b5986d472547fd0d2f8d7988e1
+  ```
+
+## Remote
+#### Change remote url
+  ```
+  $ git remote set-url origin git@gitlab.com:pometry/raphtory.git
+  ```
   
 ## Repo
-### Adding code to existing github repository
+#### Adding code to existing github repository
 
 - Create a github repository if not already created.
 
@@ -165,7 +188,7 @@ Suppose you have created a repository in github and also an unrelated repository
   $ git push --set-upstream origin master
   ```
 
-### Initialize repo with a default branch
+#### Initialize repo with a default branch
 ```bash
 $ git init --initial-branch=main   # Or,
 $ git init -b main
@@ -174,7 +197,7 @@ $ git init -b main
 $ git config --global init.defaultBranch main
 ```
 
-### Sparse Checkout
+#### Sparse Checkout
 Refer git [docs](https://www.git-scm.com/docs/git-sparse-checkout) and [this](https://stackoverflow.com/questions/600079/how-do-i-clone-a-subdirectory-only-of-a-git-repository) stackoverflow post.
 ```bash
 $ git init
@@ -188,28 +211,28 @@ $ git checkout master
 
 ## Stash
 
-### List changes in stash
+#### List changes in stash
 ```bash
 $ git stash show -p stash@{0}
 ```
 
-### List only file names in stash
+#### List only file names in stash
 ```bash
 $ git stash show stash@{0} --name-only
 ```
 
-### Selectively stash git changes
+#### Selectively stash git changes
 ```bash
 $ git stash -p
 ```
 
 ## Tags 
-### Create a tag
+#### Create a tag
 ```bash
 $ git tag <tag name>
 ```
 
-### Delete a tag
+#### Delete a tag
 ```bash
 # Delete a local tag
 $ git tag --delete v.3.0.0
@@ -218,7 +241,7 @@ $ git tag --delete v.3.0.0
 $ git push --delete origin v6.0.2.75
 ```
 
-### Push tags
+#### Push tags
 ```bash
 # Push tags created locally
 $ git push --tags origin master
@@ -227,7 +250,7 @@ $ git push --tags origin master
 $ git push origin <tag name>
 ```
 
-### Fetch all remote tags
+#### Fetch all remote tags
 ```bash
 $ git fetch --tags
 ```
