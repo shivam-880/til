@@ -1,3 +1,15 @@
+## Create heap dump
+```
+$ jmap -dump:live,file=dump1.hprof <pid>
+```
+
+## Create thread dump
+```
+$ jstack <pid> > /tmp/threaddump.txt
+```
+
+**Note**: Use [fastthread.io](https://fastthread.io) to open thread dump file.
+
 ## Reading properties from properties file
 
 Basically if our properties are not locale specific using `ResourceBundle` would be semantically incorrect. We should instead use `Properties` class in standard Java library.
@@ -57,15 +69,3 @@ $ java -cp target/kaeru-jump-1.0-SNAPSHOT.jar com.codingkapoor.kaerujump.KaeruJu
 ```
 $ java -cp target/kaeru-jump-1.0-SNAPSHOT.jar com.codingkapoor.kaerujump.KaeruJumpAlgo ".\input1.txt"
 ```
-
-## Create heap dump
-```
-$ jmap -dump:live,file=dump1.hprof <pid>
-```
-
-## Create thread dump
-```
-$ jstack <pid> > /tmp/threaddump.txt
-```
-
-**Note**: Use [fastthread.io](https://fastthread.io) to open thread dump file.
