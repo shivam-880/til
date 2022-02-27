@@ -142,3 +142,9 @@ credentials += Credentials(Path.userHome / ".sbt" / "sonatype_credentials")
 ```
 $ sbt publishSigned
 ```
+
+## Using locally maven published jar in a sbt project
+In order use a locally published jar using `mvn install` in a sbt project add following resolver to your `built.sbt`.
+```
+resolvers += Resolver.mavenLocal
+```
