@@ -1,21 +1,21 @@
 ## List topics
-```
-pulsar-admin topics list public/default
+```bash
+$ pulsar-admin topics list public/default
 ```
 
 ## Delete topic
-```
-pulsar-admin topics delete persistent://test-tenant/ns1/tp1
+```bash
+$ pulsar-admin topics delete persistent://test-tenant/ns1/tp1
 ```
 
 ## Stats
-```
-pulsar-admin topics stats persistent://test-tenant/ns1/tp1 
+```bash
+$ pulsar-admin topics stats persistent://test-tenant/ns1/tp1 
 ```
 
 ## Internal Stats
-```
-pulsar-admin topics stats-internal persistent://test-tenant/ns1/tp1
+```bash
+$ pulsar-admin topics stats-internal persistent://test-tenant/ns1/tp1
 ```
 
 ## Peek messages 
