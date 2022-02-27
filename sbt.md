@@ -143,6 +143,13 @@ credentials += Credentials(Path.userHome / ".sbt" / "sonatype_credentials")
 $ sbt publishSigned
 ```
 
+## Specify dependencies in classpath
+As part of `sbt package` command the paths of all the dependencies are compiled into a single file `target/streams/compile/dependencyClasspath/_global/streams/export` which could be referred to as classpath while running the built jar. 
+```
+$ sbt package
+$ java -cp target/scala-2.13/ethereumcc_2.13-0.1.0-SNAPSHOT.jar:$(cat target/streams/compile/dependencyClasspath/_global/streams/export) com.pometry.ethereumcc.Runner
+```
+
 ## Using locally maven published jar in a sbt project
 In order use a locally published jar using `mvn install` in a sbt project add following resolver to your `built.sbt`.
 ```
