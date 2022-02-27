@@ -60,6 +60,8 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Specifying absolute path in jdbc url](https://github.com/iamsmkr/til/blob/master/h2.md#specifying-absolute-path-in-jdbc-url)
 
 ### Java
+- [Create heap dump](https://github.com/iamsmkr/til/blob/master/java.md#create-heap-dump)
+- [Create thread dump](https://github.com/iamsmkr/til/blob/master/java.md#create-thread-dump)
 - [Running java applications](https://github.com/iamsmkr/til/blob/master/java.md#running-java-applications)
 - [Reading properties from properties file](https://github.com/iamsmkr/til/blob/master/java.md#reading-properties-from-properties-file)
 - [Reading resources from classpath](https://github.com/iamsmkr/til/blob/master/java.md#reading-resources-from-classpath)
@@ -98,6 +100,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 ](https://github.com/iamsmkr/til/blob/master/linux.md#how-to-create-windows-bootable-disk-on-ubuntu)
 - [How to format bootable ubuntu usb drive](https://github.com/iamsmkr/til/blob/master/linux.md#how-to-format-bootable-ubuntu-usb-drive)
 - [Install necessary tools](https://github.com/iamsmkr/til/blob/master/linux.md#install-necessary-tools)
+- [Keyboard shortcut to force exit ssh shell](https://github.com/iamsmkr/til/blob/master/linux.md#keyboard-shortcut-to-force-exit-ssh-shell)
 
 ### Maven
 - [Resolving dependencies](https://github.com/iamsmkr/til/blob/master/maven.md#resolving-dependencies)
@@ -139,9 +142,11 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Debug lagom projects](https://github.com/iamsmkr/til/blob/master/sbt.md#debug-lagom-projects)
 - [How to have SBT subproject with multiple Scala versions](https://github.com/iamsmkr/til/blob/master/sbt.md#how-to-have-sbt-subproject-with-multiple-scala-versions)
 - [Making eclipse aware of fresh dependencies in a sbt project](https://github.com/iamsmkr/til/blob/master/sbt.md#making-eclipse-aware-of-fresh-dependencies-in-a-sbt-project)
-- [Unmanaged Resources](https://github.com/iamsmkr/til/blob/master/sbt.md#unmanaged-resources)
-- [Using sbt from behind proxy](https://github.com/iamsmkr/til/blob/master/sbt.md#using-sbt-from-behind-proxy)
 - [Publish Artificats to Sonatype OSSRH](https://github.com/iamsmkr/til/blob/master/sbt.md#publish-artificats-to-sonatype-ossrh)
-
+- [Specify dependencies in classpath](https://github.com/iamsmkr/til/blob/master/sbt.md#specify-dependencies-in-classpath)
+- [Unmanaged Resources](https://github.com/iamsmkr/til/blob/master/sbt.md#unmanaged-resources)
+- [Using locally maven published jar in a sbt project](https://github.com/iamsmkr/til/blob/master/sbt.md#using-locally-maven-published-jar-in-a-sbt-project)
+- [Using sbt from behind proxy](https://github.com/iamsmkr/til/blob/master/sbt.md#using-sbt-from-behind-proxy)
+ 
 ### Sql
 - [Passing args to Sql files via script or command line](https://github.com/iamsmkr/til/blob/master/sql.md#passing-args-to-sql-files-via-script-or-command-line)
