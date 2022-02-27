@@ -63,3 +63,8 @@ $ apt-get update && apt-get install -y netcat
 $ apt-get update && apt-get install -y net-tools
 $ apt-get update && apt-get install -y iputils-ping
 ```
+
+## Keyboard shortcut to force exit ssh shell
+```
+ENTER~.
+```
