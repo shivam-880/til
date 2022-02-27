@@ -60,12 +60,12 @@ $ java -cp target/kaeru-jump-1.0-SNAPSHOT.jar com.codingkapoor.kaerujump.KaeruJu
 
 ## Create heap dump
 ```
-$ jmap -dump:live,file=dump1.hprof 7846
+$ jmap -dump:live,file=dump1.hprof <pid>
 ```
 
 ## Create thread dump
 ```
-jstack 17264 > /tmp/threaddump.txt
-
-**Note**: Use [fastthread.io](https://fastthread.io) to open thread dump file
+$ jstack <pid> > /tmp/threaddump.txt
 ```
+
+**Note**: Use [fastthread.io](https://fastthread.io) to open thread dump file.
