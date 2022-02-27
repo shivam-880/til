@@ -57,3 +57,15 @@ $ java -cp target/kaeru-jump-1.0-SNAPSHOT.jar com.codingkapoor.kaerujump.KaeruJu
 ```
 $ java -cp target/kaeru-jump-1.0-SNAPSHOT.jar com.codingkapoor.kaerujump.KaeruJumpAlgo ".\input1.txt"
 ```
+
+## Create heap dump
+```
+$ jmap -dump:live,file=dump1.hprof 7846
+```
+
+## Create thread dump
+```
+jstack 17264 > /tmp/threaddump.txt
+
+**Note**: Use [fastthread.io](https://fastthread.io) to open thread dump file
+```
