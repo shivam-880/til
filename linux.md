@@ -10,7 +10,8 @@ $ ssh -i aws.pem -N -f -L 4000:localhost:3000 ubuntu@ec2-10-2-199-58.compute-1.a
 
 #### Cmd
 ```sh
-$ netstat -nlp | grep 7199
+$ netstat -nlp | grep 7199  # Or
+$ lsof -n -i4TCP:8000 | grep LISTEN (mac)
 ```
 
 ## Determine if a port is open on a remote server
