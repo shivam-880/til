@@ -147,6 +147,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Unmanaged Resources](https://github.com/iamsmkr/til/blob/master/sbt.md#unmanaged-resources)
 - [Using locally maven published jar in a sbt project](https://github.com/iamsmkr/til/blob/master/sbt.md#using-locally-maven-published-jar-in-a-sbt-project)
 - [Using sbt from behind proxy](https://github.com/iamsmkr/til/blob/master/sbt.md#using-sbt-from-behind-proxy)
+- [What's SBT_OPTS/.sbtopts?](https://github.com/iamsmkr/til/blob/master/sbt.md#whats-sbt_optssbtopts)
  
 ### Sql
 - [Passing args to Sql files via script or command line](https://github.com/iamsmkr/til/blob/master/sql.md#passing-args-to-sql-files-via-script-or-command-line)
