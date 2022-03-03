@@ -121,6 +121,39 @@ credentials += Credentials(Path.userHome / ".sbt" / "sonatype_credentials")
 $ sbt publishSigned
 ```
 
+## What's SBT_OPTS/.sbtopts?
+`JAVA_OPTS`/`SBT_OPTS` are environment variables which when set are passed to java or sbt runtime environment. These could be set either in bash profiles (i.e., across all sessions) or per bash session (i.e., settings are lost with session exit).
+
+You could also define these options per project in `.jvmopts` or `.sbtopts` files under root directory. The precedence order of these alternatives is defined in the `sbt -h`:
+```
+# jvm options and output control
+JAVA_OPTS           environment variable, if unset uses "-Dfile.encoding=UTF-8"
+.jvmopts            if this file exists in the current directory, its contents
+                    are appended to JAVA_OPTS
+SBT_OPTS            environment variable, if unset uses ""
+.sbtopts            if this file exists in the current directory, its contents
+                    are prepended to the runner args
+/etc/sbt/sbtopts    if this file exists, it is prepended to the runner args
+```
+
+Alternatives lower in the order take precedence.
+
+You could also check what env variables are being passed to your sbt runtime environment using `sbt -d` command (this sets sbt log level to debug):
+```
+# Executing command line:
+java
+-Dfile.encoding=UTF-8
+-Xms4G
+-Xmx8G
+-XX:ReservedCodeCacheSize=512M
+-XX:MaxMetaspaceSize=2G
+-Dsbt.script=/Users/rentsher/.sdkman/candidates/sbt/current/bin/sbt
+-Dscala.ext.dirs=/Users/rentsher/.sbt/1.0/java9-rt-ext-adoptopenjdk_11_0_11
+-jar
+/Users/rentsher/.sdkman/candidates/sbt/1.6.1/bin/sbt-launch.jar
+-debug
+```
+
 ## Specify dependencies in classpath
 As part of `sbt package` command the paths of all the dependencies are compiled into a single file `target/streams/compile/dependencyClasspath/_global/streams/export` which could be referred to as classpath while running the built jar. 
 ```
