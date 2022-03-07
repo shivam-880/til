@@ -28,7 +28,7 @@ $ jstack <pid> > /tmp/threaddump.txt
 	$ ssh -i aws_ethereum.pem -f -N -L 9800:localhost:9800 ubuntu@ec2-3-82-189-52.compute-1.amazonaws.com
 	```
 
-	**Note**: `jmxremote.port` can be equal to `jmxremote.rmi.port` so you can use only one port to create SSH tunnel when monitoring remote JVM like so:
+	**Note**: `jmxremote.port` can be equal to `jmxremote.rmi.port` so you can use only one port to create SSH tunnel.
 
 3. Add local JMX connection
 
