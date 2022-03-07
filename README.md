@@ -65,6 +65,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Running java applications](https://github.com/iamsmkr/til/blob/master/java.md#running-java-applications)
 - [Reading properties from properties file](https://github.com/iamsmkr/til/blob/master/java.md#reading-properties-from-properties-file)
 - [Reading resources from classpath](https://github.com/iamsmkr/til/blob/master/java.md#reading-resources-from-classpath)
+- [Remote JMX Monitoring over SSH](https://github.com/iamsmkr/til/blob/master/java.md#remote-jmx-monitoring-over-ssh)
 
 ### JavaScript
 - [Animated Logo in Reactjs](https://github.com/iamsmkr/til/blob/master/javascript.md#animated-logo-in-reactjs)
