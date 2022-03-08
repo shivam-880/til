@@ -1,3 +1,26 @@
+## Calculate time difference with millisecond precision
+https://replit.com/@iamsmkr/Time-Difference-Millisecond-Precision?v=1
+
+```java
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+class Main {  
+  public static void main(String args[]) throws ParseException { 
+    String time1 = "15:23:51.981";
+    String time2 = "15:39:42.847";
+    
+    SimpleDateFormat format = new SimpleDateFormat("HH:mm:ss.SSS");
+    
+    Date date1 = format.parse(time1);
+    Date date2 = format.parse(time2);
+    long difference = date2.getTime() - date1.getTime();
+    System.out.println(difference);
+  } 
+}
+```
+
 ## Create heap dump
 ```
 $ jmap -dump:live,file=dump1.hprof <pid>
