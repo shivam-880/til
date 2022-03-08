@@ -60,7 +60,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Specifying absolute path in jdbc url](https://github.com/iamsmkr/til/blob/master/h2.md#specifying-absolute-path-in-jdbc-url)
 
 ### Java
-- [Calculate time difference with millisecond precision](https://github.com/iamsmkr/til/blob/master/java.md#calculate-time-difference-with-millisecond-precision)
+- [Calculate time difference (millisecond precision)](https://github.com/iamsmkr/til/blob/master/java.md#calculate-time-difference-with-millisecond-precision)
 - [Create heap dump](https://github.com/iamsmkr/til/blob/master/java.md#create-heap-dump)
 - [Create thread dump](https://github.com/iamsmkr/til/blob/master/java.md#create-thread-dump)
 - [Running java applications](https://github.com/iamsmkr/til/blob/master/java.md#running-java-applications)
