@@ -1,5 +1,5 @@
-## Calculate time difference with millisecond precision
-https://replit.com/@iamsmkr/Time-Difference-Millisecond-Precision?v=1
+## Calculate time difference (millisecond precision)
+[Try it on replit](https://replit.com/@iamsmkr/Time-Difference-Millisecond-Precision?v=1)
 
 ```java
 import java.text.ParseException;
