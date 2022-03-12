@@ -95,6 +95,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Kubectl logs](https://github.com/iamsmkr/til/blob/master/kubernetes.md#kubectl-logs)
 
 ### Linux
+- [Update AWS IP in your local dns](https://github.com/iamsmkr/til/blob/master/linux.md#update-aws-ip-in-your-local-dns)
 - [Create tunnel](https://github.com/iamsmkr/til/blob/master/linux.md#create-tunnel)
 - [Determine if a port is already in use](https://github.com/iamsmkr/til/blob/master/linux.md#determine-if-a-port-is-already-in-use)
 - [Determine if a port is open on a remote server](https://github.com/iamsmkr/til/blob/master/linux.md#determine-if-a-port-is-open-on-a-remote-server)
