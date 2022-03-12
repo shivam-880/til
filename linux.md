@@ -1,9 +1,34 @@
+## Update AWS IP in your local dns
+1. Make aws host entry in `~/.ssh/config`
+    ```
+    Host aws
+        HostName aws
+        User ubuntu
+        IdentityFile ~/.ssh/mykeys/aws.pem
+    ```
+2. Add domain name ip addr mapping in `/etc/hosts`
+    ```
+    44.201.182.31 aws
+    ```
+
+3. Add a function `~/.zshrc` to update ip in `/etc/hosts`
+    ```
+    function changedns(){ sudo sed -i -e "s/.*aws.*/$1 aws/"  /etc/hosts;}
+    ```
+
+4. Usage
+    ```
+    $ changedns 44.21.12.33
+    $ ssh aws
+    ```
+
+
 ## Create tunnel
 ```sh
 $ ssh -f -N -L 8989:localhost:8981 bst-03
 $ ssh -i aws.pem -N -f -L 4000:localhost:3000 ubuntu@ec2-10-2-199-58.compute-1.amazonaws.com
 
-# ssh -f -N -L <local port>:<local ipaddr>:<remote port> <remote ipaddr>
+# ssh -f -N -L <local ipaddr>:<local port>:<destination ipaddr>:<destination port> <remote ipaddr>
 ```
 
 ## Determine if a port is already in use
