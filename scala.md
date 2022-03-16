@@ -120,6 +120,21 @@ if("/tmp".toDirectory.files.map(_.path).exists(name => name matches """.*\.gz"""
 
 **Refer**: https://stackoverflow.com/a/48271851/1879109
 
+## Load Configurations
+`ConfigFactory` loads `application.conf` present under `src/main/resources` or `src/test/resources`.
+```scala
+val config = ConfigFactory.load()
+val dataDir: String = config.getString("raphtory.spout.file.local.sourceDirectory")
+```
+
+If you wish to load any configuration file named other than `application.conf`, you can pass the same as argument to the `load` method of `ConfigFactory`.
+```scala
+val config = ConfigFactory.load("reference.conf")
+val dataDir: String = config.getString("raphtory.spout.file.local.sourceDirectory")
+```
+
+**Refer**: https://github.com/lightbend/config#standard-behavior
+
 ## Managed resources
 The resource passed to `using` as first parameter will be closed after the function passed as second is done with it's execution. The resource however is expected to implement the `close` function that takes care of closing the resource.
 
