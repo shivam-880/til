@@ -122,6 +122,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Converting list of lists into tuple of lists](https://github.com/iamsmkr/til/blob/master/scala.md#converting-list-of-lists-into-tuple-of-lists)
 - [Convert String to LocalDateTime](https://github.com/iamsmkr/til/blob/master/scala.md#convert-string-to-localdatetime)
 - [Find files with a given extension](https://github.com/iamsmkr/til/blob/master/scala.md#find-files-with-a-given-extension)
+- [Load Configurations](https://github.com/iamsmkr/til/blob/master/scala.md#load-configurations)
 - [Managed Resources](https://github.com/iamsmkr/til/blob/master/scala.md#managed-resources)
 - [Map.map vs Map.mapValues](https://github.com/iamsmkr/til/blob/master/scala.md#mapmap-vs-mapmapvalues)
 - [Marshalling/Unmarshalling Java LocalDateTime using spray-json](https://github.com/iamsmkr/til/blob/master/scala.md#marshallingunmarshalling-java-localdatetime-using-spray-json)
