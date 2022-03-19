@@ -123,3 +123,16 @@ $ java -cp target/kaeru-jump-1.0-SNAPSHOT.jar com.codingkapoor.kaerujump.KaeruJu
 ```
 $ java -cp target/kaeru-jump-1.0-SNAPSHOT.jar com.codingkapoor.kaerujump.KaeruJumpAlgo ".\input1.txt"
 ```
+
+#### As background process
+```bash
+$ nohup bash -c "(java -Xms32G -Xmx64G -XX:ReservedCodeCacheSize=512M -XX:MaxMetaspaceSize=100M -XX:+UseShenandoahGC -XX:ShenandoahGCHeuristics=compact -verbose:gc \
+    -cp target/scala-2.13/trm_2.13-0.1.0-SNAPSHOT.jar:$(cat target/streams/compile/dependencyClasspath/_global/streams/export) \
+    -Djava.rmi.server.hostname=localhost \
+    -Dcom.sun.management.jmxremote=true \
+    -Dcom.sun.management.jmxremote.ssl=false \
+    -Dcom.sun.management.jmxremote.authenticate=false \
+    -Dcom.sun.management.jmxremote.port=9800 \
+    -Dcom.sun.management.jmxremote.rmi.port=9800 \
+    com.raphtory.trm.BatchLoader)" &; tail -f nohup.out
+```
