@@ -112,6 +112,17 @@ LocalDateTime.parse("02-August-1989 11:40:12.450", DateTimeFormatter.ofPattern("
 
 **Refer**: https://www.baeldung.com/java-date-to-localdate-and-localdatetime
 
+## Find duplicates in a list
+Refer: https://stackoverflow.com/questions/24729544/how-to-find-duplicates-in-a-list
+
+```scala
+val dup = List(1,1,1,2,3,4,5,5,6,100,101,101,102)
+dup.groupBy(identity).collect { case (x, List(_,_,_*)) => x }
+
+// Or
+dup.diff(dup.distinct).distinct
+```
+
 ## Find files with a given extension
 ```scala
 if("/tmp".toDirectory.files.map(_.path).exists(name => name matches """.*\.gz"""))
