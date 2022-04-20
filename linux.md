@@ -1,28 +1,3 @@
-## Update AWS IP in your local dns
-1. Make aws host entry in `~/.ssh/config`
-    ```
-    Host aws
-        HostName aws
-        User ubuntu
-        IdentityFile ~/.ssh/mykeys/aws.pem
-    ```
-2. Add domain name ip addr mapping in `/etc/hosts`
-    ```
-    44.201.182.31 aws
-    ```
-
-3. Add a function `~/.zshrc` to update ip in `/etc/hosts`
-    ```
-    function changedns(){ sudo sed -i -e "s/.*aws.*/$1 aws/"  /etc/hosts;}
-    ```
-
-4. Usage
-    ```
-    $ changedns 44.21.12.33
-    $ ssh aws
-    ```
-
-
 ## Create tunnel
 ```sh
 $ ssh -f -N -L 8989:localhost:8981 bst-03
@@ -48,6 +23,13 @@ if lsof -Pi :8080 -sTCP:LISTEN -t >/dev/null ; then
     echo "Port already in use!"
     exit 0 ;
 fi
+```
+
+## Grep in Parallel
+Refer: https://stackoverflow.com/questions/11898949/how-do-i-grep-in-parallel
+
+```sh
+$ find . -type f | parallel -k -j150% -n 1000 -m grep -H -n "2022-02-28" {} | grep "2022-02-28 23:49" | grep -v "2022-02-28 23:49:12"
 ```
 
 ## How to create windows bootable disk on ubuntu
@@ -92,3 +74,27 @@ $ apt-get update && apt-get install -y iputils-ping
 ```
 ENTER~.
 ```
+
+## Update AWS IP in your local dns
+1. Make aws host entry in `~/.ssh/config`
+    ```
+    Host aws
+        HostName aws
+        User ubuntu
+        IdentityFile ~/.ssh/mykeys/aws.pem
+    ```
+2. Add domain name ip addr mapping in `/etc/hosts`
+    ```
+    44.201.182.31 aws
+    ```
+
+3. Add a function `~/.zshrc` to update ip in `/etc/hosts`
+    ```
+    function changedns(){ sudo sed -i -e "s/.*aws.*/$1 aws/"  /etc/hosts;}
+    ```
+
+4. Usage
+    ```
+    $ changedns 44.21.12.33
+    $ ssh aws
+    ```
