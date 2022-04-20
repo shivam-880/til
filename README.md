@@ -95,15 +95,15 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Kubectl logs](https://github.com/iamsmkr/til/blob/master/kubernetes.md#kubectl-logs)
 
 ### Linux
-- [Update AWS IP in your local dns](https://github.com/iamsmkr/til/blob/master/linux.md#update-aws-ip-in-your-local-dns)
 - [Create tunnel](https://github.com/iamsmkr/til/blob/master/linux.md#create-tunnel)
 - [Determine if a port is already in use](https://github.com/iamsmkr/til/blob/master/linux.md#determine-if-a-port-is-already-in-use)
 - [Determine if a port is open on a remote server](https://github.com/iamsmkr/til/blob/master/linux.md#determine-if-a-port-is-open-on-a-remote-server)
-- [How to create windows bootable disk on ubuntu
-](https://github.com/iamsmkr/til/blob/master/linux.md#how-to-create-windows-bootable-disk-on-ubuntu)
+- [Grep in Parallel](https://github.com/iamsmkr/til/blob/master/linux.md#grep-in-parallel)
+- [How to create windows bootable disk on ubuntu](https://github.com/iamsmkr/til/blob/master/linux.md#how-to-create-windows-bootable-disk-on-ubuntu)
 - [How to format bootable ubuntu usb drive](https://github.com/iamsmkr/til/blob/master/linux.md#how-to-format-bootable-ubuntu-usb-drive)
 - [Install necessary tools](https://github.com/iamsmkr/til/blob/master/linux.md#install-necessary-tools)
 - [Keyboard shortcut to force exit ssh shell](https://github.com/iamsmkr/til/blob/master/linux.md#keyboard-shortcut-to-force-exit-ssh-shell)
+- [Update AWS IP in your local dns](https://github.com/iamsmkr/til/blob/master/linux.md#update-aws-ip-in-your-local-dns)
 
 ### Maven
 - [Resolving dependencies](https://github.com/iamsmkr/til/blob/master/maven.md#resolving-dependencies)
