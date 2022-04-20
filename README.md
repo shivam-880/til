@@ -156,3 +156,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
  
 ### Sql
 - [Passing args to Sql files via script or command line](https://github.com/iamsmkr/til/blob/master/sql.md#passing-args-to-sql-files-via-script-or-command-line)
+
+### Vim
+- [Find and replace a word](https://github.com/iamsmkr/til/blob/master/vim.md#find-and-replace-a-word)
+- [Show line numbers](https://github.com/iamsmkr/til/blob/master/vim.md#show-line-numbers)
