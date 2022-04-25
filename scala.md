@@ -112,6 +112,20 @@ LocalDateTime.parse("02-August-1989 11:40:12.450", DateTimeFormatter.ofPattern("
 
 **Refer**: https://www.baeldung.com/java-date-to-localdate-and-localdatetime
 
+## Count the number of occurrences in a list
+Refer: https://stackoverflow.com/questions/11448685/scala-how-can-i-count-the-number-of-occurrences-in-a-list
+
+```scala
+val s = Seq("apple", "oranges", "apple", "banana", "apple", "oranges", "oranges")
+s.groupBy(l => l).map(t => (t._1, t._2.length))
+
+// Or
+s.groupBy(identity).mapValues(_.size)
+
+// Results
+Map(banana -> 1, oranges -> 3, apple -> 3)
+```
+
 ## Find duplicates in a list
 Refer: https://stackoverflow.com/questions/24729544/how-to-find-duplicates-in-a-list
 
