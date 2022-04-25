@@ -121,6 +121,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Converting a list of tuples into a list of lists](https://github.com/iamsmkr/til/blob/master/scala.md#converting-a-list-of-tuples-into-a-list-of-lists)
 - [Converting list of lists into tuple of lists](https://github.com/iamsmkr/til/blob/master/scala.md#converting-list-of-lists-into-tuple-of-lists)
 - [Convert String to LocalDateTime](https://github.com/iamsmkr/til/blob/master/scala.md#convert-string-to-localdatetime)
+- [Count the number of occurrences in a list](https://github.com/iamsmkr/til/blob/master/scala.md#count-the-number-of-occurrences-in-a-list)
 - [Find duplicates in a list](https://github.com/iamsmkr/til/blob/master/scala.md#find-duplicates-in-a-list)
 - [Find files with a given extension](https://github.com/iamsmkr/til/blob/master/scala.md#find-files-with-a-given-extension)
 - [Load Configurations](https://github.com/iamsmkr/til/blob/master/scala.md#load-configurations)
