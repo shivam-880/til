@@ -75,6 +75,16 @@ $ apt-get update && apt-get install -y iputils-ping
 ENTER~.
 ```
 
+## Using `rsync` for data transfer
+- Using `rsync`
+    ```sh
+    rsync -e "ssh -i /home/ubuntu/.ssh/mykeys/aws.pem" -r /home/ubuntu/data ubuntu@172.31.89.208:/home/ubuntu/data;
+    ```
+
+- Using `rsyncd`. [Avoids encryption](https://www.upguard.com/blog/secure-rsync#:~:text=However%2C%20the%20rsync%20daemon%20does,extremely%20vulnerable%20to%20data%20exposure.)
+
+    Refer: https://serverspace.io/support/help/use-rsync-to-create-a-backup-on-ubuntu/
+
 ## Update AWS IP in your local dns
 1. Make aws host entry in `~/.ssh/config`
     ```
