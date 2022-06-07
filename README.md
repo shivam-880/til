@@ -103,6 +103,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [How to format bootable ubuntu usb drive](https://github.com/iamsmkr/til/blob/master/linux.md#how-to-format-bootable-ubuntu-usb-drive)
 - [Install necessary tools](https://github.com/iamsmkr/til/blob/master/linux.md#install-necessary-tools)
 - [Keyboard shortcut to force exit ssh shell](https://github.com/iamsmkr/til/blob/master/linux.md#keyboard-shortcut-to-force-exit-ssh-shell)
+- [Using rsync for data transfer](https://github.com/iamsmkr/til/blob/master/linux.md#using-rsync-for-data-transfer)
 - [Update AWS IP in your local dns](https://github.com/iamsmkr/til/blob/master/linux.md#update-aws-ip-in-your-local-dns)
 
 ### Maven
