@@ -6,6 +6,16 @@ $ ssh -i aws.pem -N -f -L 4000:localhost:3000 ubuntu@ec2-10-2-199-58.compute-1.a
 # ssh -f -N -L <local ipaddr>:<local port>:<destination ipaddr>:<destination port> <remote ipaddr>
 ```
 
+## Delete all files and directories except a given few
+```sh
+ls | grep -v "flightpars\|data" | while read f; do
+    rm -rf "$f"
+done
+
+# Single line statement
+ls | grep -v "flightpars\|data" | while read f; do rm -rf "$f"; done
+```
+
 ## Determine if a port is already in use
 ```sh
 $ netstat -nlp | grep 7199  # Or
