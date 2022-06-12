@@ -96,6 +96,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 
 ### Linux
 - [Create tunnel](https://github.com/iamsmkr/til/blob/master/linux.md#create-tunnel)
+- [Delete all files and directories except a given few](https://github.com/iamsmkr/til/blob/master/linux.md#delete-all-files-and-directories-except-a-given-few)
 - [Determine if a port is already in use](https://github.com/iamsmkr/til/blob/master/linux.md#determine-if-a-port-is-already-in-use)
 - [Determine if a port is open on a remote server](https://github.com/iamsmkr/til/blob/master/linux.md#determine-if-a-port-is-open-on-a-remote-server)
 - [Grep in Parallel](https://github.com/iamsmkr/til/blob/master/linux.md#grep-in-parallel)
