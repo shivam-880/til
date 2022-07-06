@@ -422,6 +422,32 @@ trait ConfWatcher {
 "%s %s, age %d".format(firstName, lastName, age)
 ```
 
+## Using Scala Reflection to create instance of a Case Class with default values
+Refer: https://stackoverflow.com/questions/16939511/instantiating-a-case-class-with-default-args-via-reflection
+
+```scala
+case class Weekday(i: Int = 0, str: String = "Sunday")
+
+def newDefault[A](implicit t: reflect.ClassTag[A]): A = {
+  import reflect.runtime.{universe => ru, currentMirror => cm}
+
+  val clazz  = cm.classSymbol(t.runtimeClass)
+  val mod    = clazz.companion.asModule
+  val im     = cm.reflect(cm.reflectModule(mod).instance)
+  val ts     = im.symbol.typeSignature
+  val mApply = ts.member(ru.TermName("apply")).asMethod
+  val syms   = mApply.paramLists.flatten
+  val args   = syms.zipWithIndex.map { case (p, i) =>
+    val mDef = ts.member(ru.TermName(s"apply$$default$$${i+1}")).asMethod
+    im.reflectMethod(mDef)()
+  }
+  im.reflectMethod(mApply)(args: _*).asInstanceOf[A]
+}
+
+val f = newDefault[Weekday]
+println(f)
+```
+
 ## Using wildcards with scala.sys.process._ in Scala
 Refer: https://stackoverflow.com/questions/71132425/using-wildcards-with-scala-sys-process-in-scala
 
