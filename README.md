@@ -126,6 +126,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Count the number of occurrences in a list](https://github.com/iamsmkr/til/blob/master/scala.md#count-the-number-of-occurrences-in-a-list)
 - [Find duplicates in a list](https://github.com/iamsmkr/til/blob/master/scala.md#find-duplicates-in-a-list)
 - [Find files with a given extension](https://github.com/iamsmkr/til/blob/master/scala.md#find-files-with-a-given-extension)
+- [How to pick up a free port number on localhost](https://github.com/iamsmkr/til/blob/master/scala.md#how-to-pick-up-a-free-port-number-on-localhost)
 - [Load Configurations](https://github.com/iamsmkr/til/blob/master/scala.md#load-configurations)
 - [Managed Resources](https://github.com/iamsmkr/til/blob/master/scala.md#managed-resources)
 - [Map.map vs Map.mapValues](https://github.com/iamsmkr/til/blob/master/scala.md#mapmap-vs-mapmapvalues)
