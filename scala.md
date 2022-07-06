@@ -147,6 +147,7 @@ if("/tmp".toDirectory.files.map(_.path).exists(name => name matches """.*\.gz"""
 
 ## How to pick up a free port number on localhost
 Do not bind to a specific port. Instead, bind to port 0. 
+
 Port 0 carries special significance in network programming, particularly in the Unix OS when it comes to socket programming where the port is used to request system-allocated, dynamic ports. Port 0 is a wildcard port that tells the system to find a suitable port number.
 
 Refer: https://www.lifewire.com/port-0-in-tcp-and-udp-818145
