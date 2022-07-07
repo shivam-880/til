@@ -34,7 +34,22 @@ class MyException(message: String) extends Exception(message) {
 }
 ```
 
-## Converting a list into a tuple
+## Convert Java collections to Scala
+Starting Scala 2.13, package `scala.jdk.CollectionConverters` replaces packages `scala.collection.JavaConverters/JavaConversions._`:
+
+```scala
+import scala.jdk.CollectionConverters._
+
+val javaList: java.util.List[String] = java.util.Arrays.asList("one","two","three")
+
+javaList.asScala
+// collection.mutable.Buffer[String] = Buffer("one", "two", "three")
+
+javaList.asScala.toSet
+// collection.immutable.Set[String] = Set("one", "two", "three")
+```
+
+## Convert a List into a Tuple
 
 There isn't any way in standard Scala library to convert a list into a tuple as:
 
@@ -51,7 +66,7 @@ scala> hl.tupled
 res6: (Int, Int, Int) = (1,2,3)
 ```
 
-## Converting list of lists into tuple of lists
+## Convert List of lists into Tuple of lists
 
 There isn't any way in standard Scala library to convert a list of lists into tuple of lists as in:
 
@@ -77,7 +92,7 @@ scala> hlist.tupled
 res2: (List[Int], List[Int], List[Int]) = (List(1, 2, 3),List(4, 5, 6),List(7, 8, 9))
 ```
 
-## Converting a list of tuples into a list of lists
+## Convert List of tuples into a List of lists
 
 Tuples can't directly be converted to lists. What we instead can do is to get an **Iterator** for that tuple, which then can be converted into a list.
 
@@ -186,7 +201,7 @@ val content = using(Source.fromFile("/tmp/myfile.txt"))(_.mkString)
 ## Map.map vs Map.mapValues
 **Refer:** http://blog.bruchez.name/2013/02/mapmap-vs-mapmapvalues.html
 
-## Output redirection
+## Output Redirection
 Bash like output redirection can be implemented in Scala using implicit classes like so.
 
 ```scala
