@@ -119,9 +119,10 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 ### Scala
 - [Change Current Directory](https://github.com/iamsmkr/til/blob/master/scala.md#change-current-directory)
 - [Class Constructors](https://github.com/iamsmkr/til/blob/master/scala.md#class-constructors)
-- [Converting a list into a tuple](https://github.com/iamsmkr/til/blob/master/scala.md#converting-a-list-into-a-tuple)
-- [Converting a list of tuples into a list of lists](https://github.com/iamsmkr/til/blob/master/scala.md#converting-a-list-of-tuples-into-a-list-of-lists)
-- [Converting list of lists into tuple of lists](https://github.com/iamsmkr/til/blob/master/scala.md#converting-list-of-lists-into-tuple-of-lists)
+- [Convert Java collections to Scala](https://github.com/iamsmkr/til/blob/master/scala.md#convert-java-collections-to-scala)
+- [Convert a List into a Tuple](https://github.com/iamsmkr/til/blob/master/scala.md#convert-a-list-into-a-tuple)
+- [Convert List of lists into Tuple of lists](https://github.com/iamsmkr/til/blob/master/scala.md#convert-list-of-lists-into-tuple-of-lists)
+- [Convert List of tuples into a List of lists](https://github.com/iamsmkr/til/blob/master/scala.md#convert-list-of-tuples-into-a-list-of-lists)
 - [Convert String to LocalDateTime](https://github.com/iamsmkr/til/blob/master/scala.md#convert-string-to-localdatetime)
 - [Count the number of occurrences in a list](https://github.com/iamsmkr/til/blob/master/scala.md#count-the-number-of-occurrences-in-a-list)
 - [Find duplicates in a list](https://github.com/iamsmkr/til/blob/master/scala.md#find-duplicates-in-a-list)
