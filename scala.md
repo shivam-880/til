@@ -34,7 +34,7 @@ class MyException(message: String) extends Exception(message) {
 }
 ```
 
-## Convert Java collections to Scala
+## Convert Java Collections to Scala
 Starting Scala 2.13, package `scala.jdk.CollectionConverters` replaces packages `scala.collection.JavaConverters/JavaConversions._`:
 
 ```scala
