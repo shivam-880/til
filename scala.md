@@ -6,15 +6,22 @@ The JVM allows registering functions to run before it completes its shutdown. Th
 Shutdown hooks are basically initialized but unstarted threads. When the JVM begins its shutdown process, it will start all registered hooks in an unspecified order. After running all hooks, the JVM will halt.
 
 ```scala
+// Scala
 Runtime.getRuntime.addShutdownHook(new Thread() {
-  println(""In the middle of a shutdown"")
-  // Close resources gracefully
+    override def run(): Unit = {
+      println(""In the middle of a shutdown"")
+      // Close resources gracefully
+    }
 })
+
+// Java
+Thread printingHook = new Thread(() -> System.out.println("In the middle of a shutdown"));
+Runtime.getRuntime().addShutdownHook(printingHook);
 ```
 
 The JVM is responsible for starting hook threads. Therefore, if the given hook has been already started, Java will throw an exception:
 
-```scala
+```java
 Thread longRunningHook = new Thread(() -> {
     try {
         Thread.sleep(300);
