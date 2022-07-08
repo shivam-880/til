@@ -1,3 +1,67 @@
+## Adding Shutdown Hooks for JVM Applications
+Refer: https://www.baeldung.com/jvm-shutdown-hooks
+
+The JVM allows registering functions to run before it completes its shutdown. These functions are usually a good place for releasing resources or other similar house-keeping tasks. In JVM terminology, these functions are called shutdown hooks.
+
+Shutdown hooks are basically initialized but unstarted threads. When the JVM begins its shutdown process, it will start all registered hooks in an unspecified order. After running all hooks, the JVM will halt.
+
+```scala
+Runtime.getRuntime.addShutdownHook(new Thread() {
+  println(""In the middle of a shutdown"")
+  // Close resources gracefully
+})
+```
+
+The JVM is responsible for starting hook threads. Therefore, if the given hook has been already started, Java will throw an exception:
+
+```scala
+Thread longRunningHook = new Thread(() -> {
+    try {
+        Thread.sleep(300);
+    } catch (InterruptedException ignored) {}
+});
+longRunningHook.start();
+
+assertThatThrownBy(() -> Runtime.getRuntime().addShutdownHook(longRunningHook))
+  .isInstanceOf(IllegalArgumentException.class)
+  .hasMessage("Hook already running");
+```
+
+Obviously, we also can't register a hook multiple times:
+```
+Thread unfortunateHook = new Thread(() -> {});
+Runtime.getRuntime().addShutdownHook(unfortunateHook);
+
+assertThatThrownBy(() -> Runtime.getRuntime().addShutdownHook(unfortunateHook))
+  .isInstanceOf(IllegalArgumentException.class)
+  .hasMessage("Hook previously registered");
+```
+
+The JVM can be shut down in two different ways:
+1. A controlled process
+2. An abrupt manner
+
+A controlled process shuts down the JVM when either:
+- The last non-daemon thread terminates. For example, when the main thread exits, the JVM starts its shutdown process
+- Sending an interrupt signal from the OS. For instance, by pressing `Ctrl + C` or logging off the OS
+- Calling `System.exit()` from Java code
+
+While we all strive for graceful shutdowns, sometimes the JVM may shut down in an abrupt and unexpected manner. The JVM shuts down abruptly when:
+- Sending a kill signal from the OS. For example, by issuing a `kill -9 <jvm_pid>`
+- Calling `Runtime.getRuntime().halt()` from Java code
+- The host OS dies unexpectedly, For example, in a power failure or OS panic
+
+The JVM runs shutdown hooks only in case of normal terminations. So, when an external force kills the JVM process abruptly, the JVM won't get a chance to execute shutdown hooks. Additionally, halting the JVM from Java code will also have the same effect:
+
+```scala
+Thread haltedHook = new Thread(() -> System.out.println("Halted abruptly"));
+Runtime.getRuntime().addShutdownHook(haltedHook);
+        
+Runtime.getRuntime().halt(129);
+```
+
+The halt method forcibly terminates the currently running JVM. Therefore, registered shutdown hooks won't get a chance to execute.
+
 ## Change Current Directory
 `cd` is not actually a program. It's a shell-internal that tells the shell to the chdir system call. 
 
