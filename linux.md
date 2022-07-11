@@ -18,8 +18,12 @@ ls | grep -v "flightpars\|data" | while read f; do rm -rf "$f"; done
 
 ## Determine if a port is already in use
 ```sh
-$ netstat -nlp | grep 7199  # Or
-$ lsof -n -i4TCP:8000 | grep LISTEN # mac
+# linux
+$ netstat -nlp | grep 7199 
+
+# macOS
+$ lsof -n -i4TCP:8000 | grep LISTEN
+$ netstat -anvp tcp | grep 8000
 ```
 
 ## Determine if a port is open on a remote server
