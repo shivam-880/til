@@ -534,6 +534,67 @@ val f = newDefault[Weekday]
 println(f)
 ```
 
+## Using Scala Reflection to invoke members of companion object
+The following example is in comparison to creating instances as shown in previous listing. 
+```scala
+object TestDefault extends App {
+
+  case class XYZ(str: String = "Shivam")
+  object XYZ { private val default: XYZ = XYZ() }
+  case class ABC(int: Int = 99)
+  object ABC { private val default: ABC = ABC() }
+
+  def newDefault[A](implicit t: reflect.ClassTag[A]): A = {
+    import reflect.runtime.{universe => ru}
+    import reflect.runtime.{currentMirror => cm}
+
+    val clazz  = cm.classSymbol(t.runtimeClass)
+    val mod    = clazz.companion.asModule
+    val im     = cm.reflect(cm.reflectModule(mod).instance)
+    val ts     = im.symbol.typeSignature
+    val mApply = ts.member(ru.TermName("apply")).asMethod
+    val syms   = mApply.paramLists.flatten
+    val args   = syms.zipWithIndex.map {
+      case (p, i) =>
+        val mDef = ts.member(ru.TermName(s"apply$$default$$${i + 1}")).asMethod
+        im.reflectMethod(mDef)()
+    }
+    im.reflectMethod(mApply)(args: _*).asInstanceOf[A]
+  }
+
+  for (i <- 0 to 1000000000)
+    newDefault[XYZ]
+
+//  println(s"newDefault XYZ = ${newDefault[XYZ]}")
+//  println(s"newDefault ABC = ${newDefault[ABC]}")
+
+  def newDefault2[A](implicit t: reflect.ClassTag[A]): A = {
+    import reflect.runtime.{currentMirror => cm}
+
+    val clazz = cm.classSymbol(t.runtimeClass)
+    val mod   = clazz.companion.asModule
+    val im    = cm.reflect(cm.reflectModule(mod).instance)
+    val ts    = im.symbol.typeSignature
+
+//    val methodMap = ts.members
+//      .filter(_.isMethod)
+//      .map(d => {
+//        d.name.toString -> d.asMethod
+//      })
+//      .toMap
+
+    val defaultMember = ts.members.filter(_.isMethod).filter(d => d.name.toString == "default").head.asMethod
+
+    val result = im.reflectMethod(defaultMember).apply()
+//    val result = im.reflectMethod(methodMap("default")).apply()
+    result.asInstanceOf[A]
+  }
+
+  for (i <- 0 to 1000000000)
+    newDefault2[XYZ]
+}
+```
+
 ## Using wildcards with scala.sys.process._ in Scala
 Refer: https://stackoverflow.com/questions/71132425/using-wildcards-with-scala-sys-process-in-scala
 
