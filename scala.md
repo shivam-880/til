@@ -595,6 +595,15 @@ object TestDefault extends App {
 }
 ```
 
+**Note**: Doesn't seem to make much difference with reflections! 
+
+newDefault
+![Screenshot-2022-09-19-at-3-32-26-pm.png](https://i.postimg.cc/nc7qNCSG/Screenshot-2022-09-19-at-3-32-26-pm.png)
+
+
+newDefault2
+![Screenshot-2022-09-19-at-3-33-22-pm.png](https://i.postimg.cc/nzyC11xb/Screenshot-2022-09-19-at-3-33-22-pm.png)
+
 ## Using wildcards with scala.sys.process._ in Scala
 Refer: https://stackoverflow.com/questions/71132425/using-wildcards-with-scala-sys-process-in-scala
 
