@@ -604,6 +604,36 @@ newDefault
 newDefault2
 ![Screenshot-2022-09-19-at-3-33-22-pm.png](https://i.postimg.cc/nzyC11xb/Screenshot-2022-09-19-at-3-33-22-pm.png)
 
+Memoization does infact makes some difference!
+
+**Refer**: https://stackoverflow.com/questions/73775296/avoiding-garbage-while-creating-objects-using-scala-runtime-reflection
+
+```scala
+  val cache = new ConcurrentHashMap[universe.Type, XYZ]()
+
+  def newDefault2[A](implicit t: reflect.ClassTag[A]): A = {
+    import reflect.runtime.{currentMirror => cm}
+
+    val clazz = cm.classSymbol(t.runtimeClass)
+    val mod   = clazz.companion.asModule
+    val im    = cm.reflect(cm.reflectModule(mod).instance)
+    val ts    = im.symbol.typeSignature
+
+    if (!cache.contains(ts)) {
+      val default = ts.members.filter(_.isMethod).filter(d => d.name.toString == "default").head.asMethod
+      cache.put(ts, im.reflectMethod(default).apply().asInstanceOf[XYZ])
+    }
+
+    cache.get(ts).asInstanceOf[A]
+  }
+
+  for (i <- 0 to 1000000000)
+    newDefault2[XYZ]
+```
+
+![Screenshot-2022-09-19-at-9-53-07-pm.png](https://i.postimg.cc/HsnKyqbB/Screenshot-2022-09-19-at-9-53-07-pm.png)
+
+
 ## Using wildcards with scala.sys.process._ in Scala
 Refer: https://stackoverflow.com/questions/71132425/using-wildcards-with-scala-sys-process-in-scala
 
