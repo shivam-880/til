@@ -136,7 +136,9 @@ unmanagedJars in Compile ++= Seq(
 )
 ```
 
-[![2021-01-26-20-30.png](https://i.postimg.cc/jjYCCt6j/2021-01-26-20-30.png)](https://postimg.cc/sMK3NFNF)
+
+![Unmanaged Resources]([https://postimg.cc/sMK3NFNF](https://i.postimg.cc/jjYCCt6j/2021-01-26-20-30.png))
+
 
 ## Using locally maven published jar in a sbt project
 In order use a locally published jar using `mvn install` in a sbt project add following resolver to your `built.sbt`.
