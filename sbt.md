@@ -137,7 +137,7 @@ unmanagedJars in Compile ++= Seq(
 ```
 
 
-![Unmanaged Resources]([https://postimg.cc/sMK3NFNF](https://i.postimg.cc/jjYCCt6j/2021-01-26-20-30.png))
+![Unmanaged Resources](https://i.postimg.cc/jjYCCt6j/2021-01-26-20-30.png)
 
 
 ## Using locally maven published jar in a sbt project
