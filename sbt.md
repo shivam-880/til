@@ -14,6 +14,28 @@ While eclipsifying a SBT project in order to open the project in Eclipse IDE all
 
 However every time you add new library dependencies in `build.sbt` it requires re-eclipsification of the SBT project i.e., you would need to re-run `sbt eclipse` so that freshly downloaded dependencies are also registered in `.classpath` file.
 
+## Making SBT load locally published jars instead of reaching out to public maven repositories
+**Refer**: [Proxy Repositories](https://www.scala-sbt.org/1.x/docs/Proxy-Repositories.html#sbt+Configuration), [sbt Launcher Configuration](https://www.scala-sbt.org/1.x/docs/Launcher-Configuration.html)
+
+1. Create a local file with name as `~/.sbt/repositories` and with content in the below format (modify URL pattern to match yours)
+    ```
+    [repositories]
+      local
+      maven-central
+      sbt-releases-repo: https://repo.typesafe.com/typesafe/ivy-releases/, [organization]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext]
+      sbt-plugins-repo: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/, [organization]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext]
+      mulesoft-public: https://repository-master.mulesoft.org/nexus/content/repositories/public
+    ```
+ 
+2. Start sbt console with the following vm args:
+    ```sh
+    $ sbt -Dsbt.override.build.repos=true
+    ```
+  
+    **Notes**: 
+    - To make this work with Intellij, goto "Preferences/Build, Execute, Deployment/Build Tools/sbt" and add `-Dsbt.override.build.repos=true` add "VM parameters".
+    - If the jar is not found in the local repository, it will be fetch from the public repository.
+
 ## Publish Artificats to Sonatype OSSRH
 **1. Add plugins**
 ```scala
