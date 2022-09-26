@@ -154,6 +154,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Debug lagom projects](https://github.com/iamsmkr/til/blob/master/sbt.md#debug-lagom-projects)
 - [How to have SBT subproject with multiple Scala versions](https://github.com/iamsmkr/til/blob/master/sbt.md#how-to-have-sbt-subproject-with-multiple-scala-versions)
 - [Making eclipse aware of fresh dependencies in a sbt project](https://github.com/iamsmkr/til/blob/master/sbt.md#making-eclipse-aware-of-fresh-dependencies-in-a-sbt-project)
+- [Making SBT fetch locally published jars instead of reaching out to public maven repositories](https://github.com/iamsmkr/til/blob/master/sbt.md#making-sbt-fetch-locally-published-jars-instead-of-reaching-out-to-public-maven-repositories)
 - [Publish Artificats to Sonatype OSSRH](https://github.com/iamsmkr/til/blob/master/sbt.md#publish-artificats-to-sonatype-ossrh)
 - [Specify dependencies in classpath](https://github.com/iamsmkr/til/blob/master/sbt.md#specify-dependencies-in-classpath)
 - [Unmanaged Resources](https://github.com/iamsmkr/til/blob/master/sbt.md#unmanaged-resources)
