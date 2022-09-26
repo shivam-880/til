@@ -14,7 +14,7 @@ While eclipsifying a SBT project in order to open the project in Eclipse IDE all
 
 However every time you add new library dependencies in `build.sbt` it requires re-eclipsification of the SBT project i.e., you would need to re-run `sbt eclipse` so that freshly downloaded dependencies are also registered in `.classpath` file.
 
-## Making SBT load locally published jars instead of reaching out to public maven repositories
+## Making SBT fetch locally published jars instead of reaching out to public maven repositories
 **Refer**: [Proxy Repositories](https://www.scala-sbt.org/1.x/docs/Proxy-Repositories.html#sbt+Configuration), [sbt Launcher Configuration](https://www.scala-sbt.org/1.x/docs/Launcher-Configuration.html)
 
 1. Create a local file with name as `~/.sbt/repositories` and with content in the below format (modify URL pattern to match yours)
