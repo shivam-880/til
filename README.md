@@ -126,6 +126,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Convert List of tuples into a List of lists](https://github.com/iamsmkr/til/blob/master/scala.md#convert-list-of-tuples-into-a-list-of-lists)
 - [Convert String to LocalDateTime](https://github.com/iamsmkr/til/blob/master/scala.md#convert-string-to-localdatetime)
 - [Count the number of occurrences in a list](https://github.com/iamsmkr/til/blob/master/scala.md#count-the-number-of-occurrences-in-a-list)
+- [Create/Update configs in Scala at runtime](https://github.com/iamsmkr/til/blob/master/scala.md#createupdate-configs-in-scala-at-runtime)
 - [Find duplicates in a list](https://github.com/iamsmkr/til/blob/master/scala.md#find-duplicates-in-a-list)
 - [Find files with a given extension](https://github.com/iamsmkr/til/blob/master/scala.md#find-files-with-a-given-extension)
 - [How to pick up a free port number on localhost](https://github.com/iamsmkr/til/blob/master/scala.md#how-to-pick-up-a-free-port-number-on-localhost)
