@@ -212,6 +212,51 @@ s.groupBy(identity).mapValues(_.size)
 Map(banana -> 1, oranges -> 3, apple -> 3)
 ```
 
+## Create/Update configs in Scala at runtime
+Cases where you have to load default `application.conf` but also override or add runtime configurations.
+
+```scala
+package com.iamsmkr.configs
+
+import com.iamsmkr.configs.RuntimeConfig.ConfigBuilder
+import com.typesafe.config.{Config, ConfigFactory, ConfigValueFactory}
+
+class RuntimeConfig private(config: Config) {
+  def getConfig: Config = config
+}
+
+object RuntimeConfig {
+  case class ConfigBuilder() {
+    var tempConf: Config =
+      ConfigFactory
+        .defaultOverrides()
+        .withFallback(ConfigFactory.defaultApplication())
+
+    def addConfig(key: String, value: Any): ConfigBuilder = {
+      tempConf = tempConf
+        .withValue(
+          key,
+          ConfigValueFactory.fromAnyRef(value)
+        )
+      this
+    }
+
+    def build(): RuntimeConfig = new RuntimeConfig(tempConf.resolve())
+  }
+}
+
+object TestConfig {
+
+  val r: RuntimeConfig =
+    ConfigBuilder()
+    .addConfig("raphtory.deploy.address", "127.0.0.1")
+    .addConfig("raphtory.deploy.port", 1736)
+    .build()
+
+  r.getConfig
+}
+```
+
 ## Find duplicates in a list
 Refer: https://stackoverflow.com/questions/24729544/how-to-find-duplicates-in-a-list
 
