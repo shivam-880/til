@@ -107,6 +107,9 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Using rsync for data transfer](https://github.com/iamsmkr/til/blob/master/linux.md#using-rsync-for-data-transfer)
 - [Update AWS IP in your local dns](https://github.com/iamsmkr/til/blob/master/linux.md#update-aws-ip-in-your-local-dns)
 
+### MacOS
+- [Run VSCode from Mac Terminal](https://github.com/iamsmkr/til/blob/master/macos.md#run-vscode-from-mac-terminal)
+
 ### Maven
 - [Resolving dependencies](https://github.com/iamsmkr/til/blob/master/maven.md#resolving-dependencies)
 - [Running maven applications](https://github.com/iamsmkr/til/blob/master/maven.md#running-maven-applications)
