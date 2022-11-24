@@ -78,7 +78,7 @@ done
 $ ls -1|while read file; do tail -1 $file; done
 ```
 
-# Write lines from and to given line numbers from a file to another file
+## Write lines from and to given line numbers from a file to another file
 ```bash
 $ sed -n '16224,16482p' in.sql > out.sql
 ```
