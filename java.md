@@ -93,7 +93,7 @@ BufferedReader br = new BufferedReader(new InputStreamReader(getResource(null)))
 	    -jar jmx-tester-1.0.0.jar
 	```
 	
-	**.jvmopts**
+	**.sbtopts**
 	```
 	-J-Xms12G
 	-J-Xmx32G
@@ -107,7 +107,7 @@ BufferedReader br = new BufferedReader(new InputStreamReader(getResource(null)))
 	-J-Dcom.sun.management.jmxremote.rmi.port=9900
 	```
 	
-	**.sbtopts**
+	**.jvmopts**
 	```
 	-Xms12G
 	-Xmx32G
