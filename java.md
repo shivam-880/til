@@ -88,9 +88,37 @@ BufferedReader br = new BufferedReader(new InputStreamReader(getResource(null)))
 	    -Dcom.sun.management.jmxremote=true \
 	    -Dcom.sun.management.jmxremote.ssl=false \
 	    -Dcom.sun.management.jmxremote.authenticate=false \
-	    -Dcom.sun.management.jmxremote.port=9800 \
-	    -Dcom.sun.management.jmxremote.rmi.port=9800 \
+	    -Dcom.sun.management.jmxremote.port=9900 \
+	    -Dcom.sun.management.jmxremote.rmi.port=9900 \
 	    -jar jmx-tester-1.0.0.jar
+	```
+	
+	**.jvmopts**
+	```
+	-J-Xms12G
+	-J-Xmx32G
+	-J-XX:ReservedCodeCacheSize=512M
+	-J-XX:MaxMetaspaceSize=2G
+	-J-Djava.rmi.server.hostname=localhost
+	-J-Dcom.sun.management.jmxremote=true
+	-J-Dcom.sun.management.jmxremote.ssl=false
+	-J-Dcom.sun.management.jmxremote.authenticate=false
+	-J-Dcom.sun.management.jmxremote.port=9900
+	-J-Dcom.sun.management.jmxremote.rmi.port=9900
+	```
+	
+	**.sbtopts**
+	```
+	-Xms12G
+	-Xmx32G
+	-XX:ReservedCodeCacheSize=512M
+	-XX:MaxMetaspaceSize=2G
+	-Djava.rmi.server.hostname=localhost
+	-Dcom.sun.management.jmxremote=true
+	-Dcom.sun.management.jmxremote.ssl=false
+	-Dcom.sun.management.jmxremote.authenticate=false
+	-Dcom.sun.management.jmxremote.port=9900
+	-Dcom.sun.management.jmxremote.rmi.port=9900
 	```
 
 2. Create standard SSH tunnel
