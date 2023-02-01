@@ -39,6 +39,18 @@ if lsof -Pi :8080 -sTCP:LISTEN -t >/dev/null ; then
 fi
 ```
 
+## Download goole drive file
+- Install `gdown`
+    ```sh
+    pip install gdown
+    ```
+
+- Download file
+    ```sh
+    # Extract file id from the shared link (such as, https://drive.google.com/file/d/1P5JrAqJlrPUDJXyXsYW5ujA-5bL5kPa7/view?usp=sharing)
+    $ gdown 1P5JrAqJlrPUDJXyXsYW5ujA-5bL5kPa7
+    ```
+
 ## Grep in Parallel
 Refer: https://stackoverflow.com/questions/11898949/how-do-i-grep-in-parallel
 
