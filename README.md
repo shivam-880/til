@@ -7,6 +7,11 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 ### Ammonite
 - [Launch a particular version of ammonite](https://github.com/iamsmkr/til/blob/master/amm.md#launch-a-particular-version-of-ammonite)
 
+### AWS
+- [Install and configure AWS CLI](https://github.com/iamsmkr/til/blob/master/aws.md#install-and-configure-aws-cli)
+- [List files in a bucket](https://github.com/iamsmkr/til/blob/master/aws.md#list-files-in-a-bucket)
+- [Copy all files from a bucket (directory)](https://github.com/iamsmkr/til/blob/master/aws.md#copy-all-files-from-a-bucket-directory)
+
 ### Bash
 - [Banners in Bash Scripts](https://github.com/iamsmkr/til/blob/master/bash.md#banners-in-bash-scripts)
 - [Configure Base Dir](https://github.com/iamsmkr/til/blob/master/bash.md#configure-base-dir)
