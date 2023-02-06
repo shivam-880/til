@@ -11,6 +11,11 @@ $ aws configure
 $ aws s3 ls s3://pometry-data/btc/
 ```
 
+## Copy single file from a bucket
+```sh
+aws s3 cp s3://pometry-data/btc/partition0/address_000000000000.csv.gz .
+```
+
 ## Copy all files from a bucket (directory)
 ```sh
 $ aws s3 sync s3://pometry-data/btc/partition1 .
