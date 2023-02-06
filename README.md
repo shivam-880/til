@@ -10,6 +10,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 ### AWS
 - [Install and configure AWS CLI](https://github.com/iamsmkr/til/blob/master/aws.md#install-and-configure-aws-cli)
 - [List files in a bucket](https://github.com/iamsmkr/til/blob/master/aws.md#list-files-in-a-bucket)
+- [Copy single file from a bucket](https://github.com/iamsmkr/til/blob/master/aws.md#copy-single-file-from-a-bucket)
 - [Copy all files from a bucket (directory)](https://github.com/iamsmkr/til/blob/master/aws.md#copy-all-files-from-a-bucket-directory)
 
 ### Bash
