@@ -1,4 +1,6 @@
 ## Difference HashSet
+**Refer**: https://users.rust-lang.org/t/idiomatic-way-to-get-difference-between-two-vecs/48396/9
+
 ```rust
 let mut last = HashSet::<&u64>::new();
         last.insert(&1);
