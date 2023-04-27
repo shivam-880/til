@@ -127,6 +127,9 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [How to pass arguments to sql file](https://github.com/iamsmkr/til/blob/master/postgres.md#how-to-pass-arguments-to-sql-file)
 - [How to merge two tables in postgresql based on multiple conditions](https://github.com/iamsmkr/til/blob/master/postgres.md#how-to-merge-two-tables-in-postgresql-based-on-multiple-conditions)
 
+### Rust
+- [Difference HashSet](https://github.com/iamsmkr/til/blob/master/rust.md#difference-hashset)
+
 ### Scala
 - [Adding Shutdown Hooks for JVM Applications](https://github.com/iamsmkr/til/blob/master/scala.md#adding-shutdown-hooks-for-jvm-applications)
 - [Change Current Directory](https://github.com/iamsmkr/til/blob/master/scala.md#change-current-directory)
