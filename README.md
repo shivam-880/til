@@ -128,6 +128,9 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [How to pass arguments to sql file](https://github.com/iamsmkr/til/blob/master/postgres.md#how-to-pass-arguments-to-sql-file)
 - [How to merge two tables in postgresql based on multiple conditions](https://github.com/iamsmkr/til/blob/master/postgres.md#how-to-merge-two-tables-in-postgresql-based-on-multiple-conditions)
 
+### Python
+- [Running single pytest](https://github.com/iamsmkr/til/blob/master/python.md#running-single-pytest)
+
 ### Rust
 - [Difference HashSet](https://github.com/iamsmkr/til/blob/master/rust.md#difference-hashset)
 
