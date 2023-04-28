@@ -51,6 +51,11 @@ fi
     $ gdown 1P5JrAqJlrPUDJXyXsYW5ujA-5bL5kPa7
     ```
 
+## Find a file by name
+```
+$ find . -type f -name test_graphdb.py
+```
+
 ## Grep in Parallel
 Refer: https://stackoverflow.com/questions/11898949/how-do-i-grep-in-parallel
 
