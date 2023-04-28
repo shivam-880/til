@@ -107,6 +107,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Determine if a port is already in use](https://github.com/iamsmkr/til/blob/master/linux.md#determine-if-a-port-is-already-in-use)
 - [Determine if a port is open on a remote server](https://github.com/iamsmkr/til/blob/master/linux.md#determine-if-a-port-is-open-on-a-remote-server)
 - [Download google drive file](https://github.com/iamsmkr/til/edit/master/linux.md#download-goole-drive-file)
+- [Find a file by name](https://github.com/iamsmkr/til/blob/master/linux.md#find-a-file-by-name)
 - [Grep in Parallel](https://github.com/iamsmkr/til/blob/master/linux.md#grep-in-parallel)
 - [How to create windows bootable disk on ubuntu](https://github.com/iamsmkr/til/blob/master/linux.md#how-to-create-windows-bootable-disk-on-ubuntu)
 - [How to format bootable ubuntu usb drive](https://github.com/iamsmkr/til/blob/master/linux.md#how-to-format-bootable-ubuntu-usb-drive)
