@@ -8,7 +8,7 @@
 However, if we want to only download dependencies without doing anything else, we can run `mvn dependency:resolve`.
 
 ## Running maven applications
-
+**Refer**: [Run a Java Main Method in Maven](https://www.baeldung.com/maven-java-main-method) 
 #### Without arguments
 
 ```
