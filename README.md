@@ -35,6 +35,11 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Run a container](https://github.com/iamsmkr/til/blob/master/docker.md#run-a-container)
 - [Set path in Dockerfile](https://github.com/iamsmkr/til/blob/master/docker.md#set-path-in-dockerfile)
 
+### Great Expectations
+- [Create and save expectations in an Expectation Suite](https://github.com/iamsmkr/til/blob/master/ge.md#create-and-save-expectations-in-an-expectation-suite)
+- [Vaildate batch against an expectation suite](https://github.com/iamsmkr/til/blob/master/ge.md#vaildate-batch-against-an-expectation-suite)
+- [Validate batch and create data docs](https://github.com/iamsmkr/til/blob/master/ge.md#validate-batch-and-create-data-docs)
+
 ### Git
 - [Branch Desciptions](https://github.com/iamsmkr/til/blob/master/git.md#branch-descriptions)
 - [Rename branch](https://github.com/iamsmkr/til/blob/master/git.md#rename-branch)
