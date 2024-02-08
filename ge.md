@@ -30,7 +30,7 @@
 ]
 ```
 
-#### Create and save expectations in an Expectation Suite
+### Create and save expectations in an Expectation Suite
 ```python
 # Import necessary libraries
 import great_expectations as ge
@@ -66,7 +66,7 @@ batch.expect_column_values_to_match_regex('details_address_state', r'^[A-Za-z\s]
 batch.save_expectation_suite('nestedjson_expectations_suite')
 ```
 
-#### Vaildate batch against an expectation suite
+### Vaildate batch against an expectation suite
 ```python
 import great_expectations as ge
 import openpyxl
@@ -92,7 +92,7 @@ print(result)
 # batch.to_excel('../../batch.xlsx')
 ```
 
-#### Validate batch and create data docs
+### Validate batch and create data docs
 ```python
 # Import necessary libraries
 import great_expectations as ge
