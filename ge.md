@@ -1,6 +1,35 @@
 
 ## Great Expectations
 
+**nested.json**
+
+```nested.json
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "details": {
+      "age": 30,
+      "address": {
+        "city": "New York",
+        "state": "NY"
+      }
+    }
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "details": {
+      "age": 25,
+      "address": {
+        "city": "San Francisco",
+        "state": "CA"
+      }
+    }
+  }
+]
+```
+
 #### Create and save expectations in an Expectation Suite
 ```python
 # Import necessary libraries
@@ -59,6 +88,8 @@ batch["details_address_state"] = batch["details"].apply(lambda x: x.get("address
 
 result = batch.validate("nestedjson_expectations_suite.json")
 print(result)
+
+# batch.to_excel('../../batch.xlsx')
 ```
 
 #### Validate batch and create data docs
@@ -113,3 +144,28 @@ print(results.to_dict)
 context.build_data_docs()
 context.open_data_docs(resource_identifier=results.list_validation_result_identifiers()[0])
 ```
+
+**References:**
+- Great expectations doesn't support validating nested json
+  
+    https://github.com/great-expectations/great_expectations/issues/7833
+  
+    https://github.com/great-expectations/great_expectations/issues/2231
+  
+    https://github.com/great-expectations/great_expectations/issues/3975
+
+- Blogs
+
+    https://qxf2.com/blog/data-validation-great-expectations-real-example/
+    
+    https://qxf2.com/blog/great-expectations-example-github-actions/
+    
+    https://qxf2.com/blog/use-pytest-to-run-great-expectations-checkpoints/
+    
+    https://qxf2.com/blog/metric-store-evaluation-parameters-great-expectations/
+    
+    https://discourse.greatexpectations.io/t/configure-datasource-for-json-files/121
+     
+    https://github.com/datarootsio/tutorial-great-expectations/blob/main/tutorial_great_expectations.ipynb
+     
+    https://github.com/search?q=repo%3Agreat-expectations%2Fgreat_expectations+batch.validate&type=code
