@@ -322,7 +322,10 @@ The `requestAnimationFrame` solutions proposed in the blogs listed below won't w
 
 (2) https://freedium.cfd/https://medium.com/jspoint/javascript-raf-requestanimationframe-456f8a0d04b0
 
+<br/>
+
 We can make use of <ins>web workers</ins> instead. 
+
 **Refer**: 
 
 (1) https://github.com/iamsmkr/seesaw 
