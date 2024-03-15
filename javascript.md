@@ -316,7 +316,7 @@ P
 The `requestAnimationFrame` solutions proposed in the blogs listed below won't work as per the documentation:
   > requestAnimationFrame() calls are paused in most browsers when running in background tabs or hidden <iframe>s, in order to improve performance and battery life.
 
-We can make use of web workers instead. **Refer**: https://github.com/iamsmkr/seesaw
+We can make use of <u>web workers</u> instead. **Refer**: https://github.com/iamsmkr/seesaw
 
 **Refer**: (1) https://abhi9bakshi.medium.com/why-javascript-timer-is-unreliable-and-how-can-you-fix-it-9ff5e6d34ee0
 (2) https://freedium.cfd/https://medium.com/jspoint/javascript-raf-requestanimationframe-456f8a0d04b0
