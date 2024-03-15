@@ -45,10 +45,14 @@ const AnimatedLogo = () => {
 export default AnimatedLogo
 ```
 
+<br/>
+
 ## Check if Javascript object is empty
 ```javascript
 Object.keys({}).length === 0
 ```
+
+<br/>
 
 ## Convert an array of objects to object of objects with indices as one of the key value
 #### Input
@@ -92,6 +96,8 @@ const arr = [
 import _ from 'lodash'
 const obj = _.keyBy(arr, "index")
 ```
+
+<br/>
 
 ## Convert a list of objects to an object of objects with indices of objects in the lists as keys
 
@@ -142,9 +148,81 @@ res
 
 <br/>
 
+## Custom React Hook to implement intervals
+`setInterval` doesn't work with react hooks as expected, hence this custom hook. It's a copy paste the following blog post.
+Refer https://overreacted.io/making-setinterval-declarative-with-react-hooks/
+```javascript
+import { useEffect, useRef } from 'react'
+
+const useInterval = (callback, delay) => {
+    const savedCallback = useRef()
+
+    // Remember the latest callback.
+    useEffect(() => {
+        savedCallback.current = callback
+    }, [callback])
+
+    // Set up the interval.
+    useEffect(() => {
+        function tick() {
+            savedCallback.current()
+        }
+        if (delay !== null) {
+            let id = setInterval(tick, delay)
+            return () => clearInterval(id)
+        }
+    }, [delay])
+}
+
+export default useInterval
+
+```
+
+#### Usage
+```javascript
+import React, { useState, useEffect, useRef } from 'react';
+
+function Counter() {
+  let [count, setCount] = useState(0);
+
+  useInterval(() => {
+    // Your custom logic here
+    setCount(count + 1);
+  }, 1000);
+
+  return <h1>{count}</h1>;
+}
+```
+
+<br/>
+
 ## Enums in Javascript
 ```javascript
 export const Scope = Object.freeze({ Row: "Row", File: "File", Bundle: "Bundle" });
+```
+
+<br/>
+
+
+## How to properly terminate timeouts started in a loop
+Calling `setTimeout` inside a loop will create multiple timers. The idea is to maintain a list of all such timers and clear them iteratively.
+
+```javascript
+let timeouts = []
+
+timeouts.forEach((timer) => {
+    clearTimeout(timer)
+})
+
+for (let x = 0; x < 10; x++) {
+    let tick = () => {
+        return () => {
+            console.log("Hi")
+        }
+    }
+    timeouts.push(setTimeout(tick(), 1000 * x))
+}
+
 ```
 
 <br/>
@@ -234,56 +312,24 @@ P
 
 <br/>
 
-## Custom React Hook to implement intervals
-`setInterval` doesn't work with react hooks as expected, hence this custom hook. It's a copy paste the following blog post.
-Refer https://overreacted.io/making-setinterval-declarative-with-react-hooks/
-```javascript
-import { useEffect, useRef } from 'react'
+## Pausing setInterval when page/ browser is out of focus
+The `requestAnimationFrame` solutions proposed in the blogs listed below won't work as per the documentation:
+  > requestAnimationFrame() calls are paused in most browsers when running in background tabs or hidden <iframe>s, in order to improve performance and battery life.
 
-const useInterval = (callback, delay) => {
-    const savedCallback = useRef()
+We can make use of web workers instead. **Refer**: https://github.com/iamsmkr/seesaw
 
-    // Remember the latest callback.
-    useEffect(() => {
-        savedCallback.current = callback
-    }, [callback])
+**Refer**: (1) https://abhi9bakshi.medium.com/why-javascript-timer-is-unreliable-and-how-can-you-fix-it-9ff5e6d34ee0
+(2) https://freedium.cfd/https://medium.com/jspoint/javascript-raf-requestanimationframe-456f8a0d04b0
 
-    // Set up the interval.
-    useEffect(() => {
-        function tick() {
-            savedCallback.current()
-        }
-        if (delay !== null) {
-            let id = setInterval(tick, delay)
-            return () => clearInterval(id)
-        }
-    }, [delay])
-}
 
-export default useInterval
-
-```
-
-#### Usage
-```javascript
-import React, { useState, useEffect, useRef } from 'react';
-
-function Counter() {
-  let [count, setCount] = useState(0);
-
-  useInterval(() => {
-    // Your custom logic here
-    setCount(count + 1);
-  }, 1000);
-
-  return <h1>{count}</h1>;
-}
-```
+<br/>
 
 ## Sleep in Javascript
 ```javascript
 await new Promise(r => setTimeout(r, 10000))
 ```
+
+<br/>
 
 ## Slice objects from a list of objects to an object of objects with keys as indices
 
@@ -435,23 +481,12 @@ function slice(offset, limit) {
 slice(2,7);
 ```
 
-## How to properly terminate timeouts started in a loop
-Calling `setTimeout` inside a loop will create multiple timers. The idea is to maintain a list of all such timers and clear them iteratively.
+<br/>
 
+## Start local webserver to host dev apps
+**Refer**: https://stackoverflow.com/questions/21408510/chrome-cant-load-web-worker
 ```javascript
-let timeouts = []
-
-timeouts.forEach((timer) => {
-    clearTimeout(timer)
-})
-
-for (let x = 0; x < 10; x++) {
-    let tick = () => {
-        return () => {
-            console.log("Hi")
-        }
-    }
-    timeouts.push(setTimeout(tick(), 1000 * x))
-}
-
+$ npm install -g local-web-server
+$ ws
 ```
+Navigate to http://localhost:8000 (default port: 8000)
