@@ -85,12 +85,15 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Check if Javascript object is empty](https://github.com/iamsmkr/til/blob/master/javascript.md#check-if-javascript-object-is-empty)
 - [Convert an array of objects to object of objects with indices as one of the key value](https://github.com/iamsmkr/til/blob/master/javascript.md#convert-an-array-of-objects-to-object-of-objects-with-indices-as-one-of-the-key-value)
 - [Convert a list of objects to an object of objects with indices of objects in the lists as keys](https://github.com/iamsmkr/til/blob/master/javascript.md#convert-a-list-of-objects-to-an-object-of-objects-with-indices-of-objects-in-the-lists-as-keys)
-- [Enums in Javascript](https://github.com/iamsmkr/til/blob/master/javascript.md#enums-in-javascript)
-- [Parsing javascript object](https://github.com/iamsmkr/til/blob/master/javascript.md#parsing-javascript-object)
 - [Custom React Hook to implement intervals](https://github.com/iamsmkr/til/blob/master/javascript.md#custom-react-hook-to-implement-intervals)
+- [Enums in Javascript](https://github.com/iamsmkr/til/blob/master/javascript.md#enums-in-javascript)
+- [How to properly terminate timeouts started in a loop](https://github.com/iamsmkr/til/blob/master/javascript.md#how-to-properly-terminate-timeouts-started-in-a-loop)
+- [Parsing javascript object](https://github.com/iamsmkr/til/blob/master/javascript.md#parsing-javascript-object)
+- [Pausing setInterval when page/ browser is out of focus](https://github.com/iamsmkr/til/blob/master/javascript.md#pausing-setinterval-when-page-browser-is-out-of-focus)
 - [Sleep in Javascript](https://github.com/iamsmkr/til/blob/master/javascript.md#sleep-in-javascript)
 - [Slice objects from a list of objects to an object of objects with keys as indices](https://github.com/iamsmkr/til/blob/master/javascript.md#slice-objects-from-a-list-of-objects-to-an-object-of-objects-with-keys-as-indices)
-- [How to properly terminate timeouts started in a loop](https://github.com/iamsmkr/til/blob/master/javascript.md#how-to-properly-terminate-timeouts-started-in-a-loop)
+- [Start local webserver to host dev apps](https://github.com/iamsmkr/til/blob/master/javascript.md#start-local-webserver-to-host-dev-apps)
+
 
 ### Kubernetes
 - [Basic minikube cluster commands](https://github.com/iamsmkr/til/blob/master/kubernetes.md#basic-minikube-cluster-commands)
