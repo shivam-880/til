@@ -1,4 +1,4 @@
-# Pretty print Json
+# Pretty Print Json
 1. Add following to your `.zshrc`:
   ```bash
   alias prettyjson='python -m json.tool'
