@@ -125,6 +125,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Update AWS IP in your local dns](https://github.com/iamsmkr/til/blob/master/linux.md#update-aws-ip-in-your-local-dns)
 
 ### MacOS
+- [Pretty Print Json](https://github.com/iamsmkr/til/blob/master/macos.md#pretty-print-json)
 - [Run VSCode from Mac Terminal](https://github.com/iamsmkr/til/blob/master/macos.md#run-vscode-from-mac-terminal)
 
 ### Maven
