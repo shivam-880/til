@@ -503,3 +503,53 @@ $ npm install -g local-web-server
 $ ws
 ```
 Navigate to http://localhost:8000 (default port: 8000)
+
+## Start React App in DEV/PROD mode
+If you have created a react app from `create-react-app`:
+```json
+"scripts": {
+    "dev": "react-scripts start",
+    "start": "concurrently \"npm run server\" \"npm run dev\"",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "server": "pouchdb-server --host 0.0.0.0 -p 10102 -m -d /opt/pouchdb/data/visibility/ -n true",
+    "eject": "react-scripts eject"
+  },
+```
+
+Starting the server like `npm run start` will always start the server in the development mode. In fact, it will automatically set `NODE_ENV` as `development` which you can use in your code to do something like:
+```javascript
+ if (process.env.NODE_ENV === "development") {
+        await import('rxdb/plugins/dev-mode').then(
+            module => addRxPlugin(module.RxDBDevModePlugin)
+        );
+    }
+```
+
+When you deploy your app in the production using `serve` using following commands:
+```bash
+% npm install -g serve
+% npm run build
+% serve -s build
+```
+
+It will automatically set `NODE_ENV` as `production`.
+
+You can also update your scripts to start the server in `dev` and `prod` mode like so:
+```json
+"scripts": {
+    "dev": "react-scripts start",
+    "start:dev": "concurrently \"npm run server\" \"npm run dev\"",
+    "start": "concurrently \"npm run server\" \"serve -s build\"",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "server": "pouchdb-server --host 0.0.0.0 -p 10102 -m -d /opt/pouchdb/data/visibility/ -n true",
+    "eject": "react-scripts eject"
+  },
+```
+
+Now start the server in `dev` and `prod` mode respectively:
+```bash
+% npm run start:dev
+% npm run start
+```
