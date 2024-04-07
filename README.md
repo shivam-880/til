@@ -93,6 +93,7 @@ A collection of succinct write-ups on whatever I learn on a day to day basis acr
 - [Sleep in Javascript](https://github.com/iamsmkr/til/blob/master/javascript.md#sleep-in-javascript)
 - [Slice objects from a list of objects to an object of objects with keys as indices](https://github.com/iamsmkr/til/blob/master/javascript.md#slice-objects-from-a-list-of-objects-to-an-object-of-objects-with-keys-as-indices)
 - [Start local webserver to host dev apps](https://github.com/iamsmkr/til/blob/master/javascript.md#start-local-webserver-to-host-dev-apps)
+- [Start React App in DEV/PROD mode](https://github.com/iamsmkr/til/blob/master/javascript.md#start-react-app-in-devprod-mode)
 
 
 ### Kubernetes
